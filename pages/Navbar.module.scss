@@ -1,0 +1,16 @@
+nav.navbar {
+    margin-top: 36px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    ul {
+        // gap: 64px;
+       a {
+        color: white;
+        cursor: pointer;
+        margin-right: 64px;
+        font-weight: 700;
+       }
+    }
+}
