@@ -1,34 +1,37 @@
 section.hero {
-    margin-top: 240px;
-    margin-left: 247px;
+    margin-top: 196px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 176px;
+    flex-direction: row;
     .info {
         justify-content: center;
+        max-width: 419px;
+        margin-left: 207px;
+        color: white;
         h1 {
             font-size: 40px;
             font-weight: 700;
-            color: white;
+            z-index: 3;
         }
         p {
             margin-top: 31px;
-            color: white;
-            max-width: 419px;
             font-size: 16px;
             font-weight: 400;
         }
         .icons {
-            display: flex;
             margin-top: 31px;
+            display: flex;
+            cursor: pointer;
             flex-direction: row;
             gap: 15px;
-            margin-bottom: 236px;
+            // margin-bottom: 236px;
         }
     }
     .image {
-        margin-top: -380px;
-        margin-right: 187px;
+        margin-right: 207px;
+        z-index: 2;
+        justify-content: center;
     }
 }

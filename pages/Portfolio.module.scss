@@ -1,0 +1,183 @@
+section.portfolio {
+    color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1500px;
+    flex-direction: column;
+    z-index: 10;
+    .container {
+        max-width: 107rem;
+        z-index: 10;
+        h2 {
+            color:white;
+            font-weight: 700;
+            font-size: 20px;
+            
+            text-align: center;
+        }
+        h2::after {
+            content: '|';
+            display: inline-block;
+            vertical-align:baseline;
+            line-height: 1;
+            opacity: 1;
+            animation: blink-caret 1s infinite;
+          }
+          
+          @keyframes blink-caret {
+            0% {
+              opacity: 1;
+            }
+            50% {
+              opacity: 0;
+            }
+            100% {
+              opacity: 1;
+            }
+          }
+        p {
+            color:white;
+            text-align: center;
+        }
+        .websites {
+            margin-top: 51px;
+            grid-gap: 5rem;
+            display: grid;
+            gap: 5rem;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto;
+            max-height: 400px;
+            width: 100%;
+            .website {
+                background-color: #ffffff;
+                border-radius: 1.7rem;
+                box-shadow: 0 0 10px rgba(0,0,0,.1);
+                display: flex;
+                flex-direction: row;
+                gap: 8rem;
+                height: 30rem;
+                padding: 2rem;
+                margin-left: 170px;
+                margin-right: 170px;
+                .image {
+                    border-radius: 1.7rem;
+                    box-shadow: 0 0 10px rgba(0,0,0,.1);
+                    height: auto;
+                    overflow: hidden;
+                    max-width: 53rem;
+                    a {
+                        cursor: pointer;
+                        img {
+                            transition: transform 10s ease-in-out 0s;
+                            height: auto;
+                            width: 100%;
+                            overflow-clip-margin: content-box;
+                            overflow: clip;
+                        }
+                        &:hover {
+                            img {
+                                transform: translateY(-50%);
+                            }
+                        }
+                    }
+                }
+                .secondimage {
+                    border-radius: 1.7rem;
+                    box-shadow: 0 0 10px rgba(0,0,0,.1);
+                    height: auto;
+                    overflow: hidden;
+                    max-width: 53rem;
+                    a {
+                        cursor: pointer;
+                        img {
+                            transition: transform 10s ease-in-out 0s;
+                            height: auto;
+                            width: 100%;
+                            overflow-clip-margin: content-box;
+                            overflow: clip;
+                        }
+                        &:hover {
+                            img {
+                                transform: translateY(-67%);
+                            }
+                        }
+                    } 
+                }
+                .thirdimage {
+                    border-radius: 1.7rem;
+                    box-shadow: 0 0 10px rgba(0,0,0,.1);
+                    height: auto;
+                    overflow: hidden;
+                    max-width: 53rem;
+                    a {
+                        cursor: pointer;
+                        img {
+                            transition: transform 10s ease-in-out 0s;
+                            height: auto;
+                            width: 100%;
+                            overflow-clip-margin: content-box;
+                            overflow: clip;
+                        }
+                        &:hover {
+                            img {
+                                transform: translateY(-72%);
+                            }
+                        }
+                    } 
+                }
+                .text {
+                    display: flex;
+                    flex-direction: column;
+                    height: auto;
+                    justify-content: center;
+                    text-align: center;
+                    // max-width: 30rem;
+                    h3 {
+                        font-size: 28px;
+                        font-weight: 700;
+                        margin-bottom: 26px;
+                    }
+                    p {
+                        // margin-top: 31px;
+                        font-size: 18px;
+                        color: black;
+                    }
+                    .buttons {
+                        margin-top:31px;
+                        display: flex;
+                        gap: 1rem;
+                        justify-content: center;
+                        p {
+                            color: #767676;
+                            font-size: 11.5px;
+                            text-align: center;
+                            background-color: #fff;
+                            box-shadow: 0 0 10px rgba(0,0,0,.1);
+                            font-weight: 600;
+                            padding: 1rem 1.3rem;
+                        }
+                    }
+                    .links {
+                        margin-top: 31px;
+                        align-items: center;
+                        display: flex;
+                        gap: 1rem;
+                        justify-content: space-evenly;
+                        flex-direction: row;
+                        a {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 5px;
+                            p {
+                                color: #2d2e32;
+                                font-weight: 700;               
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
