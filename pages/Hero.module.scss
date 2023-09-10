@@ -1,7 +1,7 @@
 section.hero {
     margin-top: 196px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 176px;
     flex-direction: row;
@@ -14,6 +14,7 @@ section.hero {
             font-size: 40px;
             font-weight: 700;
             z-index: 3;
+            color: rgb(82, 107, 166);
         }
         p {
             margin-top: 31px;

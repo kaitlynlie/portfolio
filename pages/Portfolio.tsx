@@ -1,14 +1,14 @@
 import React from 'react'
 import clsx from 'clsx'
 import styles from './Portfolio.module.scss'
-import { websiterma, code, carwash, live, galaxia } from '../public'
+import { websiterma, code, carwash, live, galaxia } from '../src'
 
 const Portfolio = () => {
   return (
-    <section className={clsx(styles.portfolio)}>
+    <section className={clsx(styles.portfolio)} id='projects'>
         <div className={clsx(styles.container)}>
             <h2>PORTFOLIO</h2>
-            <p>Projects I have created so far </p>
+            <span style={{marginLeft: '170px'}}>Projects I have created so far... </span>
             <div className={clsx(styles.websites)}>
                 <div className={clsx(styles.website)}>
                     <div className={clsx(styles.image)}>
@@ -36,8 +36,8 @@ const Portfolio = () => {
 
                 <div className={clsx(styles.website)}>
                     <div className={clsx(styles.text)}>
-                        <h3>Car Wash</h3>
-                        <p>A website for a carwash company called Big Bad Carwash, inspired by one of my previous jobs.</p>
+                        <h3>Big Bad Car Wash</h3>
+                        <p>Big Bad Carwash is a website for a car wash company centered around membership deals for their customers.</p>
                         
                         <div className={clsx(styles.buttons)}>
                             <p>React</p>

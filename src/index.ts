@@ -7,6 +7,8 @@ import code from './code.svg'
 import carwash from './carwash.png'
 import live from './live.svg'
 import galaxia from './galaxia.png'
+import mail from './mail.svg'
+import linkedinDk from './linkedinDk.svg'
 
 export {
     github,
@@ -17,5 +19,7 @@ export {
     code,
     carwash,
     live,
-    galaxia
+    galaxia,
+    mail,
+    linkedinDk
 }

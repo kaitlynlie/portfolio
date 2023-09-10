@@ -1,13 +1,13 @@
 import React from 'react'
 import styles from './Hero.module.scss'
 import clsx from 'clsx'
-import { linkedin, github, hero, me } from '../public'
+import { linkedin, github, hero } from '../src'
 import { motion } from 'framer-motion'
 import { fadeIn } from '../src/utils/motion'
 
 const Hero = () => {
   return (
-    <section className={clsx(styles.hero)}>
+    <section className={clsx(styles.hero)} id='home'>
         <div className={clsx(styles.info)}>
             <h1>Software Engineer</h1>
             <p>Hi, I'm Kaitlyn Li, a student interested in Software Development based in San Francisco, California.</p>

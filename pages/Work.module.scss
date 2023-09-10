@@ -1,0 +1,79 @@
+section.work {
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 10;
+    h2 {
+        color: rgb(82, 107, 166);
+        font-size: 20px;
+        font-weight: 700;
+    }
+    ul {
+        text-align: left;
+        padding: 50px 0;
+        li {
+            // background: rgba(45, 72, 152, 0.75);
+            background: linear-gradient(91.36deg, #2565E1 0%, #2D4898BF 13.02%, #7AEBFB 25.52%, #56ABEC 37.5%, #A58DE3 49.48%, #737EB7 63.02%, #cfd4fd 72.92%, #c9aeea 84.38%, #2565E1 97.92%);
+            list-style-type: none;
+            position: relative;
+            width: 6px;
+            padding-top: 50px;
+            align-items: center;
+  justify-content: center;
+            .right {
+                margin-left: 10px;
+                width: 250px;
+                padding: 15px;
+                position: relative;
+                background-color: white;
+                h4 {
+                    font-size: 18px;
+                    font-weight: 700;
+                }
+                h3 {
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+                p {
+                    margin-top: 10px;
+                    font-size: 14px;
+                }
+            }
+
+            .left {
+                left: -254px;
+                width: 250px;
+                padding: 15px;
+                position: relative;
+                background-color: white;
+                h4 {
+                    font-size: 18px;
+                    font-weight: 700;
+                }
+                h3 {
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+                p {
+                    margin-top: 10px;
+                    font-size: 14px;
+                }
+            }
+            padding-bottom: 50px;
+        }
+        .dot {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            z-index: 10;
+            background: rgb(206, 206, 206);
+            margin-top: -10px;
+        }
+    }
+    margin-bottom: 167px;
+}
