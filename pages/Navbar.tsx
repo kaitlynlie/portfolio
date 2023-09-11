@@ -12,7 +12,7 @@ const Navbar = () => {
             <ul>
                 <a href='#home'>Home</a>
                 <a href='#about'>About</a>
-                <a href='#work'>Work Experience</a>
+                <a href='#work'>Work</a>
                 <a href='#projects'>Projects</a>
                 <a style={{marginRight: 116}} href='#contact'>Contact</a>
             </ul>

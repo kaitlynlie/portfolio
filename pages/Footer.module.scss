@@ -1,0 +1,22 @@
+section.footer {
+    color:white;
+    margin: 0 auto;
+    max-width: 107rem;
+    margin-left: 170px;
+    margin-right: 170px;
+    margin-bottom: 31px;
+    .container {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        h4 {
+            font-weight: 600;
+        }
+        .icons {
+            display: flex;
+            justify-content: center;
+            gap:10px;
+        }
+    }
+}
