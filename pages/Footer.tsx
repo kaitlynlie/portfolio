@@ -10,8 +10,8 @@ const Footer = () => {
             <h4>Copyright © 2023. All rights reserved.</h4>
 
             <div className={clsx(styles.icons)}>
-                <img src={linkedin} />
-                <img src={github} />
+                <a href='https://www.linkedin.com/in/kaitlyn-li-0922/'><img src={linkedin} /></a>
+                <a href='https://github.com/kaitlynlie'><img src={github} /></a>
             </div>
        </div>
     </section>

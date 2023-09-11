@@ -1,9 +1,9 @@
 section.footer {
     color:white;
-    margin: 0 auto;
-    max-width: 107rem;
-    margin-left: 170px;
-    margin-right: 170px;
+    // margin: 0 auto;
+    // max-width: 107rem;
+    margin-left: 10px;
+    margin-right: 10px;
     margin-bottom: 31px;
     .container {
         display: flex;
@@ -17,6 +17,9 @@ section.footer {
             display: flex;
             justify-content: center;
             gap:10px;
+            a {
+                cursor: pointer;
+            }
         }
     }
 }
