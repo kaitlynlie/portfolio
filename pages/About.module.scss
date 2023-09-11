@@ -4,18 +4,42 @@ section.aboutme {
     justify-content: center;
     align-items: center;
     gap: 150px;
+    transition: gap 0.3s ease;
+    @media (max-width: 1149px) {
+        gap: 50px;
+    }
+    @media (max-width: 790px) {
+        flex-direction: column;
+    }
     margin-bottom: 167px;
     .image {
         justify-content: center;
         margin-left: 267px;
+        transition: margin-left 0.3s ease;
         z-index: 3;
+        @media (max-width: 1477px) {
+            margin-left: 20px;
+        }
+        @media (max-width: 790px) {
+            margin-left: 5px;
+            margin-right: 5px;
+        }
     }
     .info {
         justify-content: center;
         max-width: 419px;
         color: white;
         margin-right: 267px;
+        transition: margin-right 0.3s ease;
+        @media (max-width: 1477px) {
+            margin-right: 20px;
+        }
         z-index: 3;
+        @media (max-width: 790px) {
+            text-align: center;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
         h2 {
             font-size: 20px;
             font-weight: 700;

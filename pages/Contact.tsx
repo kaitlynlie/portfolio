@@ -19,7 +19,7 @@ const Contact = () => {
                 <a href='mailto:kaitlynli0903@gmail.com'>kaitlynli0903@gmail.com</a>
             </div>
 
-            <span style={{marginLeft: '31px'}}>
+            <span className={clsx(styles.linkedin)}>
                 <img src={linkedinDk}/>
             </span>
             <div className={clsx(styles.contact)}>

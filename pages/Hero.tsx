@@ -8,7 +8,7 @@ import { fadeIn } from '../src/utils/motion'
 const Hero = () => {
   return (
     <section className={clsx(styles.hero)} id='home'>
-        <div className={clsx(styles.info)}>
+        <div className={clsx(styles.topinfo)}>
             <h1>Software Engineer</h1>
             <p>Hi, I'm Kaitlyn Li, a student interested in Software Development based in San Francisco, California.</p>
             <div className={clsx(styles.icons)}>
@@ -24,9 +24,17 @@ const Hero = () => {
           viewport={{ once: true, amount: 0.25 }}
           className={clsx(styles.image)}
         >
-
           <img src={hero} />
         </motion.div>
+
+        <div className={clsx(styles.bottominfo)}>
+            <h1>Software Engineer</h1>
+            <p>Hi, I'm Kaitlyn Li, a student interested in Software Development based in San Francisco, California.</p>
+            <div className={clsx(styles.icons)}>
+                <a href='https://www.linkedin.com/in/kaitlyn-li-0922/'><img src={linkedin} /></a>
+                <a href='https://github.com/kaitlynlie'><img src={github} /></a>
+            </div>
+        </div>
     </section>
   )
 }

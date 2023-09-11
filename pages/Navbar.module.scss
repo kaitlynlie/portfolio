@@ -6,6 +6,10 @@ nav.navbar {
     justify-content: flex-end;
     ul {
         // gap: 64px;
+        display: block;
+        @media (max-width: 790px) {
+            display: none;
+        }
        a {
         color: white;
         cursor: pointer;
@@ -13,5 +17,49 @@ nav.navbar {
         font-weight: 700;
         z-index: 10;
        }
+       .rightmost {
+        margin-right: 116px;
+        transition: margin-right 0.3s ease;
+        @media (max-width: 1149px) {
+            margin-right: 64px;
+        }
+       }
+    }
+    .toggle {
+        display: none;
+        color: white;
+        z-index: 10;
+        margin-right: 10px;
+        @media (max-width: 790px) {
+            display: block;
+        }
+        .dropdown {
+            margin-top: 1rem;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            text-align: flex-end;
+            background-color: rgba(255, 255, 255, 0.824);
+            position: absolute;
+            top: 50px;
+            right: 10px;
+            border-radius: 5px;
+            z-index: 10;
+            ul {
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+                flex-direction: column;
+                color: white;
+                text-align: end;
+                padding: 1rem 2rem;
+                a {
+                    color: black;
+                    z-index: 11;
+                    align-self: flex-end;
+                    margin-right: auto;
+                }
+            }
+        }
     }
 }

@@ -20,6 +20,10 @@ section.contact {
         display: flex;
         align-items: center;
         gap:1.5rem;
+        @media (max-width: 543px) {
+            flex-direction: column;
+            text-align: center;
+        }
         span {
             align-items: center;
             background-color: #fff;
@@ -30,6 +34,12 @@ section.contact {
             height: 3rem;
             justify-content: center;
             width: 3rem;
+        }
+        .linkedin {
+            margin-left: 31px;
+            @media (max-width: 543px) {
+                margin-left: 0px;
+            }
         }
         .contact {
             display: flex;

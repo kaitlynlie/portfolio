@@ -8,7 +8,7 @@ const Portfolio = () => {
     <section className={clsx(styles.portfolio)} id='projects'>
         <div className={clsx(styles.container)}>
             <h2>PORTFOLIO</h2>
-            <span style={{marginLeft: '170px'}}>Projects I have created so far... </span>
+            <span>Projects I have created so far... </span>
             <div className={clsx(styles.websites)}>
                 <div className={clsx(styles.website)}>
                     <div className={clsx(styles.image)}>
@@ -35,6 +35,9 @@ const Portfolio = () => {
                 </div>
 
                 <div className={clsx(styles.website)}>
+                    <div className={clsx(styles.secondimagetop)}>
+                        <a><img src={carwash} /></a>
+                    </div>
                     <div className={clsx(styles.text)}>
                         <h3>Big Bad Car Wash</h3>
                         <p>Big Bad Carwash is a website for a car wash company centered around membership deals for their customers.</p>
@@ -52,12 +55,12 @@ const Portfolio = () => {
                             </a>
 
                             <a href='https://carwash-kaitlynlie.vercel.app'>
-                                <p>Live Demo</p>
+                                <p>Live</p>
                                 <img src={live} />
                             </a>
                         </div>
                     </div>
-                    <div className={clsx(styles.secondimage)}>
+                    <div className={clsx(styles.secondimagebot)}>
                         <a><img src={carwash} /></a>
                     </div>
                 </div>
@@ -83,7 +86,7 @@ const Portfolio = () => {
                             </a>
 
                             <a href='https://galaxia-pcs-kaitlynlie.vercel.app'>
-                                <p>Live Demo</p>
+                                <p>Live</p>
                                 <img src={live} />
                             </a>
                         </div>

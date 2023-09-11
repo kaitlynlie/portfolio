@@ -20,8 +20,9 @@ section.work {
             position: relative;
             width: 6px;
             padding-top: 50px;
-            align-items: center;
-  justify-content: center;
+            @media (max-width: 547px) {
+                margin-right: 258px;
+            }
             .right {
                 margin-left: 10px;
                 width: 250px;
@@ -48,6 +49,10 @@ section.work {
                 padding: 15px;
                 position: relative;
                 background-color: white;
+                @media (max-width: 547px) {
+                    left: 0;
+                    margin-left: 10px;
+                }
                 h4 {
                     font-size: 18px;
                     font-weight: 700;
@@ -64,6 +69,7 @@ section.work {
             padding-bottom: 50px;
         }
         .dot {
+            display: block;
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
@@ -73,6 +79,9 @@ section.work {
             z-index: 10;
             background: rgb(206, 206, 206);
             margin-top: -10px;
+            @media (max-width: 547px) {
+                display: none;
+            }
         }
     }
     margin-bottom: 167px;
