@@ -13,7 +13,6 @@ const App = () => (
     <Portfolio />
     <Contact />
     <Footer />
-    {/* <TechStack /> */}
   </div>
   );
 
