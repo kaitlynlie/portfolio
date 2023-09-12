@@ -39,6 +39,10 @@ section.hero {
             font-weight: 700;
             z-index: 3;
             color: rgb(82, 107, 166);
+            transition: transform 0.3s;
+        }
+        h1:hover {
+            transform: scale(1.2);
         }
         p {
             margin-top: 31px;
