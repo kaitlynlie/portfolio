@@ -21,7 +21,7 @@ const Portfolio = () => {
                         <div className={clsx(styles.buttons)}>
                             <p>MongoDB</p>
                             <p>Express.js</p>
-                            <p>React Native</p>
+                            <p>React</p>
                             <p>Node.js</p>
                         </div>
 
