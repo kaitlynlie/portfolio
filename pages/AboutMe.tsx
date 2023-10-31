@@ -21,7 +21,7 @@ const AboutMe = () => {
 
         <div className={clsx(styles.info)}>
             <h2>ABOUT ME</h2>
-            <p>I am currently a Computer Science student pursuing a Bachelor’s Degree with an interest in becoming a Software Engineer. I am seeking an internship to gain hands-on experience and to further develop abilities. I am also flexible, detail-oriented, and hardworking team player driven to learn quickly and focus on performance</p>
+            <p>I am currently a Computer Science student pursuing a Bachelor’s Degree with an interest in becoming a Software Engineer. I am seeking an internship to gain hands-on experience and to further develop abilities. I am also flexible, detail-oriented, and hardworking team player driven to learn quickly and focus on performance.</p>
         </div>
     </section>
   )

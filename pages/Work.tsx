@@ -8,8 +8,17 @@ const Work = () => {
         <h2>WORK EXPERIENCE</h2>
         <ul>
             <li>
+                <div className={clsx(styles.left)}>
+                    <h4>OCT 2023 - PRESENT</h4>
+                    <h3>Software Engineer</h3>
+                    <h3 style={{fontStyle: 'italic'}}>Aggieworks</h3>
+                    <p>• Collaborated with a team of 20 developers, designers, and product managers in an AGILE work environment to build applications for nearly 40,000 students using React, TypeScript, and Supabase</p>
+                </div>
+            </li>
+            <div className={clsx(styles.dot)} />
+            <li>
                 <div className={clsx(styles.right)}>
-                    <h4>JULY 2023 - PRESENT</h4>
+                    <h4>JULY 2023 - OCT 2023</h4>
                     <h3>Software Engineer Intern</h3>
                     <h3 style={{fontStyle: 'italic'}}>Stealth Startup</h3>
                     <p>• Developed interactive landing/product pages to translate Figma designs into functional web elements, resulting in a 70% increase in website traffic</p>
