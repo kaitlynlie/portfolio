@@ -12,7 +12,8 @@ const Work = () => {
                     <h4>OCT 2023 - PRESENT</h4>
                     <h3>Software Engineer</h3>
                     <h3 style={{fontStyle: 'italic'}}>Aggieworks</h3>
-                    <p>• Collaborated with a team of 20 developers, designers, and product managers in an AGILE work environment to build applications for nearly 40,000 students using React, TypeScript, and Supabase</p>
+                    <p>• Collaborated with a team of 20 developers, designers, and product managers in an AGILE work environment to build applications for nearly <b>40,000</b> students using React, TypeScript, Supabase, and Prisma </p>
+                    <p>• Spearheaded the development and implementation of a novel photo uploading method, significantly improving user experience and fostering enhanced self-expression for a roommate-matching app</p>
                 </div>
             </li>
             <div className={clsx(styles.dot)} />
@@ -22,16 +23,18 @@ const Work = () => {
                     <h3>Web Developer</h3>
                     <h3 style={{fontStyle: 'italic'}}>The Aggie Transcript</h3>
                     <p>• Developed and launched an engaging website for the Undergraduate Life Sciences Journal, providing a platform for students to author and share personal narratives</p>
+                    <p>• Coordinated with editors and graphic designers to facilitate the weekly publication of papers, ensuring a seamless integration of content and design elements</p>
                 </div>
             </li>
             <div className={clsx(styles.dot)} />
             <li>
                 <div className={clsx(styles.right)}>
-                    <h4>JULY 2023 - OCT 2023</h4>
+                    <h4>JULY 2023 - JAN 2024</h4>
                     <h3>Software Engineer Intern</h3>
                     <h3 style={{fontStyle: 'italic'}}>Stealth Startup</h3>
-                    <p>• Developed interactive landing/product pages to translate Figma designs into functional web elements, resulting in a 70% increase in website traffic</p>
-                    <p>• Implemented a system-wide change for our application, replacing numerical IDs with actual usernames, enhancing user recognition, and facilitating smoother interactions within the platform</p>
+                    <p>• Developed interactive landing/product pages to translate Figma designs into functional web elements, resulting in a <b>70%</b> increase in website traffic</p>
+                    <p>• Implemented a system-wide change for a chat application, replacing numerical IDs with actual usernames, to
+enhance user recognition and facilitate smoother interactions within the team of <b>50+</b> people</p>
                     <p>• Produced training videos for internal use, enhancing team knowledge sharing and onboarding processes</p>
                     <p>• Collaborated effectively with design and product teams to develop websites aligned with project goals</p>
                 </div>

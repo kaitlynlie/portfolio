@@ -35,12 +35,12 @@ const Portfolio = () => {
                 </div>
 
                 <div className={clsx(styles.website)}>
-                    <div className={clsx(styles.secondimagetop)}>
+                    <div className={clsx(styles.thirdimage)}>
                         <a><img src={carwash} /></a>
                     </div>
                     <div className={clsx(styles.text)}>
                         <h3>Big Bad Car Wash</h3>
-                        <p>Big Bad Carwash is a website for a car wash company centered around membership deals for their customers.</p>
+                        <p>A website for a car wash company centered around membership deals for their customers.</p>
                         
                         <div className={clsx(styles.buttons)}>
                             <p>React</p>
@@ -60,9 +60,6 @@ const Portfolio = () => {
                             </a>
                         </div>
                     </div>
-                    <div className={clsx(styles.secondimagebot)}>
-                        <a><img src={carwash} /></a>
-                    </div>
                 </div>
 
                 <div className={clsx(styles.website)}>
@@ -71,7 +68,7 @@ const Portfolio = () => {
                     </div>
                     <div className={clsx(styles.text)}>
                         <h3>Galaxia</h3>
-                        <p>Galaxia is a website dedicated to a company that sells and builds PCs centered around gaming, delivering the highest performance with the best materials and results.</p>
+                        <p>A website dedicated to a company that sells and builds PCs, delivering the highest performance.</p>
                         
                         <div className={clsx(styles.buttons)}>
                             <p>React</p>
