@@ -11,6 +11,8 @@ import mail from './mail.svg'
 import linkedinDk from './linkedinDk.svg'
 import line from './line.svg'
 import about from './about.svg'
+import dots from './dots.svg'
+import box from './box.svg'
 
 export {
     github,
@@ -25,5 +27,7 @@ export {
     mail,
     linkedinDk,
     line,
-    about
+    about,
+    dots,
+    box
 }

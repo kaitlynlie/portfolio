@@ -1,13 +1,14 @@
 import React from 'react'
 import clsx from 'clsx'
 import styles from './Portfolio.module.scss'
-import { websiterma, code, carwash, live, galaxia } from '../assets'
+import { websiterma, code, carwash, live, galaxia, box, dots } from '../assets'
 
 const Portfolio = () => {
   return (
     <section className={clsx(styles.portfolio)} id='projects'>
         <div className={clsx(styles.container)}>
             <h2>#projects</h2>
+            <div className={clsx(styles.line)} />
             <div className={clsx(styles.websites)}>
                 <div className={clsx(styles.website)}>
                     <div className={clsx(styles.image)}>
@@ -60,6 +61,8 @@ const Portfolio = () => {
                         </div>
                     </div>
                 </div>
+
+                <img src={dots} className={clsx(styles.designs)}/>
 
                 <div className={clsx(styles.website)}>
                     <div className={clsx(styles.thirdimage)}>

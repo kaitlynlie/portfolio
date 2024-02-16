@@ -2,7 +2,7 @@ import React from 'react';
 import clsx from 'clsx';
 import styles from './Work.module.scss';
 
-const Accordion = ({ title, description, isActive, onClick, position }) => {
+const Accordion = ({ title, description, isActive, onClick, position, time }) => {
   return (
     <div className={styles.accorditem}>
       <div
@@ -14,6 +14,7 @@ const Accordion = ({ title, description, isActive, onClick, position }) => {
       {isActive && (
         <div className={styles.activeArea}>
           <div className={styles.position}>{position}</div>
+          <div className={styles.time}>{time}</div>
           <div className={styles.description}>
             <ul>
               {description.map((bulletPoint, index) => (
