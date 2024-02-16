@@ -1,58 +1,71 @@
-import React from 'react'
-import clsx from 'clsx'
-import styles from './Work.module.scss'
+import React, { useState } from 'react';
+import clsx from 'clsx';
+import styles from './Work.module.scss';
+import Accordion from './Accordion';
+
+const jobs = [
+    {
+        id: 1,
+        title: 'MindHome',
+        position: 'Software Engineer Intern',
+        description: ['• Collaborating with 10 developers in an AGILE environment to improve visual appeal and overall user experience'],
+        time: 'JAN 2024 - PRESENT'
+    },
+  {
+    id: 2,
+    title: 'AggieWorks',
+    position: 'Software Engineer',
+    description: ['• Collaborated with a team of 20 developers, designers, and product managers in an AGILE work environment to build applications for nearly 40,000 students using React, Typescript, Supabase, and Prisma',],
+    time: 'OCT 2023 - PRESENT'
+  },
+  {
+    id: 3,
+    title: 'The Aggie Transcript',
+    position: 'Web Developer',
+    description: ['• Developed and launched an engaging website for the Undergraduate Life Sciences Journal, providing a platform for students to author and share personal narratives', '• Coordinated with editors and graphic designers to facilitate the weekly publication of papers, ensuring a seamless integration of content and design elements'],
+    time: 'NOV 2023 - PRESENT'
+  },
+  {
+    id: 4,
+    title: 'Stealth Startup',
+    position: 'Software Engineer Intern',
+    description: ['• Developed interactive landing/product pages to translate Figma designs into functional web elements, resulting in a 70% increase in website traffic', '• Implemented a system-wide change for a chat application, replacing numerical IDs with actual usernames, to enhance user recognition and facilitate smoother interactions within the team of 50+ people', '• Produced training videos for internal use, enhancing team knowledge sharing and onboarding processes', '• Collaborated effectively with design and product teams to develop websites aligned with project goals'],
+    time: 'JULY 2023 - JAN 2024'
+  },
+  {
+    id: 5,
+    title: 'Nonprofit Organization',
+    position: 'Machine Learning Intern',
+    description: ['• Applied pre-trained models such as VGG16 and ResNet50 to predict and fine-tune images with facial features', '• Labeled data and trained CNN architecture for classifying images', '• Coordinated with other members on group projects weekly, presenting ideas to managers'],
+    time: 'JULY 2021 - SEP 2022'
+  },
+];
 
 const Work = () => {
-  return (
-    <section className={clsx(styles.work)} id='work'>
-        <h2>WORK EXPERIENCE</h2>
-        <ul>
-            <li>
-                <div className={clsx(styles.right)}>
-                    <h4>OCT 2023 - PRESENT</h4>
-                    <h3>Software Engineer</h3>
-                    <h3 style={{fontStyle: 'italic'}}>Aggieworks</h3>
-                    <p>• Collaborated with a team of 20 developers, designers, and product managers in an AGILE work environment to build applications for nearly <b>40,000</b> students using React, TypeScript, Supabase, and Prisma </p>
-                    <p>• Spearheaded the development and implementation of a novel photo uploading method, significantly improving user experience and fostering enhanced self-expression for a roommate-matching app</p>
-                </div>
-            </li>
-            <div className={clsx(styles.dot)} />
-            <li>
-                <div className={clsx(styles.left)}>
-                    <h4>NOV 2023 - PRESENT</h4>
-                    <h3>Web Developer</h3>
-                    <h3 style={{fontStyle: 'italic'}}>The Aggie Transcript</h3>
-                    <p>• Developed and launched an engaging website for the Undergraduate Life Sciences Journal, providing a platform for students to author and share personal narratives</p>
-                    <p>• Coordinated with editors and graphic designers to facilitate the weekly publication of papers, ensuring a seamless integration of content and design elements</p>
-                </div>
-            </li>
-            <div className={clsx(styles.dot)} />
-            <li>
-                <div className={clsx(styles.right)}>
-                    <h4>JULY 2023 - JAN 2024</h4>
-                    <h3>Software Engineer Intern</h3>
-                    <h3 style={{fontStyle: 'italic'}}>Stealth Startup</h3>
-                    <p>• Developed interactive landing/product pages to translate Figma designs into functional web elements, resulting in a <b>70%</b> increase in website traffic</p>
-                    <p>• Implemented a system-wide change for a chat application, replacing numerical IDs with actual usernames, to
-enhance user recognition and facilitate smoother interactions within the team of <b>50+</b> people</p>
-                    <p>• Produced training videos for internal use, enhancing team knowledge sharing and onboarding processes</p>
-                    <p>• Collaborated effectively with design and product teams to develop websites aligned with project goals</p>
-                </div>
-            </li>
-            <div className={clsx(styles.dot)} />
-            <li>
-                <div className={clsx(styles.left)}>
-                    <h4>JULY 2021 - SEP 2022</h4>
-                    <h3>Machine Learning Intern</h3>
-                    <h3 style={{fontStyle: 'italic'}}>Nonprofit Company</h3>
-                    <p>• Applied pre-trained models such as VGG16 and ResNet50 to predict and fine-tune images with facial features</p>
-                    <p>• Labeled data and trained CNN architecture for classifying images</p>
-                    <p>• Coordinated with other members on group projects weekly, presenting ideas to managers</p>
-                </div>
-            </li>
-        </ul>
-    </section>
-  )
-}
+    const [activeIndex, setActiveIndex] = useState(1); // Set the initial value to the ID of the job you want to be selected initially
+  
+    const handleAccordionClick = (index) => {
+        setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
+      };
+  
+    return (
+      <section className={clsx(styles.work)} id='work'>
+        <h2>#work</h2>
+        <div className={clsx(styles.accord)}>
+          {jobs.map((job) => (
+            <Accordion
+              key={job.id}
+              title={job.title}
+              position={job.position}
+              time={job.time}
+              description={job.description}
+              isActive={job.id === activeIndex}
+              onClick={() => handleAccordionClick(job.id)}
+            />
+          ))}
+        </div>
+      </section>
+    );
+  };
 
-export default Work
+export default Work;

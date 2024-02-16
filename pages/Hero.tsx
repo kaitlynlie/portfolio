@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './Hero.module.scss'
 import clsx from 'clsx'
-import { linkedin, github, hero } from '../src'
+import { linkedin, github, hero, line } from '../assets'
 import { motion } from 'framer-motion'
 import { fadeIn } from '../src/utils/motion'
 

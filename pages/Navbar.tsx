@@ -11,11 +11,11 @@ const Navbar = () => {
     <nav className={clsx(styles.navbar)}>
         <div className={clsx(styles.tabs)}>
             <ul>
-                <a href='#home'>Home</a>
-                <a href='#about'>About</a>
-                <a href='#work'>Work</a>
-                <a href='#projects'>Projects</a>
-                <a href='#contact' className={clsx(styles.rightmost)}>Contact</a>
+                <a href='#home'>#home</a>
+                <a href='#about'>#about</a>
+                <a href='#work'>#work</a>
+                <a href='#projects'>#projects</a>
+                <a href='#contact' className={clsx(styles.rightmost)}>#contact</a>
             </ul>
         </div>
 
@@ -27,11 +27,11 @@ const Navbar = () => {
         <div className={clsx(styles.dropdown)}>
           <div>
             <ul>
-              <a href='#home'>Home</a>
-              <a href='#about'>About</a>
-              <a href='#work'>Work</a>
-              <a href='#projects'>Projects</a>
-              <a href='#contact'>Contact</a>
+              <a href='#home'>#home</a>
+              <a href='#about'>#about</a>
+              <a href='#work'>#work</a>
+              <a href='#projects'>#projects</a>
+              <a href='#contact'>#contact</a>
             </ul>
           </div>
         </div>

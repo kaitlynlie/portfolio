@@ -1,7 +1,7 @@
 import React from 'react'
 import clsx from 'clsx'
 import styles from './Footer.module.scss'
-import { linkedin, github } from '../src'
+import { linkedin, github } from '../assets'
 
 const Footer = () => {
   return (

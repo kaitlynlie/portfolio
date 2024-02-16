@@ -9,6 +9,8 @@ import live from './live.svg'
 import galaxia from './galaxia.png'
 import mail from './mail.svg'
 import linkedinDk from './linkedinDk.svg'
+import line from './line.svg'
+import about from './about.svg'
 
 export {
     github,
@@ -21,5 +23,7 @@ export {
     live,
     galaxia,
     mail,
-    linkedinDk
+    linkedinDk,
+    line,
+    about
 }

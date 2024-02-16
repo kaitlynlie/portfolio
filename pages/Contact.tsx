@@ -1,12 +1,12 @@
 import React from 'react'
 import clsx from 'clsx'
 import styles from './Contact.module.scss'
-import { mail, linkedinDk } from '../src'
+import { mail, linkedinDk } from '../assets'
 
 const Contact = () => {
   return (
     <section className={clsx(styles.contact)} id='contact'>
-        <h2>CONTACT</h2>
+        <h2>#contact</h2>
         <h4>Here are my socials!</h4>
         
         <div className={clsx(styles.info)}>

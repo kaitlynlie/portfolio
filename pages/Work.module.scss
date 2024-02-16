@@ -6,83 +6,55 @@ section.work {
     flex-direction: column;
     z-index: 10;
     h2 {
-        color: rgb(82, 107, 166);
-        font-size: 20px;
-        font-weight: 700;
+      color: rgb(82, 107, 166);
+      font-size: 20px;
+      font-weight: 700;
     }
-    ul {
-        text-align: left;
-        padding: 50px 0;
-        li {
-            // background: rgba(45, 72, 152, 0.75);
-            background: linear-gradient(91.36deg, #2565E1 0%, #2D4898BF 13.02%, #7AEBFB 25.52%, #56ABEC 37.5%, #A58DE3 49.48%, #737EB7 63.02%, #cfd4fd 72.92%, #c9aeea 84.38%, #2565E1 97.92%);
-            list-style-type: none;
-            position: relative;
-            width: 6px;
-            padding-top: 50px;
-            @media (max-width: 547px) {
-                margin-right: 258px;
-            }
-            .right {
-                margin-left: 10px;
-                width: 250px;
-                padding: 15px;
-                position: relative;
-                background-color: white;
-                h4 {
-                    font-size: 18px;
-                    font-weight: 700;
-                }
-                h3 {
-                    font-size: 16px;
-                    font-weight: 600;
-                }
-                p {
-                    margin-top: 10px;
-                    font-size: 14px;
-                }
-            }
-
-            .left {
-                left: -254px;
-                width: 250px;
-                padding: 15px;
-                position: relative;
-                background-color: white;
-                @media (max-width: 547px) {
-                    left: 0;
-                    margin-left: 10px;
-                }
-                h4 {
-                    font-size: 18px;
-                    font-weight: 700;
-                }
-                h3 {
-                    font-size: 16px;
-                    font-weight: 600;
-                }
-                p {
-                    margin-top: 10px;
-                    font-size: 14px;
-                }
-            }
-            padding-bottom: 50px;
+    .accord {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; 
+      .accorditem {
+        color: white;
+        display: grid;
+        grid-template-columns: 1fr max-content;
+        @media (max-width: 790px) {
+            display: flex;
+            flex-direction: column;
         }
-        .dot {
-            display: block;
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            z-index: 10;
-            background: rgb(206, 206, 206);
-            margin-top: -10px;
-            @media (max-width: 547px) {
-                display: none;
-            }
+        width: 100%;
+        max-width: 50rem;
+        cursor: pointer;
+        align-items: flex-start;
+        overflow: auto; 
+        .title {
+          font-size: 18px;
+          font-weight: 700;
+          border: 1px solid rgb(82, 107, 166);
+          padding: 5px;
+          width: 210px;
+          text-align: center;
         }
+        .activeArea {
+          border: 1px solid rgb(82, 107, 166);
+          padding: 10px;
+          grid-column: 2;
+          margin-left: 10px; 
+          @media (max-width: 790px) {
+            margin-left: 0px;;
+        }
+          max-width: 550px;
+          .position {
+            font-style: italic;
+          }
+          .description {
+            margin-top: 10px;
+            font-style: normal;
+          }
+        }
+      }
     }
     margin-bottom: 167px;
-}
+  }

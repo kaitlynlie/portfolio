@@ -5,6 +5,9 @@ section.contact {
     align-items: center;
     flex-direction: column;
     // margin-left: 170px;
+    @media (max-width: 1017px) {
+        margin-top: 1400px;
+    }
     h2 {
         font-size: 20px;
         font-weight: 700;
@@ -14,6 +17,9 @@ section.contact {
         margin-top: 5px;
         font-size: 26px;
         font-weight: 600;
+        @media (max-width: 241px) {
+            text-align: center;
+        }
     }
     .info {
         margin-top: 51px;
