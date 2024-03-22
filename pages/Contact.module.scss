@@ -4,10 +4,11 @@ section.contact {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 200px;
     // margin-left: 170px;
-    @media (max-width: 1017px) {
-        margin-top: 1400px;
-    }
+    // @media (max-width: 1017px) {
+    //     margin-top: 1400px;
+    // }
     h2 {
         font-size: 20px;
         font-weight: 700;

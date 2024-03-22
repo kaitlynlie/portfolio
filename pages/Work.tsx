@@ -6,39 +6,46 @@ import Accordion from './Accordion';
 const jobs = [
     {
         id: 1,
+        title: 'ASUCD Pantry',
+        position: 'Full-Stack Developer',
+        description: ['• Maintaining and improving an online ordering system used by hundreds of patrons every month using React, Javascript, and Django'],
+        time: 'FEB 2024 - PRESENT'
+    },
+    {
+        id: 2,
         title: 'MindHome',
         position: 'Software Engineer Intern',
-        description: ['• Collaborating with 10 developers in an AGILE environment to improve visual appeal and overall user experience'],
+        description: ['• Collaborating with 10 developers in an AGILE environment to improve visual appeal and overall user experience for product pages'],
         time: 'JAN 2024 - PRESENT'
     },
-  {
-    id: 2,
-    title: 'AggieWorks',
-    position: 'Software Engineer',
-    description: ['• Collaborated with a team of 20 developers, designers, and product managers in an AGILE work environment to build applications for nearly 40,000 students using React, Typescript, Supabase, and Prisma',],
-    time: 'OCT 2023 - PRESENT'
-  },
-  {
-    id: 3,
-    title: 'The Aggie Transcript',
-    position: 'Web Developer',
-    description: ['• Developed and launched an engaging website for the Undergraduate Life Sciences Journal, providing a platform for students to author and share personal narratives', '• Coordinated with editors and graphic designers to facilitate the weekly publication of papers, ensuring a seamless integration of content and design elements'],
-    time: 'NOV 2023 - PRESENT'
-  },
-  {
-    id: 4,
-    title: 'Stealth Startup',
-    position: 'Software Engineer Intern',
-    description: ['• Developed interactive landing/product pages to translate Figma designs into functional web elements, resulting in a 70% increase in website traffic', '• Implemented a system-wide change for a chat application, replacing numerical IDs with actual usernames, to enhance user recognition and facilitate smoother interactions within the team of 50+ people', '• Produced training videos for internal use, enhancing team knowledge sharing and onboarding processes', '• Collaborated effectively with design and product teams to develop websites aligned with project goals'],
-    time: 'JULY 2023 - JAN 2024'
-  },
-  {
-    id: 5,
-    title: 'Nonprofit Organization',
-    position: 'Machine Learning Intern',
-    description: ['• Applied pre-trained models such as VGG16 and ResNet50 to predict and fine-tune images with facial features', '• Labeled data and trained CNN architecture for classifying images', '• Coordinated with other members on group projects weekly, presenting ideas to managers'],
-    time: 'JULY 2021 - SEP 2022'
-  },
+    {
+      id: 3,
+      title: 'AggieWorks',
+      position: 'Software Engineer',
+      description: ['• Collaborating with a team of 20 developers, designers, and product managers in an AGILE work environment to build applications for nearly 40,000 students using React, Typescript, and Supabase',],
+      time: 'OCT 2023 - PRESENT'
+    },
+    {
+      id: 4,
+      title: 'The Aggie Transcript',
+      position: 'Web Developer',
+      description: ['• Developed and launched an engaging website for the Undergraduate Life Sciences Journal, providing a platform for students to author and share personal narratives', '• Coordinated with editors and graphic designers to facilitate the weekly publication of papers, ensuring a seamless integration of content and design elements'],
+      time: 'NOV 2023 - PRESENT'
+    },
+    {
+      id: 5,
+      title: 'Stealth Startup',
+      position: 'Software Engineer Intern',
+      description: ['• Developed interactive landing/product pages to translate Figma designs into functional web elements, resulting in a 70% increase in website traffic', '• Implemented a system-wide change for a chat application, replacing numerical IDs with actual usernames, to enhance user recognition and facilitate smoother interactions within the team of 50+ people', '• Produced training videos for internal use, enhancing team knowledge sharing and onboarding processes', '• Collaborated effectively with design and product teams to develop websites aligned with project goals'],
+      time: 'JULY 2023 - JAN 2024'
+    },
+    {
+      id: 6,
+      title: 'Nonprofit Organization',
+      position: 'Machine Learning Intern',
+      description: ['• Applied pre-trained models such as VGG16 and ResNet50 to predict and fine-tune images with facial features', '• Labeled data and trained CNN architecture for classifying images', '• Coordinated with other members on group projects weekly, presenting ideas to managers'],
+      time: 'JULY 2021 - SEP 2022'
+    },
 ];
 
 const Work = () => {

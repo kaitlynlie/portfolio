@@ -9,7 +9,13 @@ const Hero = () => {
   return (
     <section className={clsx(styles.hero)} id='home'>
         <div className={clsx(styles.topinfo)}>
-            <h1>Software Engineer</h1>
+          <div className={clsx(styles.wrapper)}>
+              <ul className={clsx(styles.dynamic)}>
+                <li><span>Software Engineer</span></li>
+                <li><span>Web Developer</span></li>
+                <li><span>Student</span></li>
+              </ul>
+            </div>
             <p>Hi, I'm Kaitlyn Li, a student interested in Software Development based in San Francisco, California.</p>
             <div className={clsx(styles.icons)}>
                 <a href='https://www.linkedin.com/in/kaitlyn-li-0922/'><img src={linkedin} /></a>

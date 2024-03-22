@@ -3,11 +3,14 @@ section.portfolio {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 900px;
+    // margin-bottom: 700px;
     flex-direction: row;
     z-index: 10;
     margin-left: 170px;
     margin-right: 170px;
+    // @media (max-width: 1309) {
+    //     margin-bottom: 2000px;
+    // }
     @media (max-width: 771px) {
         margin-left: 10px;
         margin-right: 10px;
@@ -52,20 +55,21 @@ section.portfolio {
             margin-top: 51px;
             grid-gap: 2rem;
             display: grid;
-            gap: 5rem;
-            grid-template-columns: repeat(2, 1fr);
-            max-height: 400px;
+            gap: 2rem;
+            grid-template-columns: repeat(3, 1fr);
+            // max-height: 400px;
             // width: 50%;
-            @media (max-width: 1017px) {
+            @media (max-width: 1309px) {
                 grid-template-columns: 1fr;
             }
             .website {
                 z-index: 1;
-                background-color: #ffffff;
+                // background-color: #ffffff;
                 border-radius: 1rem;
-                box-shadow: 0 0 10px rgba(0,0,0,.1);
+                // box-shadow: 0 0 10px rgba(227, 227, 227, 0.1);
                 display: flex;
                 flex-direction: column;
+                align-items: center;
                 @media (max-width: 1017px) {
                     flex-direction: column;
                     margin-left: 20px;
@@ -76,38 +80,38 @@ section.portfolio {
                 @media (max-width: 1369px) {
                     gap: 1.5rem;
                 }
-                gap: 4rem;
-                height: 30rem;
+                // gap: 4rem;
+                height: auto;
                 max-width: 30rem;
                 padding: 2rem;
                 .image {
                     border-radius: 1.7rem;
                     box-shadow: 0 0 10px rgba(0,0,0,.1);
                     // height: 53rem;
-                    overflow: hidden;
+                    // overflow: hidden;
                     // max-width: 53rem;
                     a {
                         cursor: pointer;
                         img {
                             transition: transform 10s ease-in-out 0s;
-                            height: auto;
+                            // height: auto;
                             width: 100%;
-                            overflow-clip-margin: content-box;
-                            overflow: clip;
+                            // overflow-clip-margin: content-box;
+                            // overflow: clip;
                         }
-                        &:hover {
-                            img {
-                                transform: translateY(-50%);
-                            }
-                        }
+                        // &:hover {
+                        //     img {
+                        //         transform: translateY(-10%);
+                        //     }
+                        // }
                     }
                 }
                 .secondimagetop {
                     display: none;
                     border-radius: 1.7rem;
                     box-shadow: 0 0 10px rgba(0,0,0,.1);
-                    height: auto;
-                    overflow: hidden;
+                    // height: auto;
+                    // overflow: hidden;
                     // max-width: 53rem;
                     @media (max-width: 1017px) {
                         display: block;
@@ -177,6 +181,7 @@ section.portfolio {
                     } 
                 }
                 .text {
+                    color: white;
                     display: flex;
                     flex-direction: column;
                     // height: auto;
@@ -186,12 +191,14 @@ section.portfolio {
                     h3 {
                         font-size: 20px;
                         transition: font-size 0.3s ease;
+                        margin-top: 10px;
                         @media (max-width: 1426px) {
-                            font-size: 20px;
+                            margin-top: 10px;
+                            font-size: 16px;
                             margin-bottom: 5px;
                         }
                         font-weight: 700;
-                        margin-top: -26px;
+                        // margin-top: -34px;
                     }
                     p {
                         // margin-top: 31px;
@@ -200,7 +207,7 @@ section.portfolio {
                         @media (max-width: 1426px) {
                             font-size: 12px;
                         }
-                        color: black;
+                        // color: black;
                     }
                     .buttons {
                         margin-top:10px;
@@ -248,9 +255,9 @@ section.portfolio {
                                 margin-top: 5px;
                             }
                             p {
-                                color: #2d2e32;
+                                color: white;
                                 font-weight: 700;   
-                                   font-size: 11px;         
+                                font-size: 11px;         
                             }
                             img {
                                     height: 20%;

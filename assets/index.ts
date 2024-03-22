@@ -2,9 +2,9 @@ import github from './github.svg'
 import linkedin from './linkedin.svg'
 import hero from './hero.png'
 import aboutme from './aboutme.png'
-import websiterma from './websiterma.png'
+import rma from './rma.png'
 import code from './code.svg'
-import carwash from './carwash.png'
+import stroke from './stroke.png'
 import live from './live.svg'
 import galaxia from './galaxia.png'
 import mail from './mail.svg'
@@ -13,15 +13,17 @@ import line from './line.svg'
 import about from './about.svg'
 import dots from './dots.svg'
 import box from './box.svg'
+import roomu from './roomu.png'
+import recipedia from './recipedia.png'
 
 export {
     github,
     linkedin,
     hero,
     aboutme,
-    websiterma,
+    rma,
     code,
-    carwash,
+    stroke,
     live,
     galaxia,
     mail,
@@ -29,5 +31,7 @@ export {
     line,
     about,
     dots,
-    box
+    box,
+    roomu,
+    recipedia
 }
