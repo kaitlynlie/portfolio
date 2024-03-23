@@ -15,6 +15,8 @@ import dots from './dots.svg'
 import box from './box.svg'
 import roomu from './roomu.png'
 import recipedia from './recipedia.png'
+import book from './book.png'
+import carwash from './carwash.png'
 
 export {
     github,
@@ -33,5 +35,7 @@ export {
     dots,
     box,
     roomu,
-    recipedia
+    recipedia,
+    book,
+    carwash
 }

@@ -8,29 +8,52 @@ section.portfolio {
     z-index: 10;
     margin-left: 170px;
     margin-right: 170px;
-    // @media (max-width: 1309) {
-    //     margin-bottom: 2000px;
-    // }
+    @media (max-width: 1309px) {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
     @media (max-width: 771px) {
         margin-left: 10px;
         margin-right: 10px;
     }
     .container {
-        max-width: 107rem;
+        // max-width: 107rem;
         z-index: 10;
-        h2 {
-            color: rgb(82, 107, 166);
-            font-weight: 700;
-            font-size: 20px;
-            text-align: left;
-            margin-bottom: 5px;
-            letter-spacing: 2px;
-            @media (max-width: 1017px) {
-                text-align: center;
-                margin-left: 0px;
-                font-size: 18px;
+        // .header {
+        //     display: flex;
+        //     flex-direction: row;
+        //     align-items: center;
+        //     justify-content: space-between;
+            h2 {
+                margin-top: 167px;
+                color: rgb(82, 107, 166);
+                font-weight: 700;
+                font-size: 20px;
+                text-align: left;
+                margin-bottom: 5px;
+                letter-spacing: 2px;
+                @media (max-width: 1017px) {
+                    text-align: center;
+                    margin-left: 0px;
+                    font-size: 18px;
+                }
             }
-        }
+
+                // h4 {
+                //     color: rgb(82, 107, 166);
+                //     font-weight: 500;
+                //     font-size: 16px;
+                //     text-align: left;
+                //     margin-bottom: 5px;
+                //     letter-spacing: 2px;
+                //     @media (max-width: 1017px) {
+                //         text-align: center;
+                //         margin-left: 0px;
+                //         font-size: 12px;
+                //     }
+                // }
+            // }
+        // }
         .line {
             border-bottom: 1px solid rgb(82, 107, 166);
         }
@@ -60,6 +83,9 @@ section.portfolio {
             // max-height: 400px;
             // width: 50%;
             @media (max-width: 1309px) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            @media (max-width: 790px) {
                 grid-template-columns: 1fr;
             }
             .website {
