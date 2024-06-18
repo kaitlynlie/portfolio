@@ -52,15 +52,33 @@ section.contact {
         .contact {
             display: flex;
             flex-direction: column;
-            gap:0.5rem;
-            h3 {
-                font-size: 18px;
-                font-weight: 700;
-            }
-            a {
-                cursor: pointer;
-            }
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            // gap:0.5rem;
+            // h3 {
+            //     font-size: 18px;
+            //     font-weight: 700;
+            // }
+            // a {
+            //     cursor: pointer;
+            // }
         }
+    }
+    .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        // gap:0.5rem;
+        // h3 {
+        //     font-size: 18px;
+        //     font-weight: 700;
+        // }
+        // a {
+        //     cursor: pointer;
+        // }
     }
     margin-bottom: 167px;
 }

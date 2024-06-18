@@ -29,5 +29,11 @@ section.footer {
                 cursor: pointer;
             }
         }
+        .contact {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
     }
 }
