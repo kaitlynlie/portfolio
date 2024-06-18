@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './About.module.scss'
 import clsx from 'clsx'
-import { about } from '../assets'
+import { hero } from '../assets'
 import { motion } from 'framer-motion'
 import { fadeIn } from '../src/utils/motion'
 
@@ -15,7 +15,7 @@ const AboutMe = () => {
   viewport={{ once: true, amount: 0.25 }}
   className={clsx(styles.image)}
 >
-            <img src={about} />
+            <img src={hero} />
             
         </motion.div>
 

@@ -4,7 +4,7 @@ import styles from './Work.module.scss';
 
 const Accordion = ({ title, description, isActive, onClick, position, time }) => {
   return (
-    <div className={styles.accorditem}>
+    <div className={clsx(styles.accorditem, { [styles.active]: isActive })}>
       <div
         className={clsx(styles.title, { [styles.active]: isActive })}
         onClick={onClick}

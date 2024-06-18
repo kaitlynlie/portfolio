@@ -16,3 +16,5 @@ export const fadeIn = (direction, type, delay, duration) => ({
       },
     },
   });
+
+export const loaderDelay = 2000;

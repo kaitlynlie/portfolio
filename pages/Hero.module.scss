@@ -22,8 +22,8 @@ section.hero {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        max-width: 419px;
-        margin-left: 207px;
+        max-width: 719px;
+        // margin-left: 207px;
         transition: margin-left 0.3s ease;
         @media (max-width: 1477px) {
             margin-left: 20px;
@@ -83,13 +83,13 @@ section.hero {
                 }
             }
         }
-        // h1 {
-        //     font-size: 40px;
-        //     font-weight: 700;
-        //     z-index: 3;
-        //     color: rgb(82, 107, 166);
-        //     transition: transform 0.3s;
-        // }
+        h1 {
+            font-size: 80px;
+            font-weight: 700;
+            z-index: 3;
+            color: rgb(82, 107, 166);
+            // transition: transform 0.3s;
+        }
         // h1:hover {
         //     transform: scale(1.2);
         // }
@@ -156,6 +156,9 @@ section.hero {
             }
             @media (max-width: 489px) {
                 font-size: 12px;
+            }
+            span {
+                color: rgb(82, 107, 166);
             }
         }
         .icons {

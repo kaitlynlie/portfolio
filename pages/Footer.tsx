@@ -9,10 +9,10 @@ const Footer = () => {
        <div className={clsx(styles.container)} >
             <h4>Copyright © 2024. All rights reserved.</h4>
 
-            <div className={clsx(styles.icons)}>
+            {/* <div className={clsx(styles.icons)}>
                 <a href='https://www.linkedin.com/in/kaitlyn-li-0922/'><img src={linkedin} /></a>
                 <a href='https://github.com/kaitlynlie'><img src={github} /></a>
-            </div>
+            </div> */}
        </div>
     </section>
   )

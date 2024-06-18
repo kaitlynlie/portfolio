@@ -130,6 +130,8 @@ const Portfolio = () => {
                         
                         <div className={clsx(styles.buttons)}>
                             <p>React</p>
+                            <p>Typescript</p>
+                            <p>Supabase</p>
                         </div>
 
                         <div className={clsx(styles.links)}>
