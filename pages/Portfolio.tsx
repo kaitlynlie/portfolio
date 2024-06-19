@@ -18,7 +18,7 @@ const Portfolio = () => {
                             <a><img src={rma} /></a>
                         </div>
                         <div className={clsx(styles.links)}>
-                            <a href='https://github.com/kaitlynlie/RMA-RateMyApartment'>
+                            <a href='https://github.com/kaitlynlie/RMA-RateMyApartment' target="_blank" rel="noopener noreferrer">
                                 {/* <p>Code</p> */}
                                 <img src={github} />
                             </a>
@@ -43,7 +43,7 @@ const Portfolio = () => {
                         <a><img src={roomu} /></a>
                     </div>
                     <div className={clsx(styles.links)}>
-                            <a href='https://roomu.aggieworks.org'>
+                            <a href='https://roomu.aggieworks.org' target="_blank" rel="noopener noreferrer">
                                 {/* <p>Website</p> */}
                                 <img src={live} />
                             </a>
