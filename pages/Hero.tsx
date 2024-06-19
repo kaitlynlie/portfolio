@@ -31,7 +31,7 @@ const Hero = () => {
                 repeat={Infinity}
               />
             </div>
-            <p>I am interested in pursuing software development, with a passion in building human-centered and accessible products.</p>
+            <p>I am interested in pursuing software development, with a passion in building human-centered and accessible products, based in San Francisco, California.</p>
             {/* <div className={clsx(styles.icons)}>
                 <a href='https://www.linkedin.com/in/kaitlyn-li-0922/'><img src={linkedin} /></a>
                 <a href='https://github.com/kaitlynlie'><img src={github} /></a>

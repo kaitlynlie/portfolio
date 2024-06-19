@@ -30,14 +30,14 @@ const StyledSocialList = styled.ul`
     a {
       padding: 10px;
 
-      &:hover,
-      &:focus {
-        transform: translateY(-3px);
-      }
-
       svg {
         width: 20px;
         height: 20px;
+
+        &:hover,
+        &:focus {
+          transform: translateY(-3px);
+        }
       }
     }
   }

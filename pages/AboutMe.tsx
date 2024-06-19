@@ -18,11 +18,30 @@ const AboutMe = () => {
             <img src={hero} />
             
         </motion.div>
-
+        <motion.div
+  variants={fadeIn('up', 'tween', 0.2, 1)}
+  initial="hidden"
+  whileInView="show"
+  viewport={{ once: true, amount: 0.25 }}
+  className={clsx(styles.image)}
+>
         <div className={clsx(styles.info)}>
             <h2>#about</h2>
-            <p>I am currently a Computer Science student pursuing a Bachelor’s Degree with an interest in becoming a Software Engineer. I am seeking an internship to gain hands-on experience and to further develop abilities. I am also flexible, detail-oriented, and hardworking team player driven to learn quickly and focus on performance.</p>
+            <p>
+              My interest started out with creating silly storytelling games as a child, using a language called Donacode, which is similar to Scratch.
+              <br/><br/> Fast forward to today, I've had the privilege of working at a student-led organization that builds products for students and a food pantry website to ensure no student is hungry. I am currently interning as a Software Engineer Intern at Roche, and I'm grateful for this opportunity to grow and help more people outside of my college.
+              {/* <br/><br/> Here are a few technologies I have been working with recently: */}
+              {/* <ul className={clsx(styles.list)}>
+                <li>Typescript</li>
+                <li>Java</li>
+                <li>Python</li>
+                <li>Javascript</li>
+                <li>C++</li>
+                <li>Go</li>
+              </ul> */}
+            </p>
         </div>
+        </motion.div>
     </section>
   )
 }

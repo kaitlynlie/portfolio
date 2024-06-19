@@ -8,7 +8,7 @@ section.aboutme {
     @media (max-width: 1225px) {
         gap: 50px;
     }
-    @media (max-width: 790px) {
+    @media (max-width: 989px) {
         flex-direction: column;
     }
     margin-bottom: 167px;
@@ -17,10 +17,10 @@ section.aboutme {
         margin-left: 267px;
         transition: margin-left 0.3s ease;
         z-index: 3;
-        @media (max-width: 1477px) {
+        @media (max-width: 1737px) {
             margin-left: 20px;
         }
-        @media (max-width: 790px) {
+        @media (max-width: 989px) {
             margin-left: 5px;
             margin-right: 25px;
         }
@@ -31,13 +31,13 @@ section.aboutme {
         color: white;
         margin-right: 267px;
         transition: margin-right 0.3s ease;
-        @media (max-width: 1477px) {
+        @media (max-width: 1737px) {
             margin-right: 20px;
         }
         z-index: 3;
-        @media (max-width: 790px) {
+        @media (max-width: 989px) {
             text-align: center;
-            margin-left: 5px;
+            margin-left: 25px;
             margin-right: 5px;
         }
         h2 {
@@ -51,6 +51,17 @@ section.aboutme {
             font-size: 16px;
             font-weight: 400;
             width: 100%;
+        }
+        ul {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(140px, 200px));
+            grid-gap: 0 10px;
+            margin: 20px 0 0 0;
+            list-style: circle;
+            li {
+            position: relative;
+            margin-bottom: 10px;
+            }
         }
     }
 }

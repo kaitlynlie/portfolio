@@ -17,6 +17,7 @@ import roomu from './roomu.png'
 import recipedia from './recipedia.png'
 import book from './book.png'
 import carwash from './carwash.png'
+import leukemia from './leukemia.png'
 
 export {
     github,
@@ -37,5 +38,6 @@ export {
     roomu,
     recipedia,
     book,
-    carwash
+    carwash,
+    leukemia
 }
