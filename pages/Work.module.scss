@@ -33,6 +33,7 @@ section.work {
 
     .titleContainer {
       display: flex;
+      padding: 5px 15px 5px 15px;
       flex-direction: column;
       @media (max-width: 790px) {
         flex-direction: row;
@@ -48,10 +49,11 @@ section.work {
         display: flex;
         cursor: pointer;
         align-items: flex-start;
-        padding: 5px;
-        padding-left: 15px;
+        padding: 5px 15px 5px 15px;
         border-left: 3px solid rgba(98, 128, 199, 0.1);
         @media (max-width: 790px) {
+          text-align: center;
+          align-items: center;
           border-left: none;
           border-bottom: 3px solid rgba(98, 128, 199, 0.1);
         }
@@ -63,6 +65,8 @@ section.work {
           background: rgba(98, 128, 199, 0.038);
           border-left: 3px solid rgb(82, 107, 166);
           @media (max-width: 790px) {
+            text-align: center;
+            align-items: center;
             border-left: none;
             border-bottom: 3px solid rgb(82, 107, 166);
           }
@@ -72,6 +76,9 @@ section.work {
           font-weight: 700;
           text-align: left;
           white-space: nowrap;
+          @media (max-width: 790px) {
+            text-align: center;
+          }
         }
       }
     }
@@ -90,7 +97,7 @@ section.work {
           font-size: 20px;
           font-style: italic;
           span {
-            color:rgb(82, 107, 166);
+            color: rgb(82, 107, 166);
           }
         }
         .time {
@@ -101,6 +108,9 @@ section.work {
           margin-top: 10px;
           ul {
             padding-left: 20px;
+            @media (max-width: 790px) {
+              padding-left: 0px;
+            }
           }
         }
       }
