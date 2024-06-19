@@ -103,6 +103,9 @@ section.portfolio {
                     margin-right: 20px;
                     padding: 1rem;
                 }
+                &:hover {
+                    background-color: rgb(64, 83, 129);
+                  }
                 transition: gap 0.3s ease;
                 @media (max-width: 1369px) {
                     gap: 1.5rem;
