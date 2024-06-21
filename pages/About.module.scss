@@ -3,11 +3,11 @@ section.aboutme {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 150px;
+    // gap: 150px;
     transition: gap 0.3s ease;
-    @media (max-width: 1225px) {
-        gap: 50px;
-    }
+    // @media (max-width: 1225px) {
+    //     gap: 50px;
+    // }
     @media (max-width: 989px) {
         flex-direction: column;
     }
