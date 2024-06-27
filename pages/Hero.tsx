@@ -51,7 +51,7 @@ const Hero = () => {
         <div className={clsx(styles.bottominfo)}>
             <p>Hello, I'm </p>
             <h1>Kaitlyn Li</h1>
-            <p>I am interested in pursuing <span>software development,</span> with a passion in building human-centered and accessible products, based in San Francisco, California.</p>
+            <p>I am interested in pursuing <span>software development,</span> with a passion in building human-centered and accessible products, based in San Francisco, California. I am currently seeking New Grad roles for full-time.</p>
             {/* <div className={clsx(styles.icons)}>
                 <a href='https://www.linkedin.com/in/kaitlyn-li-0922/'><img src={linkedin} /></a>
                 <a href='https://github.com/kaitlynlie'><img src={github} /></a>
