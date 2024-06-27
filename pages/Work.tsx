@@ -20,7 +20,7 @@ const jobs = [
       '• Enhanced user interface using HTML, CSS, and Javascript for smooth and engaging user experience',
       '• Utilized Django and PostgreSQL for database queries and smooth data retrieval'
     ],
-    time: 'FEB 2024 - PRESENT'
+    time: 'FEB 2024 - JUNE 2024'
   },
   {
     id: 3,
@@ -31,7 +31,7 @@ const jobs = [
       '• Spearheaded the development and implementation of a novel photo uploading method, significantly improving user experience and fostering enhanced self-expression for a roommate-matching app',
       '• Successfully orchestrated the migration of onboarding processes to a new database seamlessly integrated with the profile page, ensuring data continuity and system efficiency,'
     ],
-    time: 'OCT 2023 - PRESENT'
+    time: 'OCT 2023 - JUNE 2024'
   },
   {
     id: 4,
@@ -41,7 +41,7 @@ const jobs = [
       '• Developed and launched an engaging website for the Undergraduate Life Sciences Journal, providing a platform for students to author and share personal narratives',
       '• Coordinated with editors and graphic designers to facilitate the weekly publication of papers, ensuring a seamless integration of content and design elements'
     ],
-    time: 'NOV 2023 - PRESENT'
+    time: 'NOV 2023 - JUNE 2024'
   },
   {
     id: 5,
