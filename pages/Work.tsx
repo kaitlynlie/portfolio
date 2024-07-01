@@ -29,7 +29,7 @@ const jobs = [
     description: [
       '• Collaborated with a team of 20 developers, designers, and product managers in an AGILE work environment to build applications for nearly 40,000 students using React, TypeScript, Supabase, and Prisma',
       '• Spearheaded the development and implementation of a novel photo uploading method, significantly improving user experience and fostering enhanced self-expression for a roommate-matching app',
-      '• Successfully orchestrated the migration of onboarding processes to a new database seamlessly integrated with the profile page, ensuring data continuity and system efficiency,'
+      '• Successfully orchestrated the migration of onboarding processes to a new database seamlessly integrated with the profile page, ensuring data continuity and system efficiency'
     ],
     time: 'OCT 2023 - JUNE 2024'
   },
@@ -38,7 +38,7 @@ const jobs = [
     title: 'The Aggie Transcript',
     position: 'Web Developer',
     description: [
-      '• Developed and launched an engaging website for the Undergraduate Life Sciences Journal, providing a platform for students to author and share personal narratives',
+      '• Developed and launched an engaging website for the Undergraduate Psychology Journal, providing a platform for students to author and share personal narratives',
       '• Coordinated with editors and graphic designers to facilitate the weekly publication of papers, ensuring a seamless integration of content and design elements'
     ],
     time: 'NOV 2023 - JUNE 2024'
