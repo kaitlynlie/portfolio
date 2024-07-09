@@ -1,7 +1,7 @@
 import React from 'react'
 import clsx from 'clsx'
 import styles from './Portfolio.module.scss'
-import { rma, github, roomu, live, box, dots, stroke, recipedia, book, carwash, galaxia, leukemia } from '../assets'
+import { rma, github, roomu, live, box, dots, stroke, recipedia, book, carwash, galaxia, leukemia, ttt } from '../assets'
 
 const Portfolio = () => {
   return (
@@ -96,7 +96,7 @@ const Portfolio = () => {
                                 <img src={github} />
                             </a>
                         </div> */}
-                        </div>
+                    </div>
                     <div className={clsx(styles.text)}>
                         <h3>Leukemia Classification</h3>
                         <p>A classification model that distinguishes between normal and cancer cells. Final project for ECS 174: Computer Vision.</p>
@@ -136,7 +136,38 @@ const Portfolio = () => {
                         </div> */}
                     </div>
                 </div>
+
+                <div className={clsx(styles.website)}>
+                    <div className={clsx(styles.header)}>
+                    <div className={clsx(styles.image)}>
+                        <a><img src={ttt} /></a>
+                    </div>
+                    <div className={clsx(styles.links)}>
+                            <a href='https://github.com/kaitlynlie/talktotext' target="_blank" rel="noopener noreferrer">
+                                {/* <p>Code</p> */}
+                                <img src={github} />
+                            </a>
+                        </div>
+                    {/* <div className={clsx(styles.links)}>
+                            <a href='https://github.com/kaitlynlie/strokeprediction'>
+                                <img src={github} />
+                            </a>
+                        </div> */}
+                    </div>
+                    <div className={clsx(styles.text)}>
+                        <h3>Talk To Text</h3>
+                        <p>A website that allows students to upload their lecture recordings for automatic summarization and key point extraction with customizable features.</p>
+                        
+                        <div className={clsx(styles.buttons)}>
+                            <p>Python</p>
+                            <p>Flask</p>
+                            <p>HTML/CSS</p>
+                            <p>Digital Ocean</p>
+                        </div>
+                    </div>
+                </div>
             </div>
+            
             {/* <h2>#small-projects</h2>
             <div className={clsx(styles.line)} />
             <div className={clsx(styles.websites)}>
