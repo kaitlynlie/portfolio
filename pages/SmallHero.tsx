@@ -54,7 +54,7 @@ const SmallHero = () => {
             <div className={clsx(styles.icons)}>
                 <a href='https://www.linkedin.com/in/kaitlyn-li-0922/' target="_blank" rel="noopener noreferrer"><img src={linkedin} /></a>
                 <a href='https://github.com/kaitlynlie' target="_blank" rel="noopener noreferrer"><img src={github} /></a>
-                <a href='https://drive.google.com/file/d/1hh-GceMaPYqaov4nWprO-cpyuDpA6Rns/view?usp=sharing' target="_blank" rel="noopener noreferrer"><img src={resume} /></a>
+                {/* <a href='https://drive.google.com/file/d/1hh-GceMaPYqaov4nWprO-cpyuDpA6Rns/view?usp=sharing' target="_blank" rel="noopener noreferrer"><img src={resume} /></a> */}
             </div>
 
         </div>
