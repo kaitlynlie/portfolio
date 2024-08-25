@@ -61,7 +61,7 @@ const Portfolio = () => {
                     </div>
                 </div>
 
-                <img src={dots} className={clsx(styles.designs)}/>
+                {/* <img src={dots} className={clsx(styles.designs)}/> */}
 
                 <div className={clsx(styles.website)}>
                     <div className={clsx(styles.header)}>

@@ -8,7 +8,7 @@ const jobs = [
     id: 1,
     title: 'Roche',
     position: 'Software Engineer Intern',
-    description: ['• Working on Cloud Platform'],
+    description: ['• Building and testing services on the Cloud Platform, enhancing its functionality and performance'],
     time: 'JUNE 2024 - PRESENT'
   },
   {
@@ -91,6 +91,8 @@ const Work = () => {
     <section className={clsx(styles.work)} id="work">
       <h2>#work</h2>
       <div className={clsx(styles.line)} />
+      
+      <div className={clsx(styles.info)}>
       <div className={clsx(styles.accord)}>
         <div className={styles.titleContainer}>
           {jobs.map((job) => (
@@ -118,6 +120,7 @@ const Work = () => {
             </div>
           </div>
         )}
+      </div>
       </div>
     </section>
   );

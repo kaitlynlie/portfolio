@@ -1,15 +1,16 @@
 import React from 'react'
-import styles from './Hero.module.scss'
+import styles from './SmallHero.module.scss'
 import clsx from 'clsx'
 import { linkedin, github, hero, line, resume, location, look, grad } from '../assets'
 import { color, motion } from 'framer-motion'
 import { fadeIn } from '../src/utils/motion'
 import { TypeAnimation } from 'react-type-animation';
 
-const Hero = () => {
+const SmallHero = () => {
   return (
     <section className={clsx(styles.hero)} id='home'>
         <div className={clsx(styles.topinfo)}>
+          {/* <p>Hello, my name is</p> */}
           <h1>Kaitlyn Li</h1>
           <div className={clsx(styles.wrapper)}>
               <TypeAnimation
@@ -22,9 +23,16 @@ const Hero = () => {
                 wrapper="span"
                 speed={20}
                 className={clsx(styles.infinity)}
+                style={{
+                    alignSelf: 'center', // Centers within a flexbox container
+                    textAlign: 'center', // Centers text within the span
+                    display: 'block', // Ensures it's treated as a block-level element
+                  }}
                 repeat={Infinity}
               />
             </div>
+
+            <p>I am interested in pursuing software development, with a passion in building human-centered and accessible products.</p>
 
             <div className={clsx(styles.info)}>
                 <a className={clsx(styles.button)}>
@@ -42,8 +50,6 @@ const Hero = () => {
                   <p>New Grad roles</p>
                 </a>
             </div>
-
-            <p>I am interested in pursuing software development, with a passion in building human-centered and accessible products.</p>
             
             <div className={clsx(styles.icons)}>
                 <a href='https://www.linkedin.com/in/kaitlyn-li-0922/' target="_blank" rel="noopener noreferrer"><img src={linkedin} /></a>
@@ -56,4 +62,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default SmallHero;

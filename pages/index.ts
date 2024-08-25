@@ -5,6 +5,7 @@ import Portfolio from './Portfolio'
 import Work from './Work'
 import Contact from './Contact'
 import Footer from './Footer'
+import Languages from './Languages'
 
 export {
     Navbar,
@@ -13,5 +14,6 @@ export {
     Portfolio,
     Work,
     Contact,
-    Footer
+    Footer,
+    Languages
 }

@@ -2,32 +2,39 @@ section.contact {
     color: white;
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
-    margin-top: 200px;
-    // margin-left: 170px;
-    // @media (max-width: 1017px) {
-    //     margin-top: 1400px;
-    // }
+    margin-top: 100px;
+    margin-right: 80px;
     h2 {
         font-size: 20px;
         font-weight: 700;
         color: rgb(82, 107, 166);
         letter-spacing: 2px;
+        @media (max-width: 1094px) {
+            font-size: 16px;
+        }
     }
     h4 {
         margin-top: 5px;
         font-size: 26px;
         font-weight: 600;
+        @media (max-width: 1094px) {
+            font-size: 16px;
+        }
         @media (max-width: 241px) {
             text-align: center;
         }
+    }
+    .line {
+        z-index: 10;
+        border-bottom: 1px solid rgb(82, 107, 166);
     }
     .info {
         margin-top: 51px;
         display: flex;
         align-items: center;
-        gap:1.5rem;
+        justify-content: center;
+        gap: 1.5rem;
         @media (max-width: 543px) {
             flex-direction: column;
             text-align: center;
@@ -55,14 +62,6 @@ section.contact {
             justify-content: center;
             align-items: center;
             width: 100%;
-            // gap:0.5rem;
-            // h3 {
-            //     font-size: 18px;
-            //     font-weight: 700;
-            // }
-            // a {
-            //     cursor: pointer;
-            // }
         }
     }
     .contact {
@@ -74,14 +73,6 @@ section.contact {
         @media (max-width: 1199px) {
             width: 80%;
         }
-        // gap:0.5rem;
-        // h3 {
-        //     font-size: 18px;
-        //     font-weight: 700;
-        // }
-        // a {
-        //     cursor: pointer;
-        // }
     }
     margin-bottom: 167px;
 }

@@ -19,6 +19,11 @@ import book from './book.png'
 import carwash from './carwash.png'
 import leukemia from './leukemia.png'
 import ttt from './ttt.png'
+import resume from './resume.svg'
+import location from './location.svg'
+import grad from './grad.svg'
+import look from './look.svg'
+import logo from './logo.svg'
 
 export {
     github,
@@ -41,5 +46,10 @@ export {
     book,
     carwash,
     leukemia,
-    ttt
+    ttt,
+    resume,
+    location,
+    grad,
+    look,
+    logo
 }

@@ -1,7 +1,5 @@
 section.footer {
     color:white;
-    // margin: 0 auto;
-    // max-width: 107rem;
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 10px;
@@ -16,6 +14,9 @@ section.footer {
         }
         h4 {
             font-weight: 600;
+            @media (max-width: 1094px) {
+                font-size: 14px;
+            }
         }
         .icons {
             @media (max-width: 471px) {
