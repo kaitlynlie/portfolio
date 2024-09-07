@@ -17,7 +17,6 @@ import location from './location.svg'
 import grad from './grad.svg'
 import look from './look.svg'
 import logo from './logo.svg'
-import typescript from './typescript.svg'
 
 export {
     github,
@@ -39,5 +38,4 @@ export {
     grad,
     look,
     logo,
-    typescript,
 }

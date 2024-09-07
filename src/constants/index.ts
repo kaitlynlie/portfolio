@@ -1,5 +1,4 @@
-import { javascript } from "../../assets/languages";
-import { typescript } from "../../assets";
+import { cpp, go, html, javascript, python, sql, typescript, css } from "../../assets/languages";
 export const socialMedia = [
     {
       name: 'GitHub',
@@ -16,39 +15,39 @@ export const email: string = 'kaitlynli0903@gmail.com';
 export const languages = [
   {
     language: 'Javascript',
-    icon: {javascript}
+    icon: javascript
   },
   {
     language: 'C++',
-    icon: '../../assets/languages/cpp.svg'
+    icon: cpp
   },
   {
     language: 'Python',
-    icon: '../../assets/languages/python.svg'
+    icon: python
   },
   {
     language: 'Java',
-    icon: '../../assets/languages/java.svg'
+    icon: java
   },
   {
     language: 'Typescript',
-    icon: { typescript }
+    icon: typescript
   },
   {
     language: 'SQL',
-    icon: '../../assets/languages/sql.svg'
+    icon: sql
   },
   {
     language: 'Go',
-    icon: '../../assets/languages/go.svg'
+    icon: go
   },
   {
     language: 'HTML',
-    icon: '../../assets/languages/html.svg'
+    icon: html
   },
   {
     language: 'CSS',
-    icon: '../../assets/languages/css.svg'
+    icon: css
   },
 ]
 
