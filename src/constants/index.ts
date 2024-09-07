@@ -14,7 +14,7 @@ export const email: string = 'kaitlynli0903@gmail.com';
 export const languages = [
   {
     language: 'Javascript',
-    icon: '../../assets/languages/javascript.svg'
+    icon: '/assets/languages/javascript.svg'
   },
   {
     language: 'C++',
@@ -104,7 +104,7 @@ export const technologies = [
 export const cloud = [
   {
     language: 'AWS',
-    icon: '../../assets/db/aws.svg'
+    icon: '/assets/db/aws.svg'
   },
   {
     language: 'PostgreSQL',
