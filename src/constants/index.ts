@@ -1,4 +1,4 @@
-import { cpp, go, html, javascript, python, sql, typescript, css } from "../../assets/languages";
+import { cpp, go, html, javascript, python, sql, typescript, css, java } from "../../assets/languages";
 export const socialMedia = [
     {
       name: 'GitHub',
