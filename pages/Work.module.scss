@@ -1,12 +1,12 @@
 section.work {
-  color: black;
+  color: rgb(0, 0, 0);
   display: flex;
   justify-content: center;
   flex-direction: column;
   z-index: 10;
 
   h2 {
-    color: rgb(82, 107, 166);
+    color: rgb(0, 0, 0);
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 1.2px;
@@ -19,7 +19,7 @@ section.work {
 
   .line {
     z-index: 10;
-    border-bottom: 1px solid rgb(82, 107, 166);
+    border-bottom: 1px solid rgb(0, 0, 0);
   }
 
   .info {
@@ -65,34 +65,34 @@ section.work {
         }
 
         .titleItem {
-          color: white;
+          color: rgb(0, 0, 0);
           display: flex;
           cursor: pointer;
           align-items: flex-start;
           padding: 5px 15px;
-          border-left: 3px solid rgba(98, 128, 199, 0.1);
+          border-left: 3px solid rgba(70, 92, 143, 0.1);
 
           @media (max-width: 790px) {
             text-align: center;
             align-items: center;
             border-left: none;
-            border-bottom: 3px solid rgba(98, 128, 199, 0.1);
+            border-bottom: 3px solid rgba(70, 92, 143, 0.1);
           }
 
           &:hover {
-            background: rgba(98, 128, 199, 0.1);
+            background: rgba(70, 92, 143, 0.1);
           }
 
           &.active {
-            color: rgb(82, 107, 166);
+            color: rgb(4, 47, 81);
             background: rgba(98, 128, 199, 0.038);
-            border-left: 3px solid rgb(82, 107, 166);
+            border-left: 3px solid rgb(4, 47, 81);
 
             @media (max-width: 790px) {
               text-align: center;
               align-items: center;
               border-left: none;
-              border-bottom: 3px solid rgb(82, 107, 166);
+              border-bottom: 3px solid rgb(4, 47, 81);
             }
           }
 
@@ -118,7 +118,7 @@ section.work {
         flex-direction: column;
         width: 100%;
         max-width: 50rem;
-        color: white;
+        color: rgb(0, 0, 0);
 
         @media (max-width: 790px) {
           padding: 0 10px;
@@ -138,7 +138,7 @@ section.work {
             }
 
             span {
-              color: rgb(82, 107, 166);
+              color: rgb(4, 47, 81);
             }
           }
 

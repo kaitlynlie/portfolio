@@ -19,7 +19,7 @@ section.portfolio {
 
     h2 {
       margin-top: 100px;
-      color: rgb(82, 107, 166);
+      color: rgb(0, 0, 0);
       font-weight: 700;
       font-size: 20px;
       @media (max-width: 1094px) {
@@ -37,11 +37,11 @@ section.portfolio {
     }
 
     .line {
-      border-bottom: 1px solid rgb(82, 107, 166);
+      border-bottom: 1px solid rgb(0, 0, 0);
     }
 
     span {
-      color: white;
+      color: rgb(0, 0, 0);
       text-align: left;
       font-weight: 700;
       font-size: 26px;
@@ -56,7 +56,7 @@ section.portfolio {
     }
 
     p {
-      color: white;
+      color: rgb(0, 0, 0);
       text-align: center;
     }
 
@@ -65,7 +65,7 @@ section.portfolio {
       grid-gap: 2rem;
       display: grid;
       gap: 2rem;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
 
       @media (max-width: 1562px) {
         grid-template-columns: repeat(2, 1fr);
@@ -77,10 +77,11 @@ section.portfolio {
 
       .website {
         z-index: 1;
-        background-color: rgb(82, 107, 166);
+        // background-color: rgba(70, 92, 143, 0.406);
         padding: 2rem 1.75rem;
         border-radius: 1rem;
-        box-shadow: 0 0 10px rgba(227, 227, 227, 0.1);
+        // box-shadow: 0 0 10px rgba(70, 92, 143, 0.406);
+        border: 0.5px solid rgb(0, 0, 0);
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -89,9 +90,11 @@ section.portfolio {
 
         &:hover {
           transform: scale(1.01);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          background-color: rgba(70, 92, 143, 0.406);
+          box-shadow: 0 0 10px rgba(70, 92, 143, 0.406);
           z-index: 10;
           opacity: 1;
+          border: none;
         }
 
         &:not(:hover) {
@@ -110,11 +113,18 @@ section.portfolio {
               cursor: pointer;
               img {
                 transition: transform 0.3s ease;
-                width: 20%;
+                width: 40%;
               }
 
               &:hover img {
                 transform: scale(1.01);
+              }
+            }
+          }
+          .links {
+            a {
+              .github {
+                filter: saturate(0) brightness(10000%);
               }
             }
           }
@@ -143,7 +153,9 @@ section.portfolio {
           text-align: left;
 
           h3 {
+            color: rgb(4, 47, 81);
             font-size: 16px;
+            font-weight: 700;
             @media (max-width: 1094px) {
               font-size: 14px;
           }
@@ -178,7 +190,7 @@ section.portfolio {
             gap: 0.5rem;
 
             p {
-              color: #767676;
+              color: #000000;
               font-size: 10px;
               text-align: center;
               background-color: #fff;

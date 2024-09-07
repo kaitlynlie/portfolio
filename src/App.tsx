@@ -22,8 +22,8 @@ const App = () => {
       <div className={styles.rightColumn}>
         {/* <Hero /> */}
         <AboutMe />
+        <Languages />
         <Work />
-        {/* <Languages /> */}
         <Portfolio />
         <Contact />
         <Footer />

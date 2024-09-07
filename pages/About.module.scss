@@ -16,17 +16,17 @@ section.aboutme {
     }
     .line {
         z-index: 10;
-        border-bottom: 1px solid rgb(82, 107, 166);
+        border-bottom: 1px solid  rgb(0, 0, 0);;
     }
     .info {
         justify-content: center;
-        color: white;
+        color: rgb(0, 0, 0);
         transition: margin-right 0.3s ease;
         z-index: 3;
         @media (max-width: 989px) {
-            text-align: center;
-            margin-left: 25px;
-            margin-right: 5px;
+            // text-align: center;
+            // margin-left: 25px;
+            // margin-right: 5px;
         }
         h2 {
             font-size: 20px;
@@ -34,7 +34,7 @@ section.aboutme {
                 font-size: 16px;
             }
             font-weight: 700;
-            color: rgb(82, 107, 166);
+            color: rgb(0, 0, 0);;
             letter-spacing: 1.2px;
         }
         p {
@@ -58,8 +58,11 @@ section.aboutme {
             }
         }
         a {
-            color:rgb(82, 107, 166);
+            color:rgb(4, 47, 81);
             text-decoration: underline;
+        }
+        a:hover {
+            color:rgb(70, 92, 143);
         }
     }
 }

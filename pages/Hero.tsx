@@ -18,6 +18,8 @@ const Hero = () => {
                   2000,
                   'Full-Stack Developer.',
                   2000,
+                  'Web Developer.',
+                  2000,
                 ]}
                 wrapper="span"
                 speed={20}
@@ -37,10 +39,10 @@ const Hero = () => {
                   <p>UC Davis</p>
                 </a>
 
-                <a className={clsx(styles.button)}>
+                {/* <a className={clsx(styles.button)}>
                   <img src={look} />
                   <p>New Grad roles</p>
-                </a>
+                </a> */}
             </div>
 
             <p>I am interested in pursuing software development, with a passion in building human-centered and accessible products.</p>

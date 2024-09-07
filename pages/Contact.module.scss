@@ -1,5 +1,5 @@
 section.contact {
-    color: white;
+    color: rgb(0, 0, 0);
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -8,7 +8,7 @@ section.contact {
     h2 {
         font-size: 20px;
         font-weight: 700;
-        color: rgb(82, 107, 166);
+        color: rgb(0, 0, 0);
         letter-spacing: 2px;
         @media (max-width: 1094px) {
             font-size: 16px;
@@ -27,7 +27,7 @@ section.contact {
     }
     .line {
         z-index: 10;
-        border-bottom: 1px solid rgb(82, 107, 166);
+        border-bottom: 1px solid rgb(0, 0, 0);
     }
     .info {
         margin-top: 51px;
@@ -41,10 +41,10 @@ section.contact {
         }
         span {
             align-items: center;
-            background-color: #fff;
+            background-color: rgb(0, 0, 0);
             border-radius: 50%;
             box-shadow: 0 0 10px rgba(0,0,0,.1);
-            color: #147efb;
+            color: #000000;
             display: flex;
             height: 3rem;
             justify-content: center;

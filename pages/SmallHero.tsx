@@ -24,9 +24,7 @@ const SmallHero = () => {
                 speed={20}
                 className={clsx(styles.infinity)}
                 style={{
-                    alignSelf: 'center', // Centers within a flexbox container
-                    textAlign: 'center', // Centers text within the span
-                    display: 'block', // Ensures it's treated as a block-level element
+                    display: 'block',
                   }}
                 repeat={Infinity}
               />
@@ -45,10 +43,10 @@ const SmallHero = () => {
                   <p>UC Davis</p>
                 </a>
 
-                <a className={clsx(styles.button)}>
+                {/* <a className={clsx(styles.button)}>
                   <img src={look} />
                   <p>New Grad roles</p>
-                </a>
+                </a> */}
             </div>
             
             <div className={clsx(styles.icons)}>

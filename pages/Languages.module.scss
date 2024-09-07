@@ -1,63 +1,75 @@
-*, *::before, *::after {
-    box-sizing: inherit;
-    margin: 0;
-    padding: 0;
+section.languages {
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 10;
+
+  h2 {
+    color: rgb(0, 0, 0);;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-align: left;
+
+    @media (max-width: 1094px) {
+      font-size: 16px;
+    }
   }
-  
-  section.portfolio {
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
+
+  .line {
     z-index: 10;
-    .container {
-      z-index: 10;
-      h2 {
-        margin-top: 167px;
-        color: rgb(82, 107, 166);
+    border-bottom: 1px solid rgb(0, 0, 0);;
+  }
+
+  .content {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10%;
+
+    .groups {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+      h3 {
+        font-size: 18px;
         font-weight: 700;
-        font-size: 20px;
-        text-align: left;
-        margin-bottom: 5px;
-        letter-spacing: 1.2px;
-  
-        @media (max-width: 1017px) {
-          text-align: center;
-          margin-left: 0px;
-          font-size: 18px;
-        }
-      }
-  
-      .line {
-        border-bottom: 1px solid rgb(82, 107, 166);
+        color: rgb(4, 47, 81);
       }
 
-      .content {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 50px;
-        .group {
-          margin-top: 10px;
-          flex-direction: column;
-          h3 {
-            color: rgb(82, 107, 166);
-            font-weight: 700;
-            font-size: 20px;
-            text-align: left;
-            margin-bottom: 5px;
-            letter-spacing: 1.2px;
+      .language {
+        margin-top: 10px;
+        display: grid;
+        gap: 1rem;
+        width: 100%;
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        .button {
+          display: flex;
+          align-items: center;
+          //background-color: rgba(70, 92, 143, 0.406);
+          border: 0.5px solid rgb(0, 0, 0);
+          transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+          padding: 0.25rem 0.75rem;
+          border-radius: 0.5rem;
+          font-size: 12px;
+          justify-content: flex-start;
+          
+          &:hover {
+            transform: scale(1.01);
+            box-shadow: 0 0 10px rgba(98, 128, 199, 0.1);
+            z-index: 10;
+            opacity: 1;
           }
-          ul {
-            li {
-              list-style-type: circle;
-              margin-bottom: 4px;
-            }
+
+          &:not(:hover) {
+            opacity: 0.8;
           }
         }
       }
     }
   }
-  
+
+  margin-bottom: 100px;
+}
