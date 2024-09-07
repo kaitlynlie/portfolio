@@ -1,3 +1,5 @@
+import { javascript } from "../../assets/languages";
+import { typescript } from "../../assets";
 export const socialMedia = [
     {
       name: 'GitHub',
@@ -14,7 +16,7 @@ export const email: string = 'kaitlynli0903@gmail.com';
 export const languages = [
   {
     language: 'Javascript',
-    icon: '/assets/languages/javascript.svg'
+    icon: {javascript}
   },
   {
     language: 'C++',
@@ -30,7 +32,7 @@ export const languages = [
   },
   {
     language: 'Typescript',
-    icon: '../../assets/languages/typescript.svg'
+    icon: { typescript }
   },
   {
     language: 'SQL',
