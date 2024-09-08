@@ -1,4 +1,7 @@
+import { aws, mongodb, postgresql, redis, sqlite, supabase } from "../../assets/db";
 import { cpp, go, html, javascript, python, sql, typescript, css, java } from "../../assets/languages";
+import { django, drupal, express, flask, next, node, react, redux, scss, shopify, tailwind, wordpress } from "../../assets/libraries";
+
 export const socialMedia = [
     {
       name: 'GitHub',
@@ -54,74 +57,74 @@ export const languages = [
 export const technologies = [
   {
     language: 'React',
-    icon: '../../assets/libraries/react.svg'
+    icon: react
   },
   {
     language: 'Next.js',
-    icon: '../../assets/libraries/next.svg'
+    icon: next
   },
   {
     language: 'Node.js',
-    icon: '../../assets/libraries/node.svg'
+    icon: node
   },
   {
     language: 'Express.js',
-    icon: '../../assets/libraries/express.svg'
+    icon: express
   },
   {
     language: 'Redux.js',
-    icon: '../../assets/libraries/redux.svg'
+    icon: redux
   },
   {
     language: 'Flask',
-    icon: '../../assets/libraries/flask.svg'
+    icon: flask
   },
   {
     language: 'Django',
-    icon: '../../assets/libraries/django.svg'
+    icon: django
   },
   {
     language: 'Drupal',
-    icon: '../../assets/libraries/drupal.svg'
+    icon: drupal
   },
   {
     language: 'Shopify',
-    icon: '../../assets/libraries/shopify.svg'
+    icon: shopify
   },
   {
     language: 'Wordpress',
-    icon: '../../assets/libraries/wordpress.svg'
+    icon: wordpress
   },
   {
     language: 'Tailwind',
-    icon: '../../assets/libraries/tailwind.svg'
+    icon: tailwind
   },
   {
     language: 'Scss/Sass',
-    icon: '../../assets/libraries/scss.svg'
+    icon: scss
   },
 ]
 
 export const cloud = [
   {
     language: 'AWS',
-    icon: '/assets/db/aws.svg'
+    icon: aws
   },
   {
     language: 'PostgreSQL',
-    icon: '../../assets/db/postgresql.svg'
+    icon: postgresql
   },
   {
     language: 'MongoDB',
-    icon: '../../assets/db/mongodb.svg'
+    icon: mongodb
   },
   {
     language: 'SQLite',
-    icon: '../../assets/db/sqlite.svg'
+    icon: sqlite
   },
   {
     language: 'Supabase',
-    icon: '../../assets/db/supabase.svg'
+    icon: supabase
   },
   // {
   //   language: 'Digital Ocean',
@@ -129,6 +132,6 @@ export const cloud = [
   // },
   {
     language: 'Redis',
-    icon: '../../assets/db/redis.svg'
+    icon: redis
   },
 ]
