@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './Hero.module.scss'
 import clsx from 'clsx'
-import { linkedin, github, hero, line, resume, location, look, grad } from '../assets'
+import { linkedin, github, hero, line, resume, location, look, grad, goodreads } from '../assets'
 import { color, motion } from 'framer-motion'
 import { fadeIn } from '../src/utils/motion'
 import { TypeAnimation } from 'react-type-animation';
@@ -50,6 +50,7 @@ const Hero = () => {
             <div className={clsx(styles.icons)}>
                 <a href='https://www.linkedin.com/in/kaitlyn-li-0922/' target="_blank" rel="noopener noreferrer"><img src={linkedin} /></a>
                 <a href='https://github.com/kaitlynlie' target="_blank" rel="noopener noreferrer"><img src={github} /></a>
+                <a href='https://www.goodreads.com/user/show/61339920-kait' target="_blank" rel="noopener noreferrer"><img src={goodreads} /></a>
                 {/* <a href='https://drive.google.com/file/d/1hh-GceMaPYqaov4nWprO-cpyuDpA6Rns/view?usp=sharing' target="_blank" rel="noopener noreferrer"><img src={resume} /></a> */}
             </div>
 

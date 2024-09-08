@@ -43,9 +43,11 @@ section.contactform {
             @media (max-width: 1094px) {
                 font-size: 14px;
             }
+            font-weight: 600;
         }
         button:hover {
             background-color: rgb(182, 205, 255);
+            color: black;
         }
     }
 }
