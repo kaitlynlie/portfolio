@@ -119,6 +119,9 @@ section.work {
         width: 100%;
         max-width: 50rem;
         color: rgb(0, 0, 0);
+        @media (max-width: 790px) {
+          margin-top: 10px;
+        }
 
         @media (max-width: 790px) {
           padding: 0 10px;

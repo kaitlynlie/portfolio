@@ -42,7 +42,7 @@ section.languages {
       .language {
         margin-top: 10px;
         display: grid;
-        gap: 1rem;
+        gap: 1.1rem;
         width: 100%;
         grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
         .button {
