@@ -168,6 +168,9 @@ section.hero {
             @media (max-width: 1094px) {
                 flex-direction: row;
             }
+            @media (max-width: 371px) {
+                flex-direction: column;
+            }
             .button {
                 display: inline-flex;
                 align-items: center;
