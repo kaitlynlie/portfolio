@@ -2,7 +2,7 @@ import React from 'react'
 import clsx from 'clsx'
 import styles from './Languages.module.scss'
 import { rma, github, roomu, live, box, dots, stroke, recipedia, book, carwash, galaxia, leukemia, ttt } from '../assets'
-import { languages, technologies, cloud } from '../src/constants'
+import { languages, technologies, cloud, tools } from '../src/constants'
 
 const Languages = () => {
   return (
@@ -49,6 +49,22 @@ const Languages = () => {
               <h3>Databases/Cloud:</h3>
                 <div className={clsx(styles.language)}>
                 {cloud.map((lang, index) => (
+                <button key={index} className={clsx(styles.button)}>
+                  <img 
+                    src={lang.icon} 
+                    alt={lang.language} 
+                    style={{ marginRight: '7px', marginLeft: '-5px' }} 
+                  />
+                  {lang.language}
+                </button>
+              ))}
+                </div>
+              </div>
+
+              <div className={clsx(styles.groups)}>
+              <h3>Software/Tools:</h3>
+                <div className={clsx(styles.language)}>
+                {tools.map((lang, index) => (
                 <button key={index} className={clsx(styles.button)}>
                   <img 
                     src={lang.icon} 

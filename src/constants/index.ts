@@ -1,6 +1,7 @@
 import { aws, mongodb, postgresql, redis, sqlite, supabase } from "../../assets/db";
 import { cpp, go, html, javascript, python, sql, typescript, css, java } from "../../assets/languages";
 import { django, drupal, express, flask, next, node, react, redux, scss, shopify, tailwind, wordpress } from "../../assets/libraries";
+import { docker, figma, git, jenkins, jira, linux } from "../../assets/tools";
 
 export const socialMedia = [
     {
@@ -133,5 +134,32 @@ export const cloud = [
   {
     language: 'Redis',
     icon: redis
+  },
+]
+
+export const tools = [
+  {
+    language: 'Docker',
+    icon: docker,
+  },
+  {
+    language: 'Figma',
+    icon: figma,
+  },
+  {
+    language: 'Git',
+    icon: git,
+  },
+  {
+    language: 'Jenkins',
+    icon: jenkins,
+  },
+  {
+    language: 'Jira',
+    icon: jira,
+  },
+  {
+    language: 'Linux',
+    icon: linux,
   },
 ]

@@ -124,7 +124,7 @@ section.portfolio {
           .links {
             a {
               .github {
-                filter: saturate(0) brightness(10000%);
+                filter: saturate(0) brightness(0%);
               }
             }
           }
@@ -193,7 +193,8 @@ section.portfolio {
               color: #000000;
               font-size: 10px;
               text-align: center;
-              background-color: #fff;
+              //background-color: #fff;
+              border: 0.5px solid rgb(0, 0, 0);
               box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
               font-weight: 600;
               padding: 0.25rem 0.25rem;
