@@ -16,7 +16,7 @@ const AboutMe = () => {
               <a href="https://aggieworks.org" target="_blank" rel="noopener noreferrer">student-led organization that builds products for students</a>
               &nbsp;and&nbsp;
               <a href="https://order.thepantry.ucdavis.edu" target="_blank" rel="noopener noreferrer">a food pantry website to ensure no student is hungry</a>
-              . I am currently interning as a Software Engineer Intern at Roche, and I'm grateful for this opportunity to grow and help more people outside of my college.
+              . Currently, I work as a Technical Specialist at Foxit Software, where I provide support and solutions to enhance user experience. I'm grateful for these opportunities to learn, innovate, and help more people beyond my college.
             </p>
         </div>
     </section>

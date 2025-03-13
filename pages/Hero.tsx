@@ -45,7 +45,7 @@ const Hero = () => {
                 </a> */}
             </div>
 
-            <p>I am interested in pursuing software development, with a passion in building human-centered and accessible products.</p>
+            <p>One of my biggest passions is to help create products to help communities of people and bridge the gap between technical and non-technical audiences.</p>
             
             <div className={clsx(styles.icons)}>
                 <a href='https://www.linkedin.com/in/kaitlyn-li-0922/' target="_blank" rel="noopener noreferrer"><img src={linkedin} /></a>
