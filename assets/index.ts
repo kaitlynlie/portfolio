@@ -18,6 +18,11 @@ import grad from './grad.svg'
 import look from './look.svg'
 import logo from './logo.svg'
 import goodreads from './goodreads.svg'
+import gradLight from './gradLight.svg'
+import locationLight from './locationLight.svg'
+import linkedInLight from './linkedinLight.svg'
+import githubLight from './githubLight.svg'
+import goodreadsLight from './goodreadsLight.svg'
 
 export {
     github,
@@ -39,5 +44,10 @@ export {
     grad,
     look,
     logo,
-    goodreads
+    goodreads,
+    gradLight,
+    locationLight,
+    linkedInLight,
+    githubLight,
+    goodreadsLight
 }

@@ -14,7 +14,7 @@ section.contactform {
         justify-content: center;
         max-width: 600px;
         label {
-            color: rgb(0, 0, 0);
+            color: rgb(177, 177, 177);
             @media (max-width: 1094px) {
                 font-size: 14px;
             }
@@ -22,10 +22,10 @@ section.contactform {
         }
         input, textarea {
             width: 100%;
-            color: black;
+            color: rgb(177, 177, 177);
             margin-top: 10px;
-            border: 1px solid rgba(0, 0, 0, 0.2);
-            background-color: rgba(181, 181, 181, 0.688);
+            border: 1px solid rgb(177, 177, 177);
+            background-color: #313743;
             padding: .75em 1rem;
             margin-bottom: 1.5rem;
             @media (max-width: 1094px) {
@@ -34,11 +34,11 @@ section.contactform {
         }
         input::placeholder, 
         textarea::placeholder {
-            color: rgba(0, 0, 0, 0.5);
+            color: rgba(177, 177, 177, 0.439);
         }
         button {
-            //border: 1px solid rgba(0, 0, 0, 0.2);
-            background-color: rgb(4, 47, 81);
+            border: 1px solid rgb(177, 177, 177);
+            //background-color: rgb(4, 47, 81);
             padding: .75em 1rem;
             color: #d0d0d0;
             @media (max-width: 1094px) {
@@ -47,8 +47,8 @@ section.contactform {
             font-weight: 600;
         }
         button:hover {
-            background-color: rgb(182, 205, 255);
-            color: black;
+            background-color: #98c379;
+            color: #313743;
         }
     }
 }

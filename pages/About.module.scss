@@ -16,11 +16,11 @@ section.aboutme {
     }
     .line {
         z-index: 10;
-        border-bottom: 1px solid  rgb(70, 92, 143);
+        border-bottom: 1px solid  rgb(177, 177, 177);
     }
     .info {
         justify-content: center;
-        color: rgb(0, 0, 0);
+        color: rgb(177, 177, 177);
         transition: margin-right 0.3s ease;
         z-index: 3;
         @media (max-width: 989px) {
@@ -34,7 +34,7 @@ section.aboutme {
                 font-size: 16px;
             }
             font-weight: 700;
-            color: rgb(4, 47, 81);
+            color: #c678dd;
             letter-spacing: 1.2px;
         }
         p {
@@ -58,7 +58,7 @@ section.aboutme {
             }
         }
         a {
-            color:rgb(4, 47, 81);
+            color:#d19a66;
             text-decoration: underline;
         }
         a:hover {

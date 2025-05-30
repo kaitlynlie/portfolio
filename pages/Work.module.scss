@@ -6,7 +6,7 @@ section.work {
   z-index: 10;
 
   h2 {
-    color: rgb(4, 47, 81);
+    color: #c678dd;
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 1.2px;
@@ -19,7 +19,7 @@ section.work {
 
   .line {
     z-index: 10;
-    border-bottom: 1px solid rgb(70, 92, 143);
+    border-bottom: 1px solid rgb(177, 177, 177);
   }
 
   .info {
@@ -65,34 +65,34 @@ section.work {
         }
 
         .titleItem {
-          color: rgb(0, 0, 0);
+          color: rgb(177, 177, 177);
           display: flex;
           cursor: pointer;
           align-items: flex-start;
           padding: 5px 15px;
-          border-left: 3px solid rgba(70, 92, 143, 0.1);
+          border-left: 3px solid rgba(94, 123, 190, 0.171);
 
           @media (max-width: 790px) {
             text-align: center;
             align-items: center;
             border-left: none;
-            border-bottom: 3px solid rgba(70, 92, 143, 0.1);
+            border-bottom: 3px solid rgba(94, 123, 190, 0.171);
           }
 
           &:hover {
-            background: rgba(70, 92, 143, 0.1);
+            background: rgba(94, 123, 190, 0.171);
           }
 
           &.active {
-            color: rgb(4, 47, 81);
-            background: rgba(98, 128, 199, 0.038);
-            border-left: 3px solid rgb(4, 47, 81);
+            color: #d19a66;
+            background: rgba(109, 142, 220, 0.216);
+            border-left: 3px solid #d19a66;
 
             @media (max-width: 790px) {
               text-align: center;
               align-items: center;
               border-left: none;
-              border-bottom: 3px solid rgb(4, 47, 81);
+              border-bottom: 3px solid #d19a66;
             }
           }
 
@@ -118,7 +118,7 @@ section.work {
         flex-direction: column;
         width: 100%;
         max-width: 50rem;
-        color: rgb(0, 0, 0);
+        color: rgb(177, 177, 177);
         @media (max-width: 790px) {
           margin-top: 10px;
         }
@@ -141,7 +141,7 @@ section.work {
             }
 
             span {
-              color: rgb(4, 47, 81);
+              color:#d19a66;
             }
           }
 
@@ -173,11 +173,12 @@ section.work {
       }
 
       .titleContainer::-webkit-scrollbar {
-        background-color: gray;
+        background-color: #313743;
         height: 2px;
       }
 
       .titleContainer::-webkit-scrollbar-thumb {
+        background-color: #313743;
         border-radius: 10px;
       }
     }

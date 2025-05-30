@@ -3,7 +3,7 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  background-color: #d0d0d0;
+  background-color: #1e2229;
   max-width: 100%;
 }
 
@@ -11,7 +11,7 @@ html, body {
   // background: 
   //   radial-gradient(circle at top right, rgba(58, 59, 63, 0.6), transparent 50%),
   //   linear-gradient(135deg, #23252a, #3a3b3f);
-  background-color: #d0d0d0;
+  background-color: #313743;
   color: rgb(0, 0, 0);
   display: flex;
   overflow: hidden;
@@ -21,14 +21,14 @@ html, body {
   // background: 
   //   radial-gradient(circle at top left, rgba(17, 18, 20, 0.6), transparent 50%),
   //   linear-gradient(135deg, #070708, #0c0c0e);
-  background-color: #d0d0d0;
+  background-color: #313743;
   position: fixed;
   width: 20%;
   height: 100%;
   overflow: hidden;
   z-index: 1000;
   padding: 2.5%;
-  border-right: 1px solid rgb(70, 92, 143);
+  border-right: 1px solid rgb(177, 177, 177);
   @media (max-width: 1094px) {
     display: none;
   }

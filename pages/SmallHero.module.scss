@@ -16,7 +16,7 @@ section.hero {
     flex-direction: column;
     .topinfo {
         // display: block;
-        color: rgb(0, 0, 0);
+        color: rgb(177, 177, 177);
         @media (max-width: 1094px) {
             display: flex;
             justify-content: center;
@@ -35,7 +35,7 @@ section.hero {
             font-size: 20px;
             // display: inline-block;
             font-weight: 700;
-            color: rgb(0, 0, 0);
+            color: rgb(177, 177, 177);
             @media (max-width: 1251px) {
                 font-size: 14px;
             }
@@ -90,14 +90,14 @@ section.hero {
         h1 {
             font-size: 40px;
             @media (max-width: 1251px) {
-                font-size: 20px;
+                font-size: 30px;
             }
             @media (max-width: 1094px) {
                 text-align: left;
             }
             font-weight: 700;
             z-index: 3;
-            color: rgb(4, 47, 81);
+            color: #61afef;
             // transition: transform 0.3s;
         }
         p {
@@ -128,7 +128,7 @@ section.hero {
                 border-radius: 5px;
                 width: 30px;
                 height: 30px;
-                border: 0.5px solid rgb(0, 0, 0);
+                border: 0.5px solid rgb(177, 177, 177);
                 padding: 7px 7px;
                 transition: all .35s;
                 @media (max-width: 1094px) {
@@ -148,7 +148,7 @@ section.hero {
                 justify-content: center;
                 gap: 8px;
                 border-radius: 5px;
-                border: 0.5px solid rgb(0, 0, 0);
+                border: 0.5px solid rgb(177, 177, 177);
                 padding: 4px 8px;
                 transition: all .35s;
                 p {
@@ -178,7 +178,7 @@ section.hero {
                 width: auto !important; 
                 max-width: fit-content; 
                 border-radius: 5px;
-                border: 0.5px solid rgb(0, 0, 0);
+                border: 0.5px solid rgb(177, 177, 177);
                 padding: 4px 8px;
                 transition: all 0.35s;
                 text-align: center;

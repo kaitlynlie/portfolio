@@ -11,14 +11,14 @@ section.hero {
     margin: 0 auto;
     flex-direction: column;
     .topinfo {
-        color: rgb(0, 0, 0);
+        color: rgb(177, 177, 177);
         .wrapper {
             display: inline-flex;
             .infinity {
                 font-size: 20px;
                 display: inline-block;
                 font-weight: 700;
-                color: rgb(0, 0, 0);
+                color: rgb(177, 177, 177);
                 @media (max-width: 1094px) {
                     text-align: center;
                     align-self: center;
@@ -32,7 +32,7 @@ section.hero {
             }
             font-weight: 700;
             z-index: 3;
-            color: rgb(4, 47, 81);
+            color: #61afef;
         }
         p {
             font-size: 16px;
@@ -56,7 +56,7 @@ section.hero {
                 justify-content: center;
                 gap: 8px;
                 border-radius: 5px;
-                border: 0.5px solid rgb(0, 0, 0);
+                border: 0.5px solid rgb(177, 177, 177);
                 padding: 7px 7px;
                 width: 35px;
                 height: 35px;
@@ -79,7 +79,7 @@ section.hero {
                 justify-content: center;
                 gap: 8px;
                 border-radius: 5px;
-                border: 0.5px solid rgb(0, 0, 0);
+                border: 0.5px solid rgb(177, 177, 177);
                 padding: 4px 8px;
                 transition: all .35s;
                 p {
@@ -108,7 +108,7 @@ section.hero {
                 width: auto !important; 
                 max-width: fit-content; 
                 border-radius: 5px;
-                border: 0.5px solid rgb(0, 0, 0);
+                border: 0.5px solid rgb(177, 177, 177);
                 padding: 4px 8px;
                 transition: all 0.35s;
                 text-align: center;
@@ -121,10 +121,11 @@ section.hero {
                 p {
                     font-size: 13px;
                     margin: 0;
-                    color: rgb(0, 0, 0);
+                    color: rgb(177, 177, 177);
                     font-weight: 600;
                 }
                 img {
+                    width: 20px;
                     @media (max-width: 1251px) {
                         width: 30%;
                     }
