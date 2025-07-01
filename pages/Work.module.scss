@@ -78,7 +78,7 @@ section.work {
         @media (max-width: 790px) {
           flex-direction: row;
           overflow-x: auto;
-          overflow-y: none;
+          overflow-y: hidden;
           width: 100%;
           max-width: 40rem;
           white-space: nowrap;
