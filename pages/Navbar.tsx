@@ -29,7 +29,7 @@ const Navbar = () => {
           <a href="#home" onClick={() => setToggleMenu(false)}>#home</a>
           <a href="#about" onClick={() => setToggleMenu(false)}>#about</a>
           <a href="#work" onClick={() => setToggleMenu(false)}>#work</a>
-          <a href="#languages" onClick={() => setToggleMenu(false)}>#languages</a>
+          <a href="#languages" onClick={() => setToggleMenu(false)}>#skills</a>
           <a href="#projects" onClick={() => setToggleMenu(false)}>#projects</a>
           <a href="#contact" className={clsx(styles.rightmost)} onClick={() => setToggleMenu(false)}>#contact</a>
           <a className={clsx(styles.button)} onClick={() => setToggleMenu(false)} href='https://drive.google.com/file/d/1vnNty9lyedqHmXPbxmWK7rMWGaGfx00V/view?usp=sharing' target="_blank" rel="noopener noreferrer">Resume</a>
@@ -49,7 +49,7 @@ const Navbar = () => {
               <a href="#home" onClick={() => setToggleMenu(false)}>#home</a>
               <a href="#about" onClick={() => setToggleMenu(false)}>#about</a>
               <a href="#work" onClick={() => setToggleMenu(false)}>#work</a>
-              <a href="#languages" onClick={() => setToggleMenu(false)}>#languages</a>
+              <a href="#languages" onClick={() => setToggleMenu(false)}>#skills</a>
               <a href="#projects" onClick={() => setToggleMenu(false)}>#projects</a>
               <a href="#contact" onClick={() => setToggleMenu(false)}>#contact</a>
               <a onClick={() => setToggleMenu(false)} href='https://drive.google.com/file/d/1vnNty9lyedqHmXPbxmWK7rMWGaGfx00V/view?usp=sharing' target="_blank" rel="noopener noreferrer">Resume</a>
