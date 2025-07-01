@@ -1,0 +1,133 @@
+html, body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: linear-gradient(to right, #121B30, #1F406B);
+  max-width: 100%;
+}
+
+.app {
+  color: rgb(0, 0, 0);
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  padding-left: 4rem;
+  padding-right: 4rem;
+          @media (max-width:526px) {
+            padding: 0 2rem;
+    }
+    .sidebar {
+    position: fixed;
+    bottom: -10px;
+    right: 4rem;
+        @media (max-width:980px) {
+            display: none;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+
+    .line {
+      width: 2px;
+      height: 150px;
+      background-color: #ccc;
+      margin: 0px 0px;
+    }
+
+    a {
+      margin-bottom: 15px;
+      img {
+        width: 24px;
+        height: 24px;
+        transition: transform 0.2s ease;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+    .volumeButton {
+      background: none;
+      border: none;
+      margin-bottom: 15px;
+      cursor: pointer;
+
+      img {
+        width: 24px;
+        height: 24px;
+        filter: drop-shadow(0 0 2px #E4D1C9);
+        transition: transform 0.2s ease;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+  .fireflies {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0; // behind everything
+}
+
+.firefly {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: radial-gradient(circle, #E4D1C9 0%, transparent 70%);
+  text-shadow: 0 0 4px rgba(228, 209, 201, 0.5),
+                    0 0 8px rgba(228, 209, 201, 0.3);
+  border-radius: 50%;
+  animation: moveFirefly 20s linear infinite, blink 2s ease-in-out infinite;
+  opacity: 0.7;
+
+  &:nth-child(1)  { top: 10%; left: 20%; animation-delay: 1s;  animation-duration: 18s; }
+  &:nth-child(2)  { top: 30%; left: 70%; animation-delay: 3s;  animation-duration: 19s; }
+  &:nth-child(3)  { top: 50%; left: 40%; animation-delay: 5s;  animation-duration: 20s; }
+  &:nth-child(4)  { top: 80%; left: 60%; animation-delay: 7s;  animation-duration: 21s; }
+  &:nth-child(5)  { top: 15%; left: 80%; animation-delay: 2s;  animation-duration: 17s; }
+  &:nth-child(6)  { top: 60%; left: 10%; animation-delay: 4s;  animation-duration: 22s; }
+  &:nth-child(7)  { top: 25%; left: 50%; animation-delay: 6s;  animation-duration: 18s; }
+  &:nth-child(8)  { top: 70%; left: 30%; animation-delay: 8s;  animation-duration: 23s; }
+  &:nth-child(9)  { top: 40%; left: 90%; animation-delay: 9s;  animation-duration: 16s; }
+  &:nth-child(10) { top: 55%; left: 60%; animation-delay: 10s; animation-duration: 20s; }
+  &:nth-child(11) { top: 65%; left: 35%; animation-delay: 11s; animation-duration: 19s; }
+  &:nth-child(12) { top: 35%; left: 15%; animation-delay: 12s; animation-duration: 21s; }
+  &:nth-child(13) { top: 75%; left: 75%; animation-delay: 13s; animation-duration: 22s; }
+  &:nth-child(14) { top: 20%; left: 60%; animation-delay: 14s; animation-duration: 18s; }
+  &:nth-child(15) { top: 85%; left: 45%; animation-delay: 15s; animation-duration: 17s; }
+}
+
+@keyframes moveFirefly {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(20px, -30px) scale(1.2);
+  }
+  50% {
+    transform: translate(-10px, 20px) scale(0.9);
+  }
+  75% {
+    transform: translate(30px, 10px) scale(1.1);
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+  @keyframes blink {
+    0%, 100% {
+      opacity: 0.3;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+}

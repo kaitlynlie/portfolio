@@ -1,0 +1,72 @@
+section.contactform {
+    //margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: left;
+    form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        max-width: 600px;
+        @media (max-width: 779px) {
+            width: 35%;
+        }
+        @media (max-width: 590px) {
+            width: 30%;
+        }
+
+                @media (max-width: 456px) {
+            width: 20%;
+        }
+
+                        @media (max-width: 336px) {
+            width: 15%;
+        }
+        label {
+            color: #E7EEF4;
+            @media (max-width: 1094px) {
+                font-size: 14px;
+            }
+            @media (max-width: 1318px) {
+            font-size: 16px;
+            }
+            font-weight: 600;
+            font-family: "Fira";
+        }
+        input, textarea {
+            width: 100%;
+            color: #E7EEF4;
+            margin-top: 10px;
+            border: 1px solid #1F406B;
+            background-color: #1F406B;
+            padding: .75em 1rem;
+            margin-bottom: 1.5rem;
+            // @media (max-width: 1094px) {
+            //     font-size: 12px;
+            // }
+        }
+        input::placeholder, 
+        textarea::placeholder {
+            color: #e7eef430;
+        }
+        button {
+            border: 1px solid #E7EEF4;
+            //background-color: rgb(4, 47, 81);
+            padding: .75em 1rem;
+            color: #E7EEF4;
+            @media (max-width: 1094px) {
+                font-size: 14px;
+            }
+            font-weight: 600;
+        }
+        button:hover {
+            background-color: #6C7EBA;
+            border: 1px solid #6C7EBA;
+        }
+    }
+}

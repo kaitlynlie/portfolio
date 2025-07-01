@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'Fira';
+  src: url('../assets/fonts/FiraCode-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+html, body {
+  background: linear-gradient(to right, #121B30, #1F406B);
+  overscroll-behavior: none;
+}
+
+.image img {
+  -webkit-transform: translateY(0%);
+  -moz-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  -o-transform: translateY(0%);
+  transform: translateY(0%);
+  -webkit-transition: transform 10s ease-in-out 0s;
+  -moz-transition: transform 10s ease-in-out 0s;
+  -ms-transition: transform 10s ease-in-out 0s;
+  -o-transition: transform 10s ease-in-out 0s;
+  transition: transform 10s ease-in-out 0s;
+}
