@@ -6,8 +6,8 @@ import { hero } from '../assets';
 
 const AboutMe = () => {
   return (
-    <section id="about" className={styles.aboutme}>
-      <div className={styles.info}>
+    <section id="about" className={clsx(styles.aboutme)}>
+      <div className={clsx(styles.info)}>
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -17,9 +17,9 @@ const AboutMe = () => {
           #ABOUT
         </motion.h2>
 
-        <div className={styles.details}>
+        <div className={clsx(styles.details)}>
           <motion.div
-            className={styles.left}
+            className={clsx(styles.left)}
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -46,13 +46,13 @@ const AboutMe = () => {
           </motion.div>
 
           <motion.div
-            className={styles.right}
+            className={clsx(styles.right)}
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <div className={styles.image}>
+            <div className={clsx(styles.image)}>
               <img src={hero} alt="Portrait of me" />
             </div>
           </motion.div>

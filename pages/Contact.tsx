@@ -1,7 +1,6 @@
 import React from 'react'
 import clsx from 'clsx'
 import styles from './Contact.module.scss'
-import { mail, linkedinDk } from '../assets'
 import { ContactForm } from '../components/ContactForm'
 
 const Contact = () => {

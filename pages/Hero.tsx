@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './Hero.module.scss'
 import clsx from 'clsx'
-import { linkedInLight, githubLight, hero, line, resume, locationLight, look, gradLight, goodreadsLight } from '../assets'
+import { locationLight, look, gradLight, goodreadsLight } from '../assets'
 import { color, motion } from 'framer-motion'
 import { fadeIn } from '../src/utils/motion'
 import { TypeAnimation } from 'react-type-animation';
