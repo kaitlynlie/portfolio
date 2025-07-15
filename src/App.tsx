@@ -6,8 +6,7 @@ import { Analytics } from '@vercel/analytics/react'
 import { linkedInLight, githubLight, goodreadsLight, volumeOff, volumeOn } from '../assets';
 
 const App = () => {
-  const isHome = location.pathname === '/';
-  const [isLoading, setIsLoading] = useState(isHome);
+  //const isHome = location.pathname === '/';
 
   const [isMuted, setIsMuted] = useState(true);
   const audioRef = useRef(null);
