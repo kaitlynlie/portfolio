@@ -1,7 +1,7 @@
 import React from 'react'
 import clsx from 'clsx'
 import styles from './Portfolio.module.scss'
-import { rma, githubLight, roomu, live, box, dots, stroke, recipedia, book, carwash, galaxia, leukemia, ttt, rmagroup } from '../assets'
+import { rma, githubLight, roomu, live, stroke, ttt } from '../assets'
 
 const Portfolio = () => {
   return (
