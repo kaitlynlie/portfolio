@@ -14,13 +14,11 @@ const Hero = () => {
           <div className={clsx(styles.wrapper)}>
               <TypeAnimation
                 sequence={[
-                  'Software Engineer.',
+                  'Technical Support.',
                   2000,
                   'Full-Stack Developer.',
                   2000,
                   'Web Developer.',
-                  2000,
-                  'Support Engineer.',
                   2000,
                 ]}
                 wrapper="span"

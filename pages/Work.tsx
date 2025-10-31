@@ -6,16 +6,25 @@ import { motion, AnimatePresence } from 'framer-motion';
 const jobs = [
   {
     id: 1,
+    title: 'Webflow',
+    position: 'Technical Support Specialist',
+    description: [
+      '• Work in progress...',
+    ],
+    time: 'OCT 2025 - PRESENT'
+  },
+  {
+    id: 2,
     title: 'Foxit Software',
     position: 'Technical Specialist',
     description: [
       '• Diagnose and resolve customer issues across email, phone, and ticketing systems, providing technical guidance during pre- and post-deployment stages',
       '• Support and optimize synchronous communication tools (e.g., VoIP, video conferencing) to enhance user workflows and address technical challenges'
     ],
-    time: 'OCT 2024 - PRESENT'
+    time: 'OCT 2024 - OCT 2025'
   },
   {
-    id: 2,
+    id: 3,
     title: 'Roche',
     position: 'Software Engineer Intern',
     description: [
@@ -25,7 +34,7 @@ const jobs = [
     time: 'JUNE 2024 - SEP 2024'
   },
   {
-    id: 3,
+    id: 4,
     title: 'ASUCD Pantry',
     position: 'Full-Stack Developer',
     description: [
@@ -36,7 +45,7 @@ const jobs = [
     time: 'FEB 2024 - JUNE 2024'
   },
   {
-    id: 4,
+    id: 5,
     title: 'AggieWorks',
     position: 'Software Engineer',
     description: [
@@ -47,7 +56,7 @@ const jobs = [
     time: 'OCT 2023 - JUNE 2024'
   },
   {
-    id: 5,
+    id: 6,
     title: 'The Aggie Transcript',
     position: 'Web Developer',
     description: [
@@ -57,7 +66,7 @@ const jobs = [
     time: 'NOV 2023 - JUNE 2024'
   },
   {
-    id: 6,
+    id: 7,
     title: 'MindHome',
     position: 'Software Engineer Intern',
     description: [
@@ -67,7 +76,7 @@ const jobs = [
     time: 'JAN 2024 - JUNE 2024'
   },
   {
-    id: 7,
+    id: 8,
     title: 'Stealth Startup',
     position: 'Software Engineer Intern',
     description: [
@@ -79,7 +88,7 @@ const jobs = [
     time: 'JULY 2023 - JAN 2024'
   },
   {
-    id: 8,
+    id: 9,
     title: 'Nonprofit Organization',
     position: 'Machine Learning Intern',
     description: [

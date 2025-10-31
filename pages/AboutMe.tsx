@@ -39,7 +39,7 @@ const AboutMe = () => {
               </a>
               .
               <br /><br />
-              Currently, I work as a Technical Specialist at Foxit Software, where I provide support and solutions to enhance user experience. I'm grateful for the chance to learn, innovate, and build for real users.
+              Currently, I work as a Technical Support Specialist at Webflow, where I provide support and solutions to enhance user experience on Webflow's platform. I'm grateful for the chance to learn, innovate, and build for real users.
               <br /><br />
               Outside of work, you'll usually find me with a book, binge-watching C-dramas, or going on walks, but I'm still holding out hope for that sleeper hit.
             </p>
