@@ -1,0 +1,142 @@
+import { useState } from "react";
+import styles from "./App.module.scss";
+import clsx from "clsx";
+import { briefcase, mail, projects, skills, aboutme, info } from "./assets";
+import Footer from "./Footer";
+import Contact from "./Contact";
+import WorkExperience from "./WorkExperience";
+import Skills from "./Skills";
+import Projects from "./Projects";
+import AboutMe from "./AboutMe";
+import Info from "./Info";
+
+interface Window {
+  id: string;
+  title: string;
+  icon: string;
+  component: React.ReactNode;
+  zIndex?: number;
+}
+
+function App() {
+  const [windows, setWindows] = useState<Window[]>([]);
+  const [topZ, setTopZ] = useState(1);
+
+  const openWindow = (
+  id: string,
+  title: string,
+  icon: string,
+  component: React.ReactNode
+  ) => {
+    setWindows((prev) => {
+      const alreadyOpen = prev.find((w) => w.id === id);
+      if (alreadyOpen) return prev;
+      return [
+        ...prev,
+        { id, title, icon, component, zIndex: topZ + prev.length } as any,
+      ];
+    });
+  };
+
+
+  const closeWindow = (id: string) => {
+    setWindows((prev) => prev.filter((w) => w.id !== id));
+  };
+
+  return (
+    <>
+      <div className={clsx(styles.home)}>
+        <div className={clsx(styles.icons)}>
+        <div className={clsx(styles.app)}>
+          <button
+            onClick={() =>
+              openWindow("contact", "Contact Me", mail, <Contact onClose={() => closeWindow("contact")} />)
+            }
+          >
+            <img src={mail} alt="mail" />
+            <p>Contact Me</p>
+          </button>
+        </div>
+
+          <div className={clsx(styles.app)}>
+            <button
+              onClick={() =>
+                openWindow("workexperience", "Work Experience", briefcase, <WorkExperience onClose={() => closeWindow("workexperience")} />)
+              }
+            >
+            <img src={briefcase} alt="briefcase" />
+            <p>Work <br /> Experience</p>
+          </button>
+        </div>
+
+          <div className={clsx(styles.app)}>
+          <button
+            onClick={() =>
+              openWindow("skills", "Skills", skills, <Skills onClose={() => closeWindow("skills")} />)
+            }
+          >
+            <img src={skills} alt="skills" />
+            <p>Skills</p>
+          </button>
+        </div>
+
+          <div className={clsx(styles.app)}>
+            <button
+              onClick={() =>
+                openWindow("projects", "Projects", projects, <Projects onClose={() => closeWindow("projects")} />)
+              }
+            >
+            <img src={projects} alt="projects" />
+            <p>Projects</p>
+          </button>
+        </div>
+
+          <div className={clsx(styles.app)}>
+            <button
+              onClick={() =>
+                openWindow("aboutme", "About Me", aboutme, <AboutMe onClose={() => closeWindow("aboutme")} />)
+              }
+            >
+            <img src={aboutme} alt="about me" />
+            <p>About Me</p>
+          </button>
+        </div>
+
+          <div className={clsx(styles.app)}>
+            <button
+              onClick={() =>
+                openWindow("info", "info.txt", info, <Info onClose={() => closeWindow("info")} />)
+              }
+            >
+              <img src={info} alt="info" />
+              <p>info.txt</p>
+            </button>
+          </div>
+        </div>
+
+        {windows.map((win) => (
+        <div
+          key={win.id}
+          className={clsx(styles.window)}
+          style={{ zIndex: win.zIndex }}
+          onMouseDown={() => {
+            setTopZ(topZ + 1);
+            setWindows((prev) =>
+              prev.map((w) =>
+                w.id === win.id ? { ...w, zIndex: topZ + 1 } : w
+              )
+            );
+          }}
+        >
+          {win.component}
+        </div>
+      ))}
+
+      </div>
+
+      <Footer windows={windows} onSelect={() => {}} />
+    </>
+  );
+}
+
+export default App;
