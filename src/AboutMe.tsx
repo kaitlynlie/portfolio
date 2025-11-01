@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import styles from "./AboutMe.module.scss";
 import clsx from "clsx";
-import { aboutme, me, projects, skills } from "./assets";
+import { aboutme, me } from "./assets";
 
 interface AboutMeProps {
   onClose: () => void;

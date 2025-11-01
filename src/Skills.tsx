@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef } from "react";
 import styles from "./Skills.module.scss";
 import clsx from "clsx";
 import { skills } from "./assets";

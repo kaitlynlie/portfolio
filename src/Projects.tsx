@@ -1,7 +1,7 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef } from "react";
 import styles from "./Project.module.scss";
 import clsx from "clsx";
-import { projects, skills } from "./assets";
+import { projects } from "./assets";
 
 interface ProjectsProps {
   onClose: () => void;

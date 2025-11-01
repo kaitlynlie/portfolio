@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import styles from "./Contact.module.scss";
 import clsx from "clsx";
-import { attach, back, copy, cut, folderopen, forward, forwardemail, mail, mailto, paste, reply, replyall, search, send, sign, startmenu, undo, up } from "./assets";
+import { copy, cut, mail, mailto, paste, reply, replyall, send, sign, undo } from "./assets";
 import { useForm, ValidationError } from '@formspree/react';
 
 interface ContactProps {
