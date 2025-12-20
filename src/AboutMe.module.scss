@@ -9,20 +9,24 @@
         flex-direction: column;
         box-sizing: border-box;
         @media (max-width: 758px) {
-            position: fixed !important;
-            inset: 0 !important;
+          position: fixed !important;
+          inset: 0 !important;
 
-            width: 100vw !important;
-            height: 100dvh !important;
+          width: 100vw !important;
+          height: 100svh !important;
 
-            min-width: 0 !important;
-            min-height: 0 !important;
+          padding-bottom: env(safe-area-inset-bottom);
+          box-sizing: border-box;
 
-            margin: 0 !important;
-            border-radius: 0 !important;
+          min-width: 0 !important;
+          min-height: 0 !important;
 
-            transform: none !important;
-        }
+          margin: 0 !important;
+          border-radius: 0 !important;
+
+          transform: none !important;
+          overflow: hidden; /* critical */
+      }
         .header {
             display: flex;
             flex-direction: row;
