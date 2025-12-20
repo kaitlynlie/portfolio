@@ -9,7 +9,8 @@
             inset: 0 !important;
 
             width: 100vw !important;
-            height: 100dvh !important;
+            height: calc(100svh - 32px) !important;
+            box-sizing: border-box !important;
 
             min-width: 0 !important;
             min-height: 0 !important;

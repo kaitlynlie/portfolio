@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "./App.module.scss";
 import clsx from "clsx";
 import { briefcase, mail, projects, aboutme, info } from "./assets";
@@ -20,6 +20,22 @@ interface Window {
 function App() {
   const [windows, setWindows] = useState<Window[]>([]);
   const [topZ, setTopZ] = useState(1);
+
+  useEffect(() => {
+    function updateVh() {
+      // set --vh to 1% of the viewport height
+      document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
+    }
+
+    updateVh();
+    window.addEventListener('resize', updateVh);
+    window.addEventListener('orientationchange', updateVh);
+
+    return () => {
+      window.removeEventListener('resize', updateVh);
+      window.removeEventListener('orientationchange', updateVh);
+    };
+  }, []);
 
   const openWindow = (
   id: string,
