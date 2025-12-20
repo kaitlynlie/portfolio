@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import { useState } from "react";
 import styles from "./AboutMe.module.scss";
 import clsx from "clsx";
 import { aboutme, github, linkedin, me, systeminfo } from "./assets";

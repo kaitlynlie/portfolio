@@ -1,4 +1,3 @@
-import React, { useState, useRef, useEffect } from "react";
 import styles from "./WorkExperience.module.scss";
 import clsx from "clsx";
 import { back, book, briefcase, folderopen, forward, go, search, startmenu, up } from "./assets";

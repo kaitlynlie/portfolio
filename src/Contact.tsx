@@ -1,4 +1,3 @@
-import React, { useState, useRef, useEffect } from "react";
 import styles from "./Contact.module.scss";
 import clsx from "clsx";
 import { copy, cut, mail, mailto, paste, reply, replyall, send, sign, undo } from "./assets";

@@ -1,4 +1,3 @@
-import React, { useState, useRef, useEffect } from "react";
 import styles from "./Info.module.scss";
 import clsx from "clsx";
 import { info } from "./assets";

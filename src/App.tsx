@@ -1,11 +1,10 @@
 import { useState } from "react";
 import styles from "./App.module.scss";
 import clsx from "clsx";
-import { briefcase, mail, projects, skills, aboutme, info } from "./assets";
+import { briefcase, mail, projects, aboutme, info } from "./assets";
 import Footer from "./Footer";
 import Contact from "./Contact";
 import WorkExperience from "./WorkExperience";
-import Skills from "./Skills";
 import Projects from "./Projects";
 import AboutMe from "./AboutMe";
 import Info from "./Info";

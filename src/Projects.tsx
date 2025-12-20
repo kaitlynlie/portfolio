@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import { useState } from "react";
 import styles from "./Project.module.scss";
 import clsx from "clsx";
 import { cascade, documents, github, network, programs, projects, properties, react, shared, skills, supabase, typescript } from "./assets";
