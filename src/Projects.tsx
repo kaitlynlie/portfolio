@@ -3,7 +3,7 @@ import styles from "./Project.module.scss";
 import clsx from "clsx";
 import { cascade, documents, github, network, programs, projects, properties, react, shared, skills, supabase, typescript } from "./assets";
 import { useWindowControls } from "./windows";
-import { back, forward, up, search, folderopen, startmenu, book, go } from "./assets";
+import { back, forward, up, search, folderopen, startmenu, go } from "./assets";
 
 interface ProjectsProps {
   onClose: () => void;

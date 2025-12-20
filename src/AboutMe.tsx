@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from "./AboutMe.module.scss";
 import clsx from "clsx";
-import { aboutme, github, linkedin, me, systeminfo } from "./assets";
+import { aboutme, github, linkedin, systeminfo } from "./assets";
 import { useWindowControls } from "./windows";
 interface AboutMeProps {
   onClose?: () => void;
