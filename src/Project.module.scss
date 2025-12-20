@@ -406,7 +406,8 @@
             .details {
                 padding-top: .125rem;
                 background-color: white;
-                overflow: auto;
+                overflow-x: hidden;
+                overflow-y: auto;
                 display: flex;
                 flex-direction: column;
                 width: 100%;

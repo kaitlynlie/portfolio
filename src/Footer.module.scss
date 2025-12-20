@@ -145,3 +145,19 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .footer {
+    height: 2rem;
+    
+    .start button p,
+    .right p {
+      font-size: 0.75rem;
+      line-height: 2rem;
+    }
+
+    img {
+      height: 1rem;
+    }
+  }
+}
