@@ -69,7 +69,7 @@ function App() {
           </button>
         </div>
 
-          <div className={clsx(styles.app)}>
+          {/* <div className={clsx(styles.app)}>
           <button
             onClick={() =>
               openWindow("skills", "Skills", skills, <Skills onClose={() => closeWindow("skills")} />)
@@ -78,7 +78,7 @@ function App() {
             <img src={skills} alt="skills" />
             <p>Skills</p>
           </button>
-        </div>
+        </div> */}
 
           <div className={clsx(styles.app)}>
             <button

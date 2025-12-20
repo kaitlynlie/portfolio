@@ -28,6 +28,18 @@ import undo from "./Undo.png"
 import mailto from "./mailto-icon.webp"
 import me from "./Profile.jpg"
 import welcome from "./welcome.png"
+import systeminfo from "./System Information.png"
+import linkedin from "./linkedin.png"
+import github from "./github.png"
+import cascade from './cascade.webp'
+import properties from "./Properties.png"
+import documents from "./My Documents.png"
+import network from "./My Network Places.png"
+import programs from "./Programs.png"
+import shared from "./Shared Folder.png"
+import react from "./react.svg"
+import typescript from "./typescript.svg"
+import supabase from "./supabase.svg"
 
 export {
     home,
@@ -59,5 +71,17 @@ export {
     undo,
     mailto,
     me,
-    welcome
+    welcome,
+    systeminfo,
+    linkedin,
+    github,
+    cascade,
+    properties,
+    documents,
+    network,
+    programs,
+    shared,
+    react,
+    supabase,
+    typescript,
 }
