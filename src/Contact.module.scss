@@ -9,7 +9,7 @@
         display: flex;
         flex-direction: column;
         @media (max-width: 758px) {
-          position: fixed !important;
+          position: relative !important;
           inset: 0 !important;
 
           width: 100vw !important;
@@ -22,7 +22,8 @@
           border-radius: 0 !important;
 
           transform: none !important;
-          overflow: hidden; /* critical */
+          overflow: hidden; 
+          padding-bottom: env(safe-area-inset-bottom); 
       }
 
         .header {
@@ -313,11 +314,6 @@
           font-size: .7rem;
           background-color: white;
           border-style: solid;
-
-          @media (max-width: 758px) {
-            font-size: 16px;
-            transform: scale(0.7);
-          }
         }
 
         input::placeholder { color: black; }
@@ -365,11 +361,7 @@
           outline: none;
           width: 100%;
           resize: none;
-          overflow: auto;
-
-          @media (max-width: 758px) {
-            font-size: 16px;
-            transform: scale(0.7);          }
+          overflow: auto; /* show scrollbar when content overflows */
         }
 
         p {
