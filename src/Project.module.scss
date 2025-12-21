@@ -6,7 +6,7 @@
         min-width: 400px;
         min-height: 400px;
         font-family: Trebuchet MS pixelated, sans-serif;
-        @media (max-width: 758px) {
+                @media (max-width: 758px) {
           position: fixed !important;
           inset: 0 !important;
 
@@ -20,7 +20,8 @@
           border-radius: 0 !important;
 
           transform: none !important;
-          overflow: hidden; /* critical */
+          overflow: auto;
+          -webkit-overflow-scrolling: touch;
       }
 
         .header {

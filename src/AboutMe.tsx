@@ -203,7 +203,7 @@ const skillData = {
                 </div>
 
                 <div className={clsx(styles.link)}>
-                  <a href="https://www.linkedin.com/in/kaitlynli" target="_blank">
+                  <a href="https://www.linkedin.com/in/kaitlyn-li-0922/" target="_blank">
                       LinkedIn
                   </a>
                 </div>

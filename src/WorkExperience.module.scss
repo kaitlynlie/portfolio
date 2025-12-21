@@ -4,22 +4,23 @@
         width: 560px;
         min-width: 410px;
         height: 300px;
-        @media (max-width: 758px) {
-            position: fixed !important;
-            inset: 0 !important;
+                @media (max-width: 758px) {
+          position: fixed !important;
+          inset: 0 !important;
 
-            width: 100vw !important;
-            height: calc(100svh - 32px) !important;
-            box-sizing: border-box !important;
+          width: 100vw !important;
+          height: calc(100svh - 32px) !important;
 
-            min-width: 0 !important;
-            min-height: 0 !important;
+          min-width: 0 !important;
+          min-height: 0 !important;
 
-            margin: 0 !important;
-            border-radius: 0 !important;
+          margin: 0 !important;
+          border-radius: 0 !important;
 
-            transform: none !important;
-        }
+          transform: none !important;
+          overflow: auto;
+          -webkit-overflow-scrolling: touch;
+      }
         .header {
             display: flex;
             flex-direction: row;

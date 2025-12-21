@@ -17,7 +17,8 @@
           border-radius: 0 !important;
 
           transform: none !important;
-          overflow: hidden; /* critical */
+          overflow: auto;
+          -webkit-overflow-scrolling: touch;
       }
         .header {
             display: flex;
