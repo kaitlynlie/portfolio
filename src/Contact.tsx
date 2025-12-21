@@ -16,7 +16,7 @@ const Contact = ({ onClose }: ContactProps) => {
     startDrag,
     startResize,
   } = useWindowControls({
-    initialPosition: { x: 200, y: 100 },
+    initialPosition: { x: 230, y: 300 },
     initialSize: { width: 300, height: 300 },
     minWidth: 200,
     minHeight: 150,

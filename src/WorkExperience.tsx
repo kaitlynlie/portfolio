@@ -120,7 +120,7 @@ export default function WorkExperience({ onClose }: WorkExperienceProps) {
         <button onClick={() => window.open('https://drive.google.com/file/d/1vnNty9lyedqHmXPbxmWK7rMWGaGfx00V/view?usp=sharing', '_blank', 'noopener noreferrer')}>
           <img src={forward} alt="forward" />
         </button>
-        <span>Go to Resume</span>
+        <span>Resume</span>
       </div>
 
       <div className={clsx(styles.text)}>

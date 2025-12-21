@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from "./Project.module.scss";
 import clsx from "clsx";
-import { cascade, documents, github, network, programs, projects, properties, react, shared, skills, supabase, typescript } from "./assets";
+import { cascade, css, digitalocean, django, documents, flask, github, html, javascript, network, pantry, programs, projects, properties, python, react, roomu, shared, skills, stroke, supabase, ttt, typescript } from "./assets";
 import { useWindowControls } from "./windows";
 import { back, forward, up, search, folderopen, startmenu, go } from "./assets";
 
@@ -17,17 +17,23 @@ export default function Projects({ onClose }: ProjectsProps) {
     startDrag,
     startResize,
   } = useWindowControls({
-    initialPosition: { x: 200, y: 100 },
-    initialSize: { width: 300, height: 300 },
-    minWidth: 200,
-    minHeight: 150,
+    initialPosition: { x: 200, y: 200 },
+    initialSize: { width: 500, height: 600 },
+    minWidth: 600,
+    minHeight: 430,
   });
   
   type roomId = "roomu";
+  type pantryId = "pantry";
+  type strokeId = "stroke";
+  type tttId = "ttt";
 
   type View =
   | { type: "home" }
-  | { type: "roomu"; id: roomId };
+  | { type: "roomu"; id: roomId }
+  | { type: "pantry"; id: pantryId }
+  | { type: "stroke"; id: strokeId }
+  | { type: "ttt"; id: tttId };
   const projectsData = {
     roomu: {
       title: "RoomU",
@@ -38,6 +44,40 @@ export default function Projects({ onClose }: ProjectsProps) {
       { name: "Supabase", icon: supabase },
       ],
       link: "https://aggieworks.org/products/roomu",
+    },
+    pantry: {
+      title: "ASUCD Pantry",
+      description: "A web platform for UC Davis students to order nonperishable items from The Pantry in advance. The Pantry provides accessible food resources to students facing food insecurity, promotes food justice, reduces stigma around seeking assistance, and fosters a supportive campus community.",
+      tech: [
+      { name: "React", icon: react },
+      { name: "Javascript", icon: javascript },
+      { name: "Digital Ocean", icon: digitalocean },
+      { name: "Django", icon: django },
+      ],
+      link: "https://order.thepantry.ucdavis.edu",
+    },
+    stroke: {
+      title: "Stroke Prediction",
+      description: "A stroke prediction model that predicts the likelihood of a person getting a stroke. Final project for ECS 171: Machine Learning.",
+      tech: [
+      { name: "Python", icon: python },
+      { name: "Flask", icon: flask },
+      { name: "HTML", icon: html },
+      { name: "CSS", icon: css },
+      ],
+      link: "https://github.com/kaitlynlie/strokeprediction",
+    },
+    ttt: {
+      title: "Talk to Text",
+      description: "A website that allows students to upload their lecture recordings for automatic summarization and key point extraction with customizable features.",
+      tech: [
+      { name: "Python", icon: python },
+      { name: "Flask", icon: flask },
+      { name: "HTML", icon: html },
+      { name: "CSS", icon: css },
+      { name: "Digital Ocean", icon: digitalocean },
+      ],
+      link: "https://github.com/kaitlynlie/talktotext",
     },
   };
 
@@ -251,8 +291,32 @@ export default function Projects({ onClose }: ProjectsProps) {
                 className={styles.item}
                 onClick={() => navigateTo({ type: "roomu", id: "roomu" })}
               >
-                <img src={skills} alt="RoomU" />
+                <img src={roomu} alt="RoomU" />
                 <p>RoomU</p>
+              </div>
+
+              <div
+                className={styles.item}
+                onClick={() => navigateTo({ type: "pantry", id: "pantry" })}
+              >
+                <img src={pantry} alt="Pantry" />
+                <p>Pantry</p>
+              </div>
+
+              <div
+                className={styles.item}
+                onClick={() => navigateTo({ type: "stroke", id: "stroke" })}
+              >
+                <img src={stroke} alt="Stroke" />
+                <p>Stroke Prediction</p>
+              </div>
+
+              <div
+                className={styles.item}
+                onClick={() => navigateTo({ type: "ttt", id: "ttt" })}
+              >
+                <img src={ttt} alt="Stroke" />
+                <p>Talk to Text</p>
               </div>
 
       </div>
@@ -277,6 +341,72 @@ export default function Projects({ onClose }: ProjectsProps) {
 
       <div className={styles.projectLinks}>
         <a href={projectsData[currentView.id].link} target="_blank">Live Site</a>
+      </div>
+    </div>
+  )}
+
+    {currentView.type === "pantry" && (
+    <div className={styles.project}>
+      <h2>{projectsData[currentView.id].title}</h2>
+      <p>{projectsData[currentView.id].description}</p>
+
+      <div className={styles.groupbox}>
+        <ul>
+          {projectsData[currentView.id].tech.map((tech) => (
+            <li key={tech.name} className={styles.techItem}>
+              <img src={tech.icon} alt={tech.name} />
+              <span>{tech.name}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <div className={styles.projectLinks}>
+        <a href={projectsData[currentView.id].link} target="_blank">Live Site</a>
+      </div>
+    </div>
+  )}
+
+  {currentView.type === "stroke" && (
+    <div className={styles.project}>
+      <h2>{projectsData[currentView.id].title}</h2>
+      <p>{projectsData[currentView.id].description}</p>
+
+      <div className={styles.groupbox}>
+        <ul>
+          {projectsData[currentView.id].tech.map((tech) => (
+            <li key={tech.name} className={styles.techItem}>
+              <img src={tech.icon} alt={tech.name} />
+              <span>{tech.name}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <div className={styles.projectLinks}>
+        <a href={projectsData[currentView.id].link} target="_blank">Github Link</a>
+      </div>
+    </div>
+  )}
+
+  {currentView.type === "ttt" && (
+    <div className={styles.project}>
+      <h2>{projectsData[currentView.id].title}</h2>
+      <p>{projectsData[currentView.id].description}</p>
+
+      <div className={styles.groupbox}>
+        <ul>
+          {projectsData[currentView.id].tech.map((tech) => (
+            <li key={tech.name} className={styles.techItem}>
+              <img src={tech.icon} alt={tech.name} />
+              <span>{tech.name}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <div className={styles.projectLinks}>
+        <a href={projectsData[currentView.id].link} target="_blank">Github Link</a>
       </div>
     </div>
   )}

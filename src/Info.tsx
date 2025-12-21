@@ -15,7 +15,7 @@ export default function Info({ onClose }: InfoProps) {
     startDrag,
     startResize,
   } = useWindowControls({
-    initialPosition: { x: 200, y: 100 },
+    initialPosition: { x: 120, y: 800 },
     initialSize: { width: 300, height: 300 },
     minWidth: 200,
     minHeight: 150,

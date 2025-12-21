@@ -40,6 +40,17 @@ import shared from "./Shared Folder.png"
 import react from "./react.svg"
 import typescript from "./typescript.svg"
 import supabase from "./supabase.svg"
+import javascript from "./javascript.svg"
+import django from "./django.svg"
+import digitalocean from "./do.svg"
+import html from "./html.svg"
+import flask from "./flask.svg"
+import python from "./python.svg"
+import css from "./css.svg"
+import roomu from "./roomu.png"
+import pantry from "./pantry.png"
+import ttt from "./ttt.png"
+import stroke from "./stroke.png"
 
 export {
     home,
@@ -84,4 +95,15 @@ export {
     react,
     supabase,
     typescript,
+    javascript,
+    django,
+    digitalocean,
+    html,
+    flask,
+    python,
+    css,
+    roomu,
+    pantry,
+    ttt,
+    stroke,
 }
