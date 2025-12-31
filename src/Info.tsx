@@ -66,9 +66,10 @@ export default function Info({ onClose }: InfoProps) {
             <p>Inspired by Windows XP</p>
             <p>Built with React, TypeScript, SCSS</p>
             <p>Icons from @marchmountain on Deviant Art</p>
-            <p>Background audio from Emily is Away</p>
+            {/* <p>Background audio from Emily is Away</p> */}
             <br />
             <p>This is still a work in progress! If you find any bugs or have any suggestions, please let me know :)</p>
+            <p>Last updated: Dec 2025</p>
             <br />
             <p>© 2025 Kaitlyn Li</p>
         </div>

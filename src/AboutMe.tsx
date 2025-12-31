@@ -120,7 +120,7 @@ const skillData = {
                 <p>Computer: </p>
                 <ul>
                   <li>Brain: Pattern-Seeker 3.2GHz</li>
-                  <li>RAM: 10,000 ideas (constantly swapping)</li>
+                  <li>RAM: 10,000 ideas</li>
                   <li>GPU: Imagination v2.5</li>
                 </ul>
               </div>

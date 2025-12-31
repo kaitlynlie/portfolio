@@ -141,7 +141,7 @@ export default function Projects({ onClose }: ProjectsProps) {
           <div className={clsx(styles.leftdirections)}>
             <div className={clsx(styles.back, !canGoBack && styles.disabled)} onClick={goBack}>
               <img src={back} alt="back" />
-              <p>Back</p>
+              <a>Back</a>
               <div className={clsx(styles.triangle)} />
             </div>
 
@@ -191,10 +191,10 @@ export default function Projects({ onClose }: ProjectsProps) {
             <img src={go} alt="go" />
           </div>
         </div>
-        <button onClick={() => window.open('https://drive.google.com/file/d/1vnNty9lyedqHmXPbxmWK7rMWGaGfx00V/view?usp=sharing', '_blank', 'noopener noreferrer')}>
+        <button onClick={() => window.open('https://github.com/kaitlynlie/', '_blank', 'noopener noreferrer')}>
           <img src={forward} alt="forward" />
         </button>
-        <span>Go</span>
+        <span>Github</span>
       </div>
 
       <div className={clsx(styles.body)}>
@@ -273,7 +273,7 @@ export default function Projects({ onClose }: ProjectsProps) {
             <div className={clsx(styles.task)}>
               <div className={clsx(styles.text)}>
                 <img src={github} alt="github" className={clsx(styles.github)} />
-                <p>Github</p>
+                <a onClick={() => window.open('https://github.com/kaitlynlie/', '_blank', 'noopener noreferrer')}>Github</a>
               </div>
             </div>
 

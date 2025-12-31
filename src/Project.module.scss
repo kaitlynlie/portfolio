@@ -153,12 +153,13 @@
                     border-radius: .125rem;
                     border-width: 1px;
                     height: 2rem;
+                    cursor: pointer;
                     img {
                         width: 1.25rem;
                         height: 1.25rem;
                         margin-right: .25rem;
                     }
-                    p {
+                    p, a {
                         font-family: Tahoma, sans-serif;
                         font-size: 11px;
                         font-weight: 400;
@@ -384,11 +385,15 @@
                             display: flex;
                             flex-direction: row;
                             align-items: center;
-                            p {
+                            p, a {
                                 font-size: .65rem;
                                 font-weight: 300;
                                 margin: 0;
                                 font-family: Tahoma, sans-serif;
+                            }
+
+                            a {
+                                cursor: pointer;
                             }
 
                             .github {
@@ -447,6 +452,7 @@
                             gap: .625rem;
                             align-items: center;
                             display: flex;
+                            cursor: pointer;
                             filter: drop-shadow(blue 0px 0px);
                             img {
                                 //opacity: 0.5;
