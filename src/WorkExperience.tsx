@@ -16,7 +16,7 @@ export default function WorkExperience({ onClose }: WorkExperienceProps) {
     startDrag,
     startResize,
   } = useWindowControls({
-    initialPosition: { x: 200, y: 100 },
+    initialPosition: { x: 100, y: 100 },
     initialSize: { width: 300, height: 300 },
     minWidth: 200,
     minHeight: 150,

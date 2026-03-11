@@ -17,7 +17,7 @@ export default function Projects({ onClose }: ProjectsProps) {
     startDrag,
     startResize,
   } = useWindowControls({
-    initialPosition: { x: 200, y: 200 },
+    initialPosition: { x: 20, y: 0 },
     initialSize: { width: 500, height: 600 },
     minWidth: 600,
     minHeight: 430,
@@ -283,7 +283,7 @@ export default function Projects({ onClose }: ProjectsProps) {
         <div className={clsx(styles.details)}>
         {currentView.type === "home" && (
           <div className={styles.websites}>
-            <h2>Websites</h2>
+            <h2>Projects</h2>
             <div className={styles.line} />
 
             <div className={styles.items}>

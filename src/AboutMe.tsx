@@ -26,7 +26,7 @@ const skillData = {
     startDrag,
     startResize,
   } = useWindowControls({
-    initialPosition: { x: 180, y: 300 },
+    initialPosition: { x: 180, y: 60 },
     initialSize: { width: 300, height: 300 },
     minWidth: 200,
     minHeight: 150,
