@@ -69,9 +69,9 @@ export default function Info({ onClose }: InfoProps) {
             {/* <p>Background audio from Emily is Away</p> */}
             <br />
             <p>This is still a work in progress! If you find any bugs or have any suggestions, please let me know :)</p>
-            <p>Last updated: Dec 2025</p>
+            <p>Last updated: Mar 2026</p>
             <br />
-            <p>© 2025 Kaitlyn Li</p>
+            <p>© 2026 Kaitlyn Li</p>
         </div>
 
       {/* right edge */}

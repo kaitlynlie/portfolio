@@ -104,24 +104,24 @@ const skillData = {
               <div className={clsx(styles.info)}>
                 <p>System: </p>
                 <ul>
-                  <li>Kaitlyn OS v10.25</li>
+                  <li>Kaitlyn OS v10.26</li>
                   <li>Professional</li>
-                  <li>Version 2025</li>
+                  <li>Version 2026</li>
                   <li>Service Pack</li>
                 </ul>
 
                 <p>Registered to: </p>
                 <ul>
                   <li>Kaitlyn Li</li>
-                  <li>Technical Support/Web Developer</li>
-                  <li>55274-640-0000356-23XXX</li>
+                  <li>Support/Web</li>
+                  <li>55274-640-0000356-26XXX</li>
                 </ul>
                 
                 <p>Computer: </p>
                 <ul>
-                  <li>Brain: Pattern-Seeker 3.2GHz</li>
-                  <li>RAM: 10,000 ideas</li>
-                  <li>GPU: Imagination v2.5</li>
+                  <li>Brain: 2 cells</li>
+                  <li>RAM: 10 ideas</li>
+                  <li>GPU: Imagination v6</li>
                 </ul>
               </div>
             </div>

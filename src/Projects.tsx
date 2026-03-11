@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from "./Project.module.scss";
 import clsx from "clsx";
-import { cascade, css, digitalocean, django, documents, flask, github, html, javascript, network, pantry, programs, projects, properties, python, react, roomu, shared, skills, stroke, supabase, ttt, typescript } from "./assets";
+import { cafestop, cascade, css, digitalocean, django, documents, flask, github, html, javascript, network, pantry, programs, projects, properties, python, react, roomu, shared, skills, stroke, supabase, ttt, typescript } from "./assets";
 import { useWindowControls } from "./windows";
 import { back, forward, up, search, folderopen, startmenu, go } from "./assets";
 
@@ -17,7 +17,7 @@ export default function Projects({ onClose }: ProjectsProps) {
     startDrag,
     startResize,
   } = useWindowControls({
-    initialPosition: { x: 20, y: 0 },
+    initialPosition: { x: 120, y: 0 },
     initialSize: { width: 500, height: 600 },
     minWidth: 600,
     minHeight: 430,
@@ -27,13 +27,16 @@ export default function Projects({ onClose }: ProjectsProps) {
   type pantryId = "pantry";
   type strokeId = "stroke";
   type tttId = "ttt";
+  type cafestopId = "cafestop";
 
   type View =
   | { type: "home" }
   | { type: "roomu"; id: roomId }
   | { type: "pantry"; id: pantryId }
   | { type: "stroke"; id: strokeId }
-  | { type: "ttt"; id: tttId };
+  | { type: "ttt"; id: tttId }
+  | { type: "cafestop"; id: cafestopId };
+
   const projectsData = {
     roomu: {
       title: "RoomU",
@@ -77,7 +80,18 @@ export default function Projects({ onClose }: ProjectsProps) {
       { name: "CSS", icon: css },
       { name: "Digital Ocean", icon: digitalocean },
       ],
+      live: "https://speechtotext-kappa.vercel.app",
       link: "https://github.com/kaitlynlie/talktotext",
+    },
+    cafestop: {
+      title: "CafeStop",
+      description: "A virtual café for focus and productivity, with a Pomodoro timer and ambient café sounds.",
+      tech: [
+      { name: "React", icon: react },
+      { name: "TypeScript", icon: typescript },
+      ],
+      live: "https://cafestop-nine.vercel.app",
+      link: "https://github.com/kaitlynlie/cafestop",
     },
   };
 
@@ -185,7 +199,12 @@ export default function Projects({ onClose }: ProjectsProps) {
         <div className={clsx(styles.addressbar)}>
           <div className={clsx(styles.leftaddress)}>
             <img src={projects} alt="projects" />
-            <p> Projects </p>
+            <p>
+              Projects
+              {currentView.type !== "home" && (
+                <span> / {projectsData[currentView.id].title}</span>
+              )}
+            </p>
           </div>
           <div className={clsx(styles.rightaddress)}>
             <img src={go} alt="go" />
@@ -319,115 +338,145 @@ export default function Projects({ onClose }: ProjectsProps) {
                 <p>Talk to Text</p>
               </div>
 
+              <div
+                className={styles.item}
+                onClick={() => navigateTo({ type: "cafestop", id: "cafestop" })}
+              >
+                <img src={cafestop} alt="CafeStop" />
+                <p>CafeStop</p>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {currentView.type === "roomu" && (
+          <div className={styles.project}>
+            <h2>{projectsData[currentView.id].title}</h2>
+            <p>{projectsData[currentView.id].description}</p>
+
+            <div className={styles.groupbox}>
+              <ul>
+                {projectsData[currentView.id].tech.map((tech) => (
+                  <li key={tech.name} className={styles.techItem}>
+                    <img src={tech.icon} alt={tech.name} />
+                    <span>{tech.name}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className={styles.projectLinks}>
+              <a href={projectsData[currentView.id].link} target="_blank">Live Site</a>
+            </div>
+          </div>
+        )}
+
+        {currentView.type === "pantry" && (
+          <div className={styles.project}>
+            <h2>{projectsData[currentView.id].title}</h2>
+            <p>{projectsData[currentView.id].description}</p>
+
+            <div className={styles.groupbox}>
+              <ul>
+                {projectsData[currentView.id].tech.map((tech) => (
+                  <li key={tech.name} className={styles.techItem}>
+                    <img src={tech.icon} alt={tech.name} />
+                    <span>{tech.name}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className={styles.projectLinks}>
+              <a href={projectsData[currentView.id].link} target="_blank">Live Site</a>
+            </div>
+          </div>
+        )}
+
+        {currentView.type === "stroke" && (
+          <div className={styles.project}>
+            <h2>{projectsData[currentView.id].title}</h2>
+            <p>{projectsData[currentView.id].description}</p>
+
+            <div className={styles.groupbox}>
+              <ul>
+                {projectsData[currentView.id].tech.map((tech) => (
+                  <li key={tech.name} className={styles.techItem}>
+                    <img src={tech.icon} alt={tech.name} />
+                    <span>{tech.name}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className={styles.projectLinks}>
+              <a href={projectsData[currentView.id].link} target="_blank">Github Link</a>
+            </div>
+          </div>
+        )}
+
+        {currentView.type === "ttt" && (
+          <div className={styles.project}>
+            <h2>{projectsData[currentView.id].title}</h2>
+            <p>{projectsData[currentView.id].description}</p>
+
+            <div className={styles.groupbox}>
+              <ul>
+                {projectsData[currentView.id].tech.map((tech) => (
+                  <li key={tech.name} className={styles.techItem}>
+                    <img src={tech.icon} alt={tech.name} />
+                    <span>{tech.name}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className={styles.projectLinks}>
+              <a href={projectsData[currentView.id].live} target="_blank">Live Site</a>
+              <a href={projectsData[currentView.id].link} target="_blank">Github Link</a>
+            </div>
+          </div>
+        )}
+
+        {currentView.type === "cafestop" && (
+          <div className={styles.project}>
+            <h2>{projectsData[currentView.id].title}</h2>
+            <p>{projectsData[currentView.id].description}</p>
+
+            <div className={styles.groupbox}>
+              <ul>
+                {projectsData[currentView.id].tech.map((tech) => (
+                  <li key={tech.name} className={styles.techItem}>
+                    <img src={tech.icon} alt={tech.name} />
+                    <span>{tech.name}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className={styles.projectLinks}>
+              <a href={projectsData[currentView.id].live} target="_blank">Live Site</a>
+              <a href={projectsData[currentView.id].link} target="_blank">Github Link</a>
+            </div>
+          </div>
+        )}
       </div>
     </div>
-  )}
 
-  {currentView.type === "roomu" && (
-    <div className={styles.project}>
-      <h2>{projectsData[currentView.id].title}</h2>
-      <p>{projectsData[currentView.id].description}</p>
+    <div
+      className={clsx(styles.resizeHandle, styles.right)}
+      onMouseDown={(e) => startResize(e, "right")}
+    />
 
-      <div className={styles.groupbox}>
-        <ul>
-          {projectsData[currentView.id].tech.map((tech) => (
-            <li key={tech.name} className={styles.techItem}>
-              <img src={tech.icon} alt={tech.name} />
-              <span>{tech.name}</span>
-            </li>
-          ))}
-        </ul>
-      </div>
+    <div
+      className={clsx(styles.resizeHandle, styles.bottom)}
+      onMouseDown={(e) => startResize(e, "bottom")}
+    />
 
-      <div className={styles.projectLinks}>
-        <a href={projectsData[currentView.id].link} target="_blank">Live Site</a>
-      </div>
-    </div>
-  )}
-
-    {currentView.type === "pantry" && (
-    <div className={styles.project}>
-      <h2>{projectsData[currentView.id].title}</h2>
-      <p>{projectsData[currentView.id].description}</p>
-
-      <div className={styles.groupbox}>
-        <ul>
-          {projectsData[currentView.id].tech.map((tech) => (
-            <li key={tech.name} className={styles.techItem}>
-              <img src={tech.icon} alt={tech.name} />
-              <span>{tech.name}</span>
-            </li>
-          ))}
-        </ul>
-      </div>
-
-      <div className={styles.projectLinks}>
-        <a href={projectsData[currentView.id].link} target="_blank">Live Site</a>
-      </div>
-    </div>
-  )}
-
-  {currentView.type === "stroke" && (
-    <div className={styles.project}>
-      <h2>{projectsData[currentView.id].title}</h2>
-      <p>{projectsData[currentView.id].description}</p>
-
-      <div className={styles.groupbox}>
-        <ul>
-          {projectsData[currentView.id].tech.map((tech) => (
-            <li key={tech.name} className={styles.techItem}>
-              <img src={tech.icon} alt={tech.name} />
-              <span>{tech.name}</span>
-            </li>
-          ))}
-        </ul>
-      </div>
-
-      <div className={styles.projectLinks}>
-        <a href={projectsData[currentView.id].link} target="_blank">Github Link</a>
-      </div>
-    </div>
-  )}
-
-  {currentView.type === "ttt" && (
-    <div className={styles.project}>
-      <h2>{projectsData[currentView.id].title}</h2>
-      <p>{projectsData[currentView.id].description}</p>
-
-      <div className={styles.groupbox}>
-        <ul>
-          {projectsData[currentView.id].tech.map((tech) => (
-            <li key={tech.name} className={styles.techItem}>
-              <img src={tech.icon} alt={tech.name} />
-              <span>{tech.name}</span>
-            </li>
-          ))}
-        </ul>
-      </div>
-
-      <div className={styles.projectLinks}>
-        <a href={projectsData[currentView.id].link} target="_blank">Github Link</a>
-      </div>
-    </div>
-  )}
-</div>
-
-      </div>
-
-      <div
-        className={clsx(styles.resizeHandle, styles.right)}
-        onMouseDown={(e) => startResize(e, "right")}
-      />
-
-      <div
-        className={clsx(styles.resizeHandle, styles.bottom)}
-        onMouseDown={(e) => startResize(e, "bottom")}
-      />
-
-      <div
-        className={clsx(styles.resizeHandle, styles.corner)}
-        onMouseDown={(e) => startResize(e, "corner")}
-      />
-    </div>
+    <div
+      className={clsx(styles.resizeHandle, styles.corner)}
+      onMouseDown={(e) => startResize(e, "corner")}
+    />
+  </div>
   );
 };

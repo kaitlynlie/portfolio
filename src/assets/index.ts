@@ -51,6 +51,7 @@ import roomu from "./roomu.png"
 import pantry from "./pantry.png"
 import ttt from "./ttt.png"
 import stroke from "./stroke.png"
+import cafestop from "./cafestop.png"
 
 export {
     home,
@@ -106,4 +107,5 @@ export {
     pantry,
     ttt,
     stroke,
+    cafestop
 }
