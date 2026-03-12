@@ -55,6 +55,12 @@ import cafestop from "./cafestop.png"
 import greentriangle from "./greentriangle.png"
 import logout from "./Logout.png"
 import power from "./Power.png"
+import roomumock from "./roomumock.svg"
+import pantrymock from "./pantrymock.png"
+import tttmock from "./tttmock.png"
+import cafestopmock from "./cafestopmock.png"
+import aoxamockup from "./aoxamockup.png"
+import aoxa from "./aoxa.png"
 
 export {
     home,
@@ -113,5 +119,11 @@ export {
     cafestop,
     greentriangle,
     power,
-    logout
+    logout,
+    roomumock,
+    pantrymock,
+    tttmock,
+    cafestopmock,
+    aoxamockup,
+    aoxa
 }

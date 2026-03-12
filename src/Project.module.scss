@@ -421,57 +421,59 @@
                 height: calc(100% + 1.1rem);
                 .websites {
                     margin-bottom: .75rem;
-                    position: relative;
-    
-                    h2 {
-                        font-weight: 600;
-                        font-size: .8rem;
-                        padding-left: .5rem;
-                        padding-right: .75rem;
-                        color: black;
-                    }
-                    .line {
-                        background-image: linear-gradient(to right, #93c5fd 0%, #fff 100%);
-                        width: 20rem;
-                        height: 1px;
-                        top: 2.15rem;
-                        left: -12px;
-                        position: absolute;
-                    }
-                    .items {
-                        padding-top: .75rem;
-                        padding-bottom: .75rem;
-                        gap: .5rem;
-                        flex-wrap: wrap;
-                        width: 100%;
-                        display: grid; 
-                        grid-template-columns: repeat(3, minmax(0, 1fr));
-                        @media (max-width: 520px) {
-                            grid-template-columns: repeat(2, minmax(0, 1fr));
+                    .section {
+                        position: relative;
+                        margin-bottom: 1.25rem;
+                        h2 {
+                            font-weight: 600;
+                            font-size: .8rem;
+                            padding-left: .5rem;
+                            padding-right: .75rem;
+                            color: black;
                         }
-                        @media (max-width: 400px) {
-                            grid-template-columns: repeat(1, minmax(0, 1fr));
+                        .line {
+                            background-image: linear-gradient(to right, #93c5fd 0%, #fff 100%);
+                            width: 20rem;
+                            height: 1px;
+                            top: 2.15rem;
+                            left: -12px;
+                            position: static; 
                         }
-                        flex-direction: row;
-                        .item {
-                            padding-bottom: .5rem;
-                            padding-left: 1rem;
-                            padding-right: 1rem;
-                            gap: .625rem;
-                            align-items: center;
-                            display: flex;
-                            cursor: pointer;
-                            filter: drop-shadow(blue 0px 0px);
-                            img {
-                                //opacity: 0.5;
-                                width: 2.5rem;
-                                height: 2.5rem;
+                        .items {
+                            padding-top: .75rem;
+                            padding-bottom: .75rem;
+                            gap: .5rem;
+                            flex-wrap: wrap;
+                            width: 100%;
+                            display: grid; 
+                            grid-template-columns: repeat(3, minmax(0, 1fr));
+                            @media (max-width: 520px) {
+                                grid-template-columns: repeat(2, minmax(0, 1fr));
                             }
-                            p {
-                                font-weight: 500;
-                                font-size: .7rem;
-                                color: black;
-                                font-family: Tahoma, sans-serif;
+                            @media (max-width: 400px) {
+                                grid-template-columns: repeat(1, minmax(0, 1fr));
+                            }
+                            flex-direction: row;
+                            .item {
+                                padding-bottom: .5rem;
+                                padding-left: 1rem;
+                                padding-right: 1rem;
+                                gap: .625rem;
+                                align-items: center;
+                                display: flex;
+                                cursor: pointer;
+                                filter: drop-shadow(blue 0px 0px);
+                                img {
+                                    //opacity: 0.5;
+                                    width: 2.5rem;
+                                    height: 2.5rem;
+                                }
+                                p {
+                                    font-weight: 500;
+                                    font-size: .7rem;
+                                    color: black;
+                                    font-family: Tahoma, sans-serif;
+                                }
                             }
                         }
                     }
@@ -516,6 +518,12 @@
                         font-size: .75rem;
                         margin-top: .25rem;
                     }
+                }
+            }
+            .projectImage {
+                width: 400px;
+                img {
+                    width: 100%;
                 }
             }
             .projectLinks {

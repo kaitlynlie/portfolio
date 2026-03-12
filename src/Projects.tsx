@@ -1,9 +1,9 @@
 import { useState } from "react";
 import styles from "./Project.module.scss";
 import clsx from "clsx";
-import { cafestop, cascade, css, digitalocean, django, documents, flask, github, html, javascript, network, pantry, programs, projects, properties, python, react, roomu, shared, skills, stroke, supabase, ttt, typescript } from "./assets";
+import { aoxa, aoxamockup, cafestop, cascade, css, digitalocean, django, documents, flask, github, html, javascript, network, pantry, programs, projects, properties, python, react, roomu, shared, skills, stroke, supabase, ttt, typescript } from "./assets";
 import { useWindowControls } from "./windows";
-import { back, forward, up, search, folderopen, startmenu, go } from "./assets";
+import { back, forward, up, search, folderopen, startmenu, go, roomumock, pantrymock, tttmock, cafestopmock } from "./assets";
 
 interface ProjectsProps {
   onClose: () => void;
@@ -28,6 +28,7 @@ export default function Projects({ onClose }: ProjectsProps) {
   type strokeId = "stroke";
   type tttId = "ttt";
   type cafestopId = "cafestop";
+  type aoxaId = "aoxa";
 
   type View =
   | { type: "home" }
@@ -35,10 +36,12 @@ export default function Projects({ onClose }: ProjectsProps) {
   | { type: "pantry"; id: pantryId }
   | { type: "stroke"; id: strokeId }
   | { type: "ttt"; id: tttId }
-  | { type: "cafestop"; id: cafestopId };
+  | { type: "cafestop"; id: cafestopId }
+  | { type: "aoxa", id: aoxaId };
 
   const projectsData = {
     roomu: {
+      category: "projects",
       title: "RoomU",
       description: "A roommate matching app for students at UC Davis. Built with my team at AggieWorks.",
       tech: [
@@ -46,9 +49,11 @@ export default function Projects({ onClose }: ProjectsProps) {
       { name: "TypeScript", icon: typescript },
       { name: "Supabase", icon: supabase },
       ],
+      image: roomumock,
       link: "https://roomu.aggieworks.org",
     },
     pantry: {
+      category: "projects",
       title: "ASUCD Pantry",
       description: "A web platform for UC Davis students to order nonperishable items from The Pantry in advance. The Pantry provides accessible food resources to students facing food insecurity, promotes food justice, reduces stigma around seeking assistance, and fosters a supportive campus community.",
       tech: [
@@ -57,9 +62,11 @@ export default function Projects({ onClose }: ProjectsProps) {
       { name: "Digital Ocean", icon: digitalocean },
       { name: "Django", icon: django },
       ],
+      image: pantrymock,
       link: "https://order.thepantry.ucdavis.edu",
     },
     stroke: {
+      category: "projects",
       title: "Stroke Prediction",
       description: "A stroke prediction model that predicts the likelihood of a person getting a stroke. Final project for ECS 171: Machine Learning.",
       tech: [
@@ -71,6 +78,7 @@ export default function Projects({ onClose }: ProjectsProps) {
       link: "https://github.com/kaitlynlie/strokeprediction",
     },
     ttt: {
+      category: "projects",
       title: "Talk to Text",
       description: "A website that allows students to upload their lecture recordings for automatic summarization and key point extraction with customizable features.",
       tech: [
@@ -80,18 +88,32 @@ export default function Projects({ onClose }: ProjectsProps) {
       { name: "CSS", icon: css },
       { name: "Digital Ocean", icon: digitalocean },
       ],
+      image: tttmock,
       live: "https://speechtotext-kappa.vercel.app",
       link: "https://github.com/kaitlynlie/talktotext",
     },
     cafestop: {
+      category: "fun",
       title: "CafeStop",
       description: "A virtual café for focus and productivity, with a Pomodoro timer and ambient café sounds.",
       tech: [
       { name: "React", icon: react },
       { name: "TypeScript", icon: typescript },
       ],
+      image: cafestopmock,
       live: "https://cafestop-nine.vercel.app",
       link: "https://github.com/kaitlynlie/cafestop",
+    },
+    aoxa: { 
+      category: "freelance",
+      title: "Aoxa",
+      description: "Frontend mockup for a website to book local experts for home, office, or personal needs.",
+      // tech: [
+      // { name: "React", icon: react },
+      // { name: "TypeScript", icon: typescript },
+      // ],
+      image: aoxamockup,
+      live: "https://aoxa.webflow.io",
     },
   };
 
@@ -302,48 +324,71 @@ export default function Projects({ onClose }: ProjectsProps) {
         <div className={clsx(styles.details)}>
         {currentView.type === "home" && (
           <div className={styles.websites}>
+
+            <div className={styles.section}>
             <h2>Projects</h2>
-            <div className={styles.line} />
+              <div className={styles.line} />
 
-            <div className={styles.items}>
-              <div
-                className={styles.item}
-                onClick={() => navigateTo({ type: "roomu", id: "roomu" })}
-              >
-                <img src={roomu} alt="RoomU" />
-                <p>RoomU</p>
+              <div className={styles.items}>
+                <div
+                  className={styles.item}
+                  onClick={() => navigateTo({ type: "roomu", id: "roomu" })}
+                >
+                  <img src={roomu} alt="RoomU" />
+                  <p>RoomU</p>
+                </div>
+
+                <div
+                  className={styles.item}
+                  onClick={() => navigateTo({ type: "pantry", id: "pantry" })}
+                >
+                  <img src={pantry} alt="Pantry" />
+                  <p>Pantry</p>
+                </div>
+
+                <div
+                  className={styles.item}
+                  onClick={() => navigateTo({ type: "stroke", id: "stroke" })}
+                >
+                  <img src={stroke} alt="Stroke" />
+                  <p>Stroke Prediction</p>
+                </div>
+
+                <div
+                  className={styles.item}
+                  onClick={() => navigateTo({ type: "ttt", id: "ttt" })}
+                >
+                  <img src={ttt} alt="Stroke" />
+                  <p>Talk to Text</p>
+                </div>
               </div>
+            </div>
 
-              <div
-                className={styles.item}
-                onClick={() => navigateTo({ type: "pantry", id: "pantry" })}
-              >
-                <img src={pantry} alt="Pantry" />
-                <p>Pantry</p>
+            <div className={styles.section}>
+              <h2>Freelance Mockups</h2>
+              <div className={styles.line} />
+              <div className={styles.items}>
+                <div
+                  className={styles.item}
+                  onClick={() => navigateTo({ type: "aoxa", id: "aoxa" })}
+                >
+                  <img src={aoxa} alt="Aoxa" />
+                  <p>Aoxa</p>
+                </div>
               </div>
+            </div>
 
-              <div
-                className={styles.item}
-                onClick={() => navigateTo({ type: "stroke", id: "stroke" })}
-              >
-                <img src={stroke} alt="Stroke" />
-                <p>Stroke Prediction</p>
-              </div>
-
-              <div
-                className={styles.item}
-                onClick={() => navigateTo({ type: "ttt", id: "ttt" })}
-              >
-                <img src={ttt} alt="Stroke" />
-                <p>Talk to Text</p>
-              </div>
-
-              <div
-                className={styles.item}
-                onClick={() => navigateTo({ type: "cafestop", id: "cafestop" })}
-              >
-                <img src={cafestop} alt="CafeStop" />
-                <p>CafeStop</p>
+            <div className={styles.section}>
+              <h2>Just for Fun</h2>
+              <div className={styles.line} />
+              <div className={styles.items}>
+                <div
+                  className={styles.item}
+                  onClick={() => navigateTo({ type: "cafestop", id: "cafestop" })}
+                >
+                  <img src={cafestop} alt="CafeStop" />
+                  <p>CafeStop</p>
+                </div>
               </div>
             </div>
           </div>
@@ -363,6 +408,10 @@ export default function Projects({ onClose }: ProjectsProps) {
                   </li>
                 ))}
               </ul>
+            </div>
+
+            <div className={styles.projectImage}>
+              <img src={projectsData[currentView.id].image} alt={projectsData[currentView.id].title} />
             </div>
 
             <div className={styles.projectLinks}>
@@ -386,6 +435,10 @@ export default function Projects({ onClose }: ProjectsProps) {
                 ))}
               </ul>
             </div>
+
+            {/* <div className={styles.projectImage}>
+              <img src={projectsData[currentView.id].image} alt={projectsData[currentView.id].title} />
+            </div> */}
 
             <div className={styles.projectLinks}>
               <a href={projectsData[currentView.id].link} target="_blank">Live Site</a>
@@ -431,6 +484,10 @@ export default function Projects({ onClose }: ProjectsProps) {
               </ul>
             </div>
 
+            <div className={styles.projectImage}>
+              <img src={projectsData[currentView.id].image} alt={projectsData[currentView.id].title} />
+            </div>
+
             <div className={styles.projectLinks}>
               <a href={projectsData[currentView.id].live} target="_blank">Live Site</a>
               <a href={projectsData[currentView.id].link} target="_blank">Github Link</a>
@@ -454,9 +511,40 @@ export default function Projects({ onClose }: ProjectsProps) {
               </ul>
             </div>
 
+            <div className={styles.projectImage}>
+              <img src={projectsData[currentView.id].image} alt={projectsData[currentView.id].title} />
+            </div>
+
             <div className={styles.projectLinks}>
               <a href={projectsData[currentView.id].live} target="_blank">Live Site</a>
               <a href={projectsData[currentView.id].link} target="_blank">Github Link</a>
+            </div>
+          </div>
+        )}
+
+        {currentView.type === "aoxa" && (
+          <div className={styles.project}>
+            <h2>{projectsData[currentView.id].title}</h2>
+            <p>{projectsData[currentView.id].description}</p>
+
+            {/* <div className={styles.groupbox}>
+              <ul>
+                {projectsData[currentView.id].tech.map((tech) => (
+                  <li key={tech.name} className={styles.techItem}>
+                    <img src={tech.icon} alt={tech.name} />
+                    <span>{tech.name}</span>
+                  </li>
+                ))}
+              </ul>
+            </div> */}
+
+            <div className={styles.projectImage}>
+              <img src={projectsData[currentView.id].image} alt={projectsData[currentView.id].title} />
+            </div>
+
+            <div className={styles.projectLinks}>
+              <a href={projectsData[currentView.id].live} target="_blank">Live Site</a>
+              {/* <a href={projectsData[currentView.id].link} target="_blank">Github Link</a> */}
             </div>
           </div>
         )}
