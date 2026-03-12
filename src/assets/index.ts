@@ -1,42 +1,42 @@
 import home from './home.jpg'
-import briefcase from './briefcase.png'
-import mail from './mail.png'
-import windowsxp from './windowsxp.png'
-import volume from './volume.png'
-import skills from './skills.png'
-import projects from './projects.png'
-import aboutme from './aboutme.png'
-import info from './info.png'
-import back from "./Back.png"
-import forward from "./Forward.png"
-import folderopen from "./Folder Opened.png"
-import search from "./Search.png"
-import startmenu from "./Start Menu Programs.png"
-import up from "./Up.png"
-import book from "./Address Book.png"
-import go from "./Setup task.png"
-import send from "./OE Send.png"
-import sign from "./OE Sign.png"
-import reply from "./OE Reply.png"
-import replyall from "./OE Reply All.png"
-import forwardemail from "./OE Forward.png"
-import attach from "./OE Attach.png"
-import copy from "./Copy.png"
-import paste from "./Paste.png"
-import cut from "./Cut.png"
-import undo from "./Undo.png"
+import briefcase from './briefcase.avif'
+import mail from './mail.avif'
+import windowsxp from './windowsxp.avif'
+import volume from './volume.avif'
+import skills from './skills.avif'
+import projects from './projects.avif'
+import aboutme from './aboutme.avif'
+import info from './info.avif'
+import back from "./Back.avif"
+import forward from "./Forward.avif"
+import folderopen from "./Folder Opened.avif"
+import search from "./Search.avif"
+import startmenu from "./Start Menu Programs.avif"
+import up from "./Up.avif"
+import book from "./Address Book.avif"
+import go from "./Setup task.avif"
+import send from "./OE Send.avif"
+import sign from "./OE Sign.avif"
+import reply from "./OE Reply.avif"
+import replyall from "./OE Reply All.avif"
+import forwardemail from "./OE Forward.avif"
+import attach from "./OE Attach.avif"
+import copy from "./Copy.avif"
+import paste from "./Paste.avif"
+import cut from "./Cut.avif"
+import undo from "./Undo.avif"
 import mailto from "./mailto-icon.webp"
 import me from "./Profile.jpg"
-import welcome from "./welcome.png"
-import systeminfo from "./System Information.png"
-import linkedin from "./linkedin.png"
-import github from "./github.png"
+import welcome from "./welcome.avif"
+import systeminfo from "./System Information.avif"
+import linkedin from "./linkedin.avif"
+import github from "./github.avif"
 import cascade from './cascade.webp'
-import properties from "./Properties.png"
-import documents from "./My Documents.png"
-import network from "./My Network Places.png"
-import programs from "./Programs.png"
-import shared from "./Shared Folder.png"
+import properties from "./Properties.avif"
+import documents from "./My Documents.avif"
+import network from "./My Network Places.avif"
+import programs from "./Programs.avif"
+import shared from "./Shared Folder.avif"
 import react from "./react.svg"
 import typescript from "./typescript.svg"
 import supabase from "./supabase.svg"
@@ -47,21 +47,22 @@ import html from "./html.svg"
 import flask from "./flask.svg"
 import python from "./python.svg"
 import css from "./css.svg"
-import roomu from "./roomu.png"
-import pantry from "./pantry.png"
-import ttt from "./ttt.png"
-import stroke from "./stroke.png"
-import cafestop from "./cafestop.png"
-import greentriangle from "./greentriangle.png"
-import logout from "./Logout.png"
-import power from "./Power.png"
+import roomu from "./roomu.avif"
+import pantry from "./pantry.avif"
+import ttt from "./ttt.avif"
+import stroke from "./stroke.avif"
+import cafestop from "./cafestop.avif"
+import greentriangle from "./greentriangle.avif"
+import logout from "./Logout.avif"
+import power from "./Power.avif"
 import roomumock from "./roomumock.svg"
-import pantrymock from "./pantrymock.png"
-import tttmock from "./tttmock.png"
-import cafestopmock from "./cafestopmock.png"
-import aoxamockup from "./aoxamockup.png"
-import aoxa from "./aoxa.png"
-import atpsych from "./atpsych.png"
+import pantrymock from "./pantrymock.avif"
+import tttmock from "./tttmock.avif"
+import cafestopmock from "./cafestopmock.avif"
+import aoxamockup from "./aoxamockup.avif"
+import aoxa from "./aoxa.avif"
+import atpsych from "./atpsych.avif"
+import mute from "./Mute.avif"
 
 export {
     home,
@@ -127,5 +128,6 @@ export {
     cafestopmock,
     aoxamockup,
     aoxa,
-    atpsych
+    atpsych,
+    mute
 }
