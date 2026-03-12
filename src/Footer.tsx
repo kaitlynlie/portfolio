@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import styles from "./Footer.module.scss";
 import clsx from "clsx";
-import { volume, windowsxp, projects, briefcase, mail, aboutme, greentriangle, info, logout, power } from "./assets";
+import { volumeUp, windowsxp, projects, briefcase, mail, aboutme, greentriangle, info, logout, power, mute } from "./assets";
 
 interface FooterProps {
   windows: { id: string; title: string; icon: string }[];
@@ -11,6 +11,13 @@ interface FooterProps {
 
 function Footer({ windows, onSelect, onOpenWindow }: FooterProps) {
   const [startOpen, setStartOpen] = useState(false);
+  const [muted, setMuted] = useState(false);
+  const [showVolume, setShowVolume] = useState(false);
+  const [volume, setVolume] = useState(0.5);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+  const volumeRef = useRef<HTMLDivElement>(null);
+  const volumeButtonRef = useRef<HTMLDivElement>(null);
+
   const time = new Date().toLocaleTimeString([], { hour: "numeric", minute: "2-digit" });
 
   const menuRef = useRef<HTMLDivElement>(null);
@@ -31,6 +38,40 @@ function Footer({ windows, onSelect, onOpenWindow }: FooterProps) {
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, [startOpen]);
+
+  // initalize audio
+  useEffect(() => {
+    audioRef.current = new Audio("/public/background.ogg");
+    audioRef.current.loop = true;
+    audioRef.current.volume = volume;
+    audioRef.current.play().catch(() => {});
+
+    return () => {
+      audioRef.current?.pause();
+    };
+  }, []);
+
+  // sync volume changes
+  useEffect(() => {
+    if (!audioRef.current) return;
+    audioRef.current.muted = muted;
+    audioRef.current.volume = volume;
+  }, [muted, volume]);
+
+  // close volume popup on outside click like start menu
+  useEffect(() => {
+    if (!showVolume) return;
+    const handleClick = (e: MouseEvent) => {
+      if (
+        volumeRef.current && !volumeRef.current.contains(e.target as Node) &&
+        volumeButtonRef.current && !volumeButtonRef.current.contains(e.target as Node)
+      ) {
+        setShowVolume(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClick);
+    return () => document.removeEventListener("mousedown", handleClick);
+  }, [showVolume]);
 
   return (
     <>
@@ -135,6 +176,35 @@ function Footer({ windows, onSelect, onOpenWindow }: FooterProps) {
         </div>
       )}
 
+      {/* VOLUME POPUP */}
+          {showVolume && (
+            <div ref={volumeRef} className={clsx(styles.volumepopup)}>
+              <div className={clsx(styles.volumeheader)}>
+                <img src={volumeUp} alt="volume" />
+                <h4>Control</h4>
+              </div>
+
+              <div className={clsx(styles.volumebody)}>
+                <div className={clsx(styles.body)}>
+                  <label htmlFor="volume">Volume</label>
+                  <input
+                    type="range"
+                    min={0}
+                    max={1}
+                    step={0.01}
+                    value={muted ? 0 : volume}
+                    onChange={(e) => {
+                      const val = parseFloat(e.target.value);
+                      setVolume(val);
+                      setMuted(val === 0);
+                    }}
+                    className={clsx(styles.volumeSlider)}
+                  />
+                </div>
+              </div>
+            </div>
+          )}
+
       {/* TASKBAR */}
       <div className={clsx(styles.footer)}>
         <div className={clsx(styles.start)}>
@@ -158,7 +228,13 @@ function Footer({ windows, onSelect, onOpenWindow }: FooterProps) {
         </div>
 
         <div className={clsx(styles.right)}>
-          <img src={volume} alt="volume" />
+          <div
+            ref={volumeButtonRef}
+            onClick={() => setShowVolume((prev) => !prev)}
+            className={clsx(styles.volumeicon)}
+          >
+            <img src={muted || volume === 0 ? mute : volumeUp} alt="volume" />
+          </div>
           <p>{time}</p>
         </div>
       </div>

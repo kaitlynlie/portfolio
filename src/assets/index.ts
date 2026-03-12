@@ -2,7 +2,7 @@ import home from './home.jpg'
 import briefcase from './briefcase.avif'
 import mail from './mail.avif'
 import windowsxp from './windowsxp.avif'
-import volume from './volume.avif'
+import volumeUp from './volumeUp.avif'
 import skills from './skills.avif'
 import projects from './projects.avif'
 import aboutme from './aboutme.avif'
@@ -69,7 +69,7 @@ export {
     briefcase,
     mail,
     windowsxp,
-    volume,
+    volumeUp,
     skills,
     projects,
     aboutme,

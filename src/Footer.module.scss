@@ -256,6 +256,123 @@
   }
 }
 
+  .volumepopup {
+    position: fixed;
+    right: 2.25rem;
+    background-color: rgb(101 130 245);
+    border-top-left-radius: .375rem;
+    border-top-right-radius: .375rem;
+    overflow: hidden;
+    width: 90px;
+    position: absolute;
+    bottom: 2.5rem;
+    padding-left: .125rem;
+    padding-right: .125rem;
+    padding-bottom: .125rem;
+    .volumeheader {
+      padding-left: .375rem;
+      padding-right: .375rem;
+      box-sizing: border-box;
+      background-image: linear-gradient(#0058ee, #3593ff 4%, #288eff, #127dff, #036ffc 10%, #0262ee 14%, #0057e5 20%, #0054e3 24%, #0055eb 56%, #005bf5, #026afe, #0062ef 86%, #0052d6 92%, #0040ab 94%, #003092);
+      align-items: center;
+      width: 100%;
+      height: 1.75rem;
+      display: flex;
+      z-index: 10;
+      // top: 0;
+      // left: 0;
+      // position: absolute;
+      img {
+        width: 1rem;
+        height: 1rem;
+        margin-right: .25rem;
+      }
+      h4 {
+        text-shadow: 1px 1px 0px #09177f;
+        font-size: .85rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin: 0;
+        white-space: nowrap;
+        font-family: Trebuchet MS, sans-serif;
+      }
+    }
+
+    .volumebody {
+      padding-right: .25rem;
+      background-color: rgb(255 255 225);
+      height: 12rem;
+      //margin-top: .75rem;
+      .body {
+        padding-left: .5rem;
+        padding-right: .5rem;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        label {
+          color: black;
+          font-size: .7rem;
+          font-family: Trebuchet MS pixelated, sans-serif;
+          padding-right: 1rem;
+        }
+        input {
+          writing-mode: vertical-lr;
+          direction: rtl;
+          height: 150px;
+          padding: 0;
+          margin: 0;
+          box-shadow: 1px 0 #fff, 1px 1px #fff, 0 1px #fff, -1px 0 #a9a9a9, -1px -1px #a9a9a9, 0 -1px #a9a9a9, -1px 1px #fff, 1px -1px #a9a9a9;
+          -webkit-appearance: none;
+          appearance: none;        // add this
+          background: transparent; // add this
+          width: 4px;      
+          cursor: pointer;
+          // the vertical track line
+          &::-webkit-slider-runnable-track {
+            width: 4px;
+            background: linear-gradient(to right, #a9a9a9 0px, #a9a9a9 1px, white 1px, white 2px, #fff 2px, #fff 3px, #a9a9a9 3px);
+            border: none;
+          }
+
+          // the white thumb tab
+          &::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 20px;
+            height: 10px;
+            background: linear-gradient(
+              to right,
+              #808080 0px, #808080 1px,
+              #00aa00 1px, #00aa00 3px,      // left green — thicker, brighter
+              #ececec 3px, #ececec 17px,    // gray center
+              #00aa00 17px, #00aa00 19px,    // right green — thicker, brighter
+              #808080 19px, #808080 20px
+            );
+            border-top: 1px solid #ffffff;
+            border-bottom: 1px solid #808080;
+            cursor: pointer;
+            margin-left: -8px;
+          }
+
+          // firefox
+          &::-moz-range-track {
+            width: 4px;
+            background: #a9a9a9;
+          }
+
+          &::-moz-range-thumb {
+            width: 28px;
+            height: 14px;
+            background: linear-gradient(to bottom, #ffffff 0%, #e0e0e0 50%, #ffffff 100%);
+            border: 1px solid #808080;
+            border-radius: 0;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
 .footer {
   background: linear-gradient(
     rgb(31, 47, 134) 0px,
@@ -372,8 +489,8 @@
         background: linear-gradient(to bottom, #dcdcdc 0%, #b9b9b9 100%);
     }
 }
-
   .right {
+    overflow: visible;
     background: linear-gradient(
       rgb(12, 89, 185) 1%,
       rgb(19, 158, 233) 6%,
@@ -407,6 +524,18 @@
       font-size: 13px;
       line-height: 1.75rem;
       color: white;
+    }
+
+    .volumeicon {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+
+      img {
+        height: 20px;
+        margin-left: 10px;
+        margin-right: 5px;
+      }
     }
   }
 }
