@@ -1,3 +1,261 @@
+.startmenu {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 430px;
+  height: 530px;
+  background-color: #6487dc;
+  border-radius: 5px 5px 0 0;
+  z-index: 999999;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 768px) {
+    width: 300px;
+    height: 410px;
+  }
+  .banner {
+    background: linear-gradient(#1868ce, #0e60cb 12% 20%, #1164cf 32%, #1667cf 33%, #1b6cd3 47%, #1e70d9 54%, #2476dc 60%, #297ae0 65%, #3482e3 77%, #3786e5 79%, #428ee9 90%, #4791eb);
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    flex-shrink: 0;
+    .avatar {
+      width: 2.75rem;
+      height: 2.75rem;
+      box-shadow: -1px 3px 3px #00000040;
+      border: 1px solid #FEFEFE;
+      border-radius: .5rem;
+      background-image: url(/src/assets/Profile.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    h2 {
+      color: rgb(255 255 255 / 1);
+      font-size: 1.125rem;
+      line-height: 1.75rem;
+      padding-left: .5rem;
+      text-shadow: rgba(0, 0, 0, .7) 1px 1px;
+      margin: 0;
+      font-family: Franklin Gothic Medium, sans-serif;
+    }
+  }
+
+  .body {
+    padding-left: .125rem;
+    padding-right: .125rem;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    flex: 1;   
+    overflow: hidden;
+    .divider {
+      display: block;
+      top: 0;
+      left: 0;
+      right: 0;
+      position: absolute;
+      border: 0px;
+      height: 2px;
+      background: linear-gradient(to right, #0000, #da884a, #0000);
+    }
+    .container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      .left {
+        padding: .25rem;
+        background-color: white;
+        width: 58.333333%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: hidden;
+        .app {
+          padding: 0.5rem 0;
+          gap: .75rem;
+          flex-direction: column;
+          display: flex;
+          flex: 1;
+          overflow-y: auto;
+          button {
+            all: unset;
+            cursor: pointer;
+            //padding: 0 .125rem;
+            gap: .375rem;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 2.5rem;
+            .image {
+              width: 2.25rem;
+              height: 2.25rem;
+              @media (max-width: 768px) {
+                width: 1.75rem;
+                height: 1.75rem;
+              }
+              img {
+                max-width: 100%;
+                height: auto;
+              }
+            }
+
+            .label {
+              text-align: left;
+              h3 {
+                font-weight: 700;
+                font-size: .7rem;
+                font-family: Tahoma, sans-serif;
+                margin: 0;
+                color: black;
+              }
+              p {
+                color: rgb(156 163 175);
+                margin: 0;
+                font-family: Tahoma, sans-serif;
+                font-size: 11px;
+                font-weight: 400;
+              }
+            }
+            &:hover {
+              background: #316ac5;
+              color: white;
+            }
+          }
+        }
+        .bottom {
+          display: flex;
+          flex-shrink: 0;
+          flex-direction: column;
+          color: black;
+          .line {
+            height: 1px;
+            background: #ccc;
+            margin: 0 20px;
+          }
+          .allprogramsbutton {
+            display: flex;
+            flex-direction: row;
+            margin: 4px 0px 8px;
+            margin-top: 6px;
+            margin-bottom: 8px;
+            padding-top: 6px;
+            padding-bottom: 4px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            gap: 6px;
+            .allprograms {
+              // padding: 8px 12px;
+              font-size: 12px;
+              font-weight: 800;
+              color: black;
+            }
+            &:hover {
+              background: #316ac5;
+              color: white;
+            }
+          }
+        }
+      }
+
+      .right {
+        padding: .5rem .25rem;
+        width: 50%;
+        height: 100%;
+        background-color: #d3e5fb;
+        border-left: 1px solid rgba(58, 58, 255, .37);
+        button {
+          background-color: transparent;
+          border: none;
+          color: #00136b;
+          padding-left: .125rem;
+          padding-right: .125rem;
+          gap: .375rem;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          height: 2.5rem;
+          width: 100%;
+          .image {
+            width: 1.75rem;
+            height: 1.75rem;
+            img {
+              max-width: 100%;
+              height: auto;
+            }
+          }
+
+          .label {
+            font-size: .7rem;
+            //font-weight: 600;
+            margin: 0;
+            h3 {
+              font-weight: 700;
+              font-size: .7rem;
+              font-family: Tahoma, sans-serif;
+              margin: 0;
+              color: black;
+            }
+          }
+          &:hover {
+            background: #316ac5;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+
+  .startfooter {
+    height: 3rem;
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: linear-gradient(#4282d6, #3b85e0 3%, #418ae3 5% 17%, #3c87e2 21%, #3786e4 26%, #3482e3 29%, #2e7ee1, #2374df 49%, #2072db 57%, #196edb 62%, #176bd8 72%, #1468d5 75%, #1165d2 83%, #0f61cb 88%);
+    width: 100%;
+    .startbuttons {
+      gap: .75rem;
+      height: 83.333333%;
+      display: flex;
+      margin-right: .5rem;
+      .menuaction {
+        background: none;
+        border: none;
+        color: white;
+        font-size: .7rem;
+        cursor: pointer;
+        padding-left: .25rem;
+        padding-right: .25rem;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        &:hover {
+          background: rgba(255,255,255,0.2);
+        }
+        img {
+          width: 1.75rem;
+          height: 1.75rem;
+          margin-right: .25rem;
+        }
+        p {
+          font-family: Tahoma, sans-serif;
+          font-size: 11px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+
 .footer {
   background: linear-gradient(
     rgb(31, 47, 134) 0px,
@@ -149,3 +407,5 @@
     }
   }
 }
+
+

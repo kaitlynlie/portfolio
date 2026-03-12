@@ -46,7 +46,7 @@ export default function Projects({ onClose }: ProjectsProps) {
       { name: "TypeScript", icon: typescript },
       { name: "Supabase", icon: supabase },
       ],
-      link: "https://aggieworks.org/products/roomu",
+      link: "https://roomu.aggieworks.org",
     },
     pantry: {
       title: "ASUCD Pantry",

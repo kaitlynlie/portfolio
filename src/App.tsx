@@ -149,7 +149,26 @@ function App() {
 
       </div>
 
-      <Footer windows={windows} onSelect={() => {}} />
+      <Footer
+        windows={windows}
+        onSelect={(id) => {
+          setTopZ((prev) => prev + 1);
+          setWindows((prev) =>
+            prev.map((w) => w.id === id ? { ...w, zIndex: topZ + 1 } : w)
+          );
+        }}
+        onOpenWindow={(id) => {
+          const map: Record<string, { title: string; icon: string; component: React.ReactNode }> = {
+            contact: { title: "Contact Me", icon: mail, component: <Contact onClose={() => closeWindow("contact")} /> },
+            workexperience: { title: "Work Experience", icon: briefcase, component: <WorkExperience onClose={() => closeWindow("workexperience")} /> },
+            projects: { title: "Projects", icon: projects, component: <Projects onClose={() => closeWindow("projects")} /> },
+            aboutme: { title: "About Me", icon: aboutme, component: <AboutMe onClose={() => closeWindow("aboutme")} /> },
+            info: { title: "info.txt", icon: info, component: <Info onClose={() => closeWindow("info")} /> },
+          };
+          const win = map[id];
+          if (win) openWindow(id, win.title, win.icon, win.component);
+        }}
+      />
     </>
   );
 }

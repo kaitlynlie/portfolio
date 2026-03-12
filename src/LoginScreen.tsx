@@ -1,8 +1,19 @@
 import { me, welcome } from "./assets";
 import styles from "./LoginScreen.module.scss";
 import startupSound from "./assets/Microsoft Windows XP Startup Sound.mp3";
+import { useEffect } from "react";
 
 export default function LoginScreen({ onLogin }: { onLogin: () => void }) {
+  
+  // for mobile
+  useEffect(() => {
+    function updateVh() {
+      document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
+    }
+    updateVh();
+    window.addEventListener('resize', updateVh);
+    return () => window.removeEventListener('resize', updateVh);
+  }, []);
 
   const handleLoginClick = () => {
     const audio = new Audio(startupSound);

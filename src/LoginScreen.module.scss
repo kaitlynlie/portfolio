@@ -1,10 +1,11 @@
 .login {
   position: relative;
   background: radial-gradient(29.68% 27.76% at 5.94% 14.64%, rgba(255, 255, 255, .2) 0%, rgba(255, 255, 255, .16) 59.9%, rgba(255, 255, 255, 0) 100%), #567DDA;
-  height: 100vh; // dynamic viewport height works better on mobile than 100vh
+  height: 100vh; // fallback
+  height: calc(var(--vh, 1vh) * 100);
   width: 100vw;
   color: white;
-  overflow: hidden; // prevents scrolling or any overflow
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,7 +20,7 @@
     left: 0;
     border-bottom: 2px solid #FEFEFE;
     border-radius: 0 !important;
-    z-index: 10; // make sure it stays above other elements
+    z-index: 10;
   }
   .content {
     display: flex;
@@ -122,12 +123,12 @@
   }
 }
 
-  .footer {
-    height: 8rem;
-    width: 100%;
-    background-color: #012f9e;
-    position: absolute;
-    bottom: 0;
-    border-top: 2px solid #13920D;
-    z-index: 10;
-  }
+.footer {
+  height: 8rem;
+  width: 100%;
+  background-color: #012f9e;
+  position: absolute;
+  bottom: 0;
+  border-top: 2px solid #13920D;
+  z-index: 10;
+}

@@ -52,6 +52,9 @@ import pantry from "./pantry.png"
 import ttt from "./ttt.png"
 import stroke from "./stroke.png"
 import cafestop from "./cafestop.png"
+import greentriangle from "./greentriangle.png"
+import logout from "./Logout.png"
+import power from "./Power.png"
 
 export {
     home,
@@ -107,5 +110,8 @@ export {
     pantry,
     ttt,
     stroke,
-    cafestop
+    cafestop,
+    greentriangle,
+    power,
+    logout
 }
