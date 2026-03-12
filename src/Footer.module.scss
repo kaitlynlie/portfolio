@@ -326,30 +326,30 @@
           -webkit-appearance: none;
           appearance: none;        // add this
           background: transparent; // add this
-          width: 4px;      
+          width: 8px;      
           cursor: pointer;
           touch-action: none;
           // the vertical track line
           &::-webkit-slider-runnable-track {
-            width: 4px;
-            background: linear-gradient(to right, #a9a9a9 0px, #a9a9a9 1px, white 1px, white 2px, #fff 2px, #fff 3px, #a9a9a9 3px);
+            width: 8px;
+            background: linear-gradient(to bottom, #ffffff 0%, #e0e0e0 50%, #ffffff 100%);
             border: none;
           }
 
           // the white thumb tab
           &::-webkit-slider-thumb {
             -webkit-appearance: none;
-            width: 20px;
-            height: 10px;
+            width: 24px;
+            height: 12px;
             background: linear-gradient(
               to right,
               #808080 0px, #808080 1px,
-              #00aa00 1px, #00aa00 3px,      // left green — thicker, brighter
-              #ececec 3px, #ececec 17px,    // gray center
-              #00aa00 17px, #00aa00 19px,    // right green — thicker, brighter
-              #808080 19px, #808080 20px
+              #00aa00 1px, #00aa00 4px,      // left green — thicker, brighter
+              #ececec 4px, #ececec 20px,    // gray center
+              #00aa00 20px, #00aa00 23px,    // right green — thicker, brighter
+              #808080 23px, #808080 24px
             );
-            border-top: 1px solid #ffffff;
+            //border-top: 1px solid #ffffff;
             border-bottom: 1px solid #808080;
             cursor: pointer;
             margin-left: -8px;
@@ -358,7 +358,7 @@
           // firefox
           &::-moz-range-track {
             width: 4px;
-            background: #a9a9a9;
+            background: linear-gradient(to bottom, #ffffff 0%, #e0e0e0 50%, #ffffff 100%);
           }
 
           &::-moz-range-thumb {
