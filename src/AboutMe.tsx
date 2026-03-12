@@ -85,7 +85,7 @@ const skillData = {
           >
             Profile
           </button>
-        <button className={clsx(activeTab === "skills" && styles.active)} 
+        <button className={clsx(activeTab === "skills" && styles.activetab)} 
           onClick={() => setActiveTab("skills")}>
           Skills
         </button>

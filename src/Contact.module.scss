@@ -113,7 +113,7 @@
                 height: 100%;
                 button {
                     all: unset;
-                    cursor: pointer;
+                    cursor: auto;
                     display: block;
                     align-items: center;
                     justify-content: center;
@@ -124,6 +124,9 @@
                     font-size: 11px;
                     font-weight: 400;
                     color: black;
+                    // opacity: 0.5;
+                    //cursor: not-allowed;
+                    user-select: none;
                 }
                 button:hover {
                     background-image: linear-gradient(rgb(0, 88, 238) 0%, rgb(53, 147, 255) 4%, rgb(40, 142, 255) 6%, rgb(18, 125, 255) 8%, rgb(3, 111, 252) 10%, rgb(2, 98, 238) 14%, rgb(0, 87, 229) 20%, rgb(0, 84, 227) 24%, rgb(0, 85, 235) 56%, rgb(0, 91, 245) 66%, rgb(2, 106, 254) 76%, rgb(0, 98, 239) 86%, rgb(0, 82, 214) 92%, rgb(0, 64, 171) 94%, rgb(0, 48, 146) 100%);
@@ -204,6 +207,9 @@
           flex-direction: column;
           align-items: center;
           padding-right: .75rem;
+          opacity: 0.5;
+          cursor: not-allowed;
+          user-select: none;
 
           img { width: 1.4rem; height: 1.3rem; }
 
@@ -222,6 +228,9 @@
           flex-direction: column;
           align-items: center;
           padding-right: .5rem;
+          opacity: 0.5;
+          cursor: not-allowed;
+          user-select: none;
 
           img { width: 1.4rem; height: 1.3rem; }
 
@@ -247,6 +256,9 @@
           flex-direction: column;
           align-items: center;
           padding-right: .75rem;
+          opacity: 0.5;
+          cursor: not-allowed;
+          user-select: none;
 
           img { width: 1.3rem; height: 1.3rem; }
 

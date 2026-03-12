@@ -111,7 +111,7 @@
                 height: 100%;
                 button {
                     all: unset;
-                    cursor: pointer;
+                    cursor: auto;
                     display: block;
                     align-items: center;
                     justify-content: center;
@@ -173,6 +173,11 @@
                         border-color: rgb(0, 0, 0) transparent;
                         border-style: solid;
                     }
+                    &.disabled {
+                        opacity: 0.5;
+                        cursor: default;
+                        pointer-events: none;
+                    }
                 }
                 .forward {
                     display: flex;
@@ -182,6 +187,9 @@
                     border-radius: .125rem;
                     border-width: 1px;
                     height: 2rem;
+                    opacity: 0.5;
+                    cursor: not-allowed;
+                    user-select: none;
                     img {
                         width: 1.25rem;
                         height: 1.25rem;
@@ -203,6 +211,9 @@
                     border-radius: .125rem;
                     border-width: 1px;
                     height: 2rem;
+                    opacity: 0.5;
+                    cursor: not-allowed;
+                    user-select: none;
                     img {
                         width: 1.5rem;
                         height: 1.25rem;
@@ -231,6 +242,9 @@
                     border-radius: .125rem;
                     border-width: 1px;
                     height: 2rem;
+                    opacity: 0.5;
+                    cursor: not-allowed;
+                    user-select: none;
                     img {
                         width: 1.25rem;
                         height: 1.25rem;
@@ -521,7 +535,9 @@
                 }
             }
             .projectImage {
-                width: 400px;
+                //width: 400px;
+                margin-bottom: .7rem;
+                margin-right: .5rem;
                 img {
                     width: 100%;
                 }

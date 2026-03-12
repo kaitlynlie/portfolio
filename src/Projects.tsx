@@ -224,7 +224,7 @@ export default function Projects({ onClose }: ProjectsProps) {
             <p>
               Projects
               {currentView.type !== "home" && (
-                <span> / {projectsData[currentView.id].title}</span>
+                <span>/ {projectsData[currentView.id].title}</span>
               )}
             </p>
           </div>
