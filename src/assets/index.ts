@@ -61,6 +61,7 @@ import tttmock from "./tttmock.png"
 import cafestopmock from "./cafestopmock.png"
 import aoxamockup from "./aoxamockup.png"
 import aoxa from "./aoxa.png"
+import atpsych from "./atpsych.png"
 
 export {
     home,
@@ -125,5 +126,6 @@ export {
     tttmock,
     cafestopmock,
     aoxamockup,
-    aoxa
+    aoxa,
+    atpsych
 }

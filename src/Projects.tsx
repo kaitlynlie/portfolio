@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from "./Project.module.scss";
 import clsx from "clsx";
-import { aoxa, aoxamockup, cafestop, cascade, css, digitalocean, django, documents, flask, github, html, javascript, network, pantry, programs, projects, properties, python, react, roomu, shared, skills, stroke, supabase, ttt, typescript } from "./assets";
+import { aoxa, aoxamockup, atpsych, cafestop, cascade, css, digitalocean, django, documents, flask, github, html, javascript, network, pantry, programs, projects, properties, python, react, roomu, shared, skills, stroke, supabase, ttt, typescript } from "./assets";
 import { useWindowControls } from "./windows";
 import { back, forward, up, search, folderopen, startmenu, go, roomumock, pantrymock, tttmock, cafestopmock } from "./assets";
 
@@ -29,6 +29,7 @@ export default function Projects({ onClose }: ProjectsProps) {
   type tttId = "ttt";
   type cafestopId = "cafestop";
   type aoxaId = "aoxa";
+  type atpsychId = "atpsych"
 
   type View =
   | { type: "home" }
@@ -37,7 +38,8 @@ export default function Projects({ onClose }: ProjectsProps) {
   | { type: "stroke"; id: strokeId }
   | { type: "ttt"; id: tttId }
   | { type: "cafestop"; id: cafestopId }
-  | { type: "aoxa", id: aoxaId };
+  | { type: "aoxa", id: aoxaId }
+  | { type: "atpsych", id: atpsychId};
 
   const projectsData = {
     roomu: {
@@ -114,6 +116,16 @@ export default function Projects({ onClose }: ProjectsProps) {
       // ],
       image: aoxamockup,
       live: "https://aoxa.webflow.io",
+    },
+    atpsych: { 
+      category: "projects",
+      title: "Aggie Transcript: Psychology",
+      description: "An undergraduate student-run research journal at UC Davis that publishes papers related to psychology, human development, and cognitive science to make science accessible to everyone and to inspire undergraduate students to enter the realm of academic writing.",
+      tech: [
+      { name: "HTML", icon: html },
+      { name: "CSS", icon: css },
+      ],
+      live: "https://aggietranscript.ucdavis.edu",
     },
   };
 
@@ -361,6 +373,14 @@ export default function Projects({ onClose }: ProjectsProps) {
                   <img src={ttt} alt="Stroke" />
                   <p>Talk to Text</p>
                 </div>
+
+                <div
+                  className={styles.item}
+                  onClick={() => navigateTo({ type: "atpsych", id: "atpsych" })}
+                >
+                  <img src={atpsych} alt="Aggie Transcript: Psychology" />
+                  <p>Aggie Transcript: Psychology</p>
+                </div>
               </div>
             </div>
 
@@ -541,6 +561,33 @@ export default function Projects({ onClose }: ProjectsProps) {
             <div className={styles.projectImage}>
               <img src={projectsData[currentView.id].image} alt={projectsData[currentView.id].title} />
             </div>
+
+            <div className={styles.projectLinks}>
+              <a href={projectsData[currentView.id].live} target="_blank">Live Site</a>
+              {/* <a href={projectsData[currentView.id].link} target="_blank">Github Link</a> */}
+            </div>
+          </div>
+        )}
+
+        {currentView.type === "atpsych" && (
+          <div className={styles.project}>
+            <h2>{projectsData[currentView.id].title}</h2>
+            <p>{projectsData[currentView.id].description}</p>
+
+            <div className={styles.groupbox}>
+              <ul>
+                {projectsData[currentView.id].tech.map((tech) => (
+                  <li key={tech.name} className={styles.techItem}>
+                    <img src={tech.icon} alt={tech.name} />
+                    <span>{tech.name}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* <div className={styles.projectImage}>
+              <img src={projectsData[currentView.id].image} alt={projectsData[currentView.id].title} />
+            </div> */}
 
             <div className={styles.projectLinks}>
               <a href={projectsData[currentView.id].live} target="_blank">Live Site</a>
