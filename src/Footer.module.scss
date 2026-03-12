@@ -328,6 +328,7 @@
           background: transparent; // add this
           width: 4px;      
           cursor: pointer;
+          touch-action: none;
           // the vertical track line
           &::-webkit-slider-runnable-track {
             width: 4px;

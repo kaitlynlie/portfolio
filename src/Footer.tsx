@@ -41,7 +41,7 @@ function Footer({ windows, onSelect, onOpenWindow }: FooterProps) {
 
   // initalize audio
   useEffect(() => {
-    audioRef.current = new Audio("/public/background.ogg");
+    audioRef.current = new Audio("/background.ogg");
     audioRef.current.loop = true;
     audioRef.current.volume = volume;
     audioRef.current.play().catch(() => {});
