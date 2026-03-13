@@ -2,9 +2,8 @@ import { welcome } from "./assets";
 import styles from "./BootScreen.module.scss";
 import { useEffect } from "react";
 
-export default function BootScreen() {
+export default function BootScreen({ onFinish }: { onFinish: () => void }) {
 
-  // for mobile
   useEffect(() => {
     function updateVh() {
       document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
@@ -12,6 +11,11 @@ export default function BootScreen() {
     updateVh();
     window.addEventListener('resize', updateVh);
     return () => window.removeEventListener('resize', updateVh);
+  }, []);
+
+  useEffect(() => {
+    const timer = setTimeout(onFinish, 3000);
+    return () => clearTimeout(timer);
   }, []);
 
   return (

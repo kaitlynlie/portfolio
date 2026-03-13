@@ -7,9 +7,10 @@ interface FooterProps {
   windows: { id: string; title: string; icon: string }[];
   onSelect: (id: string) => void;
   onOpenWindow: (id: string) => void;
+  onLogOff: () => void;
 }
 
-function Footer({ windows, onSelect, onOpenWindow }: FooterProps) {
+function Footer({ windows, onSelect, onOpenWindow, onLogOff }: FooterProps) {
   const [startOpen, setStartOpen] = useState(false);
   const [muted, setMuted] = useState(false);
   const [showVolume, setShowVolume] = useState(false);
@@ -163,7 +164,7 @@ function Footer({ windows, onSelect, onOpenWindow }: FooterProps) {
           {/* BOTTOM */}
           <div className={clsx(styles.startfooter)}>
             <div className={clsx(styles.startbuttons)}>
-              <button className={clsx(styles.menuaction)}>
+              <button className={clsx(styles.menuaction)} onClick={() => { onLogOff(); setStartOpen(false); }}>
                 <img src={logout} alt="logout" />
                 <p>Log Off</p>
               </button>

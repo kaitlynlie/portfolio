@@ -8,6 +8,8 @@ import WorkExperience from "./WorkExperience";
 import Projects from "./Projects";
 import AboutMe from "./AboutMe";
 import Info from "./Info";
+import BootScreen from "./BootScreen";
+import LoginScreen from "./LoginScreen";
 
 interface Window {
   id: string;
@@ -20,10 +22,10 @@ interface Window {
 function App() {
   const [windows, setWindows] = useState<Window[]>([]);
   const [topZ, setTopZ] = useState(1);
+  const [screen, setScreen] = useState<"boot" | "login" | "desktop">("boot"); // for users who logout
 
   useEffect(() => {
     function updateVh() {
-      // set --vh to 1% of the viewport height
       document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
     }
 
@@ -57,6 +59,11 @@ function App() {
   const closeWindow = (id: string) => {
     setWindows((prev) => prev.filter((w) => w.id !== id));
   };
+
+  if (screen === "boot") return <BootScreen onFinish={() => setScreen("login")} />;
+  if (screen === "login") return <LoginScreen onLogin={() => { setWindows([]); setScreen("desktop"); }} />;
+
+  console.log("current screen:", screen);
 
   return (
     <>
@@ -168,6 +175,7 @@ function App() {
           const win = map[id];
           if (win) openWindow(id, win.title, win.icon, win.component);
         }}
+        onLogOff={() => { console.log("logging off, screen ->", screen); setScreen("login"); }}
       />
     </>
   );
