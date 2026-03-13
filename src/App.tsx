@@ -11,6 +11,7 @@ import Info from "./Info";
 import BootScreen from "./BootScreen";
 import LoginScreen from "./LoginScreen";
 import BSODScreen from "./BSODScreen";
+import { Analytics } from "@vercel/analytics/next"
 
 interface Window {
   id: string;
@@ -180,6 +181,8 @@ const [screen, setScreen] = useState<"boot" | "login" | "desktop" | "bsod">("boo
         onLogOff={() => { console.log("logging off, screen ->", screen); setScreen("login"); }}
         onShutdown={() => setScreen("bsod")}
       />
+
+      <Analytics />
     </>
   );
 }
