@@ -11,7 +11,7 @@ import Info from "./Info";
 import BootScreen from "./BootScreen";
 import LoginScreen from "./LoginScreen";
 import BSODScreen from "./BSODScreen";
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/react"
 
 interface Window {
   id: string;
