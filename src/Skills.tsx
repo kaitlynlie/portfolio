@@ -18,6 +18,8 @@ const skillData = {
   Certifications: ["Azure Fundamentals"],
 };
 
+// moved to separate file --- IGNORE ---
+
 export default function Skills({ onClose }: SkillsProps) {
   const [selectedCategory, setSelectedCategory] = useState<keyof typeof skillData>("Languages");
   const {
@@ -45,7 +47,7 @@ export default function Skills({ onClose }: SkillsProps) {
         height: size.height,
       }}
     >
-      {/* Header */}
+      {/* HEADER */}
       <div
         className={clsx(styles.header)}
         onMouseDown={startDrag}
@@ -63,7 +65,7 @@ export default function Skills({ onClose }: SkillsProps) {
         </div>
       </div>
 
-      {/* Top menu bar */}
+      {/* TOP MENU */}
       <div className={clsx(styles.functions)}>
         <div className={clsx(styles.leftfunctions)}>
           <button>File</button>
@@ -73,9 +75,7 @@ export default function Skills({ onClose }: SkillsProps) {
         </div>
       </div>
 
-      {/* XP System Info layout */}
       <div className={clsx(styles.xpBody)}>
-        {/* Left sidebar */}
         <div className={clsx(styles.sidebar)}>
           <ul>
             {Object.keys(skillData).map((category) => (
@@ -90,7 +90,6 @@ export default function Skills({ onClose }: SkillsProps) {
           </ul>
         </div>
 
-        {/* Right details panel */}
         <div className={clsx(styles.details)}>
           <table>
             <thead>

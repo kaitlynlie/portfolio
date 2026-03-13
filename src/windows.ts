@@ -1,4 +1,3 @@
-// useWindowControls.ts
 import { useState, useRef, useEffect } from "react";
 
 interface Position { x: number; y: number; }

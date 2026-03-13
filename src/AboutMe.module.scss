@@ -322,14 +322,14 @@
                             padding-top: 5px;
                             font-family: Trebuchet MS pixelated, sans-serif;
                             font-size: 14px;
-                            overflow-wrap: break-word; /* prevents long words from overflowing */
+                            overflow-wrap: break-word; 
                             word-break: break-word;
                     }
                     p {
                             all: unset;
                             font-family: Trebuchet MS pixelated, sans-serif;
                             font-size: 14px;
-                            overflow-wrap: break-word; /* prevents long words from overflowing */
+                            overflow-wrap: break-word; 
                             word-break: break-word;
                     }
                     ul {
@@ -400,7 +400,7 @@
                 .skills {
                     display: flex;
                     flex: 1;
-                    min-height: 0; /* allow flex children to shrink */
+                    min-height: 0; 
                     overflow: hidden;
 
                     .sidebar {

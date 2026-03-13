@@ -332,10 +332,10 @@
     }
 
     .message {
-      flex: 1; /* let it fill remaining space automatically */
+      flex: 1; 
       display: flex;
       flex-direction: column;
-      min-height: 0; /* allow children to shrink */
+      min-height: 0; 
       background-color: white;
       font-family: Trebuchet MS pixelated, sans-serif;
       margin-left: .125rem;
@@ -361,7 +361,7 @@
 
         .text {
           all: unset;
-          flex: 1; /* grow + shrink dynamically */
+          flex: 1; 
           display: block;
           box-sizing: border-box;
           padding: 0.5rem;
@@ -372,7 +372,7 @@
           outline: none;
           width: 100%;
           resize: none;
-          overflow: auto; /* show scrollbar when content overflows */
+          overflow: auto;
         }
 
         p {
