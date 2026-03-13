@@ -13,6 +13,11 @@
   src: url('../public/fonts/trebuchet-pixel.otf');
 }
 
+@font-face {
+  font-family: 'Lucida Console';
+  src: url('../public/fonts/lucida-bsod.otf');
+}
+
 :root {
   font-family: Tahoma;
   line-height: 1.5;

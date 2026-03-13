@@ -10,6 +10,7 @@ import AboutMe from "./AboutMe";
 import Info from "./Info";
 import BootScreen from "./BootScreen";
 import LoginScreen from "./LoginScreen";
+import BSODScreen from "./BSODScreen";
 
 interface Window {
   id: string;
@@ -22,7 +23,7 @@ interface Window {
 function App() {
   const [windows, setWindows] = useState<Window[]>([]);
   const [topZ, setTopZ] = useState(1);
-  const [screen, setScreen] = useState<"boot" | "login" | "desktop">("boot"); // for users who logout
+const [screen, setScreen] = useState<"boot" | "login" | "desktop" | "bsod">("boot");
 
   useEffect(() => {
     function updateVh() {
@@ -62,8 +63,9 @@ function App() {
 
   if (screen === "boot") return <BootScreen onFinish={() => setScreen("login")} />;
   if (screen === "login") return <LoginScreen onLogin={() => { setWindows([]); setScreen("desktop"); }} />;
+  if (screen === "bsod") return <BSODScreen />;
 
-  console.log("current screen:", screen);
+  //console.log("current screen:", screen);
 
   return (
     <>
@@ -176,6 +178,7 @@ function App() {
           if (win) openWindow(id, win.title, win.icon, win.component);
         }}
         onLogOff={() => { console.log("logging off, screen ->", screen); setScreen("login"); }}
+        onShutdown={() => setScreen("bsod")}
       />
     </>
   );
